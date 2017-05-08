@@ -1,0 +1,1765 @@
+
+@font-face {
+  font-family: "FuturaLight";
+  src: url('https://anima-uploads.s3.amazonaws.com/590de98e9ed2dd000c674923/590de9b3410ae9000d4974cb/590dfa5d9ed2dd000b7173f0/fonts/Futura (Light).ttf') format("truetype");
+}
+
+.index {
+  width               : 100%;
+  min-width           : 320px;
+  height              : 100%;
+  min-height          : 3099px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background          : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+.index .rectangle8 {
+  background          : rgba(255, 87, 91, 1.0);
+  width               : 100%;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .rectangle8-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 0px;
+  align-items         : center;
+  height              : 436px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.index .group17 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 261px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .group17-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 484px;
+  align-items         : center;
+  height              : 43px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.index .group17 .where-is-your-airbnb {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  opacity             : 0.5;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(164, 173, 176, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group17 .rectangle2 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 41px;
+  height              : 2px;
+  width               : 261px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group17 .group {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 7px;
+  height              : 19px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 242px;
+}
+.index .group17 .group .oval {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 16px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group17 .group .line {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 13px;
+  height              : 6px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 13px;
+}
+.index .group16 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 320px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .group16-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 120px;
+  align-items         : center;
+  height              : 284px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.index .group16 .before-airbnb {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  min-width           : 253px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 54.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 72.0px;
+}
+.index .group16 .onlymytho {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 267px;
+  min-width           : 90px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 228px;
+  opacity             : 0.5;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : right;
+  line-height         : 16.0px;
+}
+.index .group16 .research-neighborhoo {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 172px;
+  height              : auto;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 320px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .group12-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 781px;
+  align-items         : center;
+  height              : 2190px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.index .group12 .a929-listings {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 32.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 42.0px;
+}
+.index .group12 .group2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 224px;
+  height              : 172px;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .group12 .group8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 591px;
+  height              : 239px;
+  width               : 271px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .group12 .group8 .group5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 159px;
+  height              : 80px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.index .group12 .group8 .group4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 159px;
+  height              : 80px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+}
+.index .group12 .group8 .group6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 159px;
+  height              : 80px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 207px;
+}
+.index .group12 .group8 .group15 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.index .group12 .group8 .group14 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 211px;
+}
+.index .group12 .group8 .group14 .group3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : 6px;
+  width               : 30px;
+  position            : relative;
+  margin              : 0;
+  left                : 13px;
+}
+.index .group12 .group8 .group13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+}
+.index .group12 .group8 .group13 .group7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 8px;
+  height              : 40px;
+  width               : 42px;
+  position            : relative;
+  margin              : 0;
+  left                : 6px;
+}
+.index .group12 .group21 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 878px;
+  height              : 167px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group21 .super-host-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group21 .rectangle4 {
+  background          : rgba(222, 222, 222, 1.0);
+  top                 : 47px;
+  height              : 1px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group21 .rectangle4-copy {
+  background          : rgba(222, 222, 222, 1.0);
+  top                 : 96px;
+  height              : 1px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group21 .rectangle5 {
+  background          : rgba(255, 87, 91, 0.1);
+  top                 : 48px;
+  height              : 48px;
+  width               : 120px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group21 .rectangle5-copy3 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 48px;
+  height              : 48px;
+  width               : 200px;
+  position            : absolute;
+  margin              : 0;
+  left                : 120px;
+}
+.index .group12 .group21 .a374 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group21 .a626 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(160, 160, 160, 1.0);
+  text-align          : right;
+  line-height         : 32.0px;
+}
+.index .group12 .group21 .normal-host {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 198px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(160, 160, 160, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+}
+.index .group12 .group21 .super-host {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.index .group12 .group21 .opportuinity {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 60px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 202px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+}
+.index .group12 .group22 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1093px;
+  height              : 191px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group22 .business-preferred-r {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group22 .rectangle4-copy2 {
+  background          : rgba(222, 222, 222, 1.0);
+  top                 : 47px;
+  height              : 1px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group22 .rectangle4-copy3 {
+  background          : rgba(222, 222, 222, 1.0);
+  top                 : 96px;
+  height              : 1px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group22 .rectangle5-copy {
+  background          : rgba(255, 87, 91, 0.1);
+  top                 : 48px;
+  height              : 48px;
+  width               : 99px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group22 .rectangle5-copy4 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 48px;
+  height              : 48px;
+  width               : 221px;
+  position            : absolute;
+  margin              : 0;
+  left                : 99px;
+}
+.index .group12 .group22 .a309 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group22 .a691 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : right;
+  line-height         : 32.0px;
+}
+.index .group12 .group22 .business-travel-non {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : 120px;
+  position            : absolute;
+  margin              : 0;
+  left                : 174px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+}
+.index .group12 .group22 .business-travel-pref {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : 120px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.index .group12 .group22 .opportuinity-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 60px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 202px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+}
+.index .group12 .group23 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1332px;
+  height              : 191px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group23 .family-preferred-rat {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group23 .rectangle4-copy4 {
+  background          : rgba(222, 222, 222, 1.0);
+  top                 : 47px;
+  height              : 1px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group23 .rectangle4-copy5 {
+  background          : rgba(222, 222, 222, 1.0);
+  top                 : 96px;
+  height              : 1px;
+  width               : 320px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group23 .rectangle5-copy2 {
+  background          : rgba(255, 87, 91, 0.1);
+  top                 : 48px;
+  height              : 48px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.index .group12 .group23 .rectangle5-copy5 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 48px;
+  height              : 48px;
+  width               : 297px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+}
+.index .group12 .group23 .a72 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group23 .a928 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 225px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : right;
+  line-height         : 32.0px;
+}
+.index .group12 .group23 .family-travel-non-pr {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : 120px;
+  position            : absolute;
+  margin              : 0;
+  left                : 174px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+}
+.index .group12 .group23 .family-travel-prefer {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : 120px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.index .group12 .group23 .opportuinity-copy2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 60px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 202px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+}
+.index .group12 .group9 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1618px;
+  height              : 149px;
+  width               : 270px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+}
+.index .group12 .group25 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1815px;
+  height              : 364px;
+  width               : 186px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .group12 .group25 .listings-distances {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group25 .group11 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 88px;
+  height              : 276px;
+  width               : 67px;
+  position            : absolute;
+  margin              : 0;
+  left                : 41px;
+}
+.index .group12 .group25 .group11 .a10m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a0m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a0 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a0-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a20m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a50m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 82px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 82px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a100m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 117px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 117px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a200m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 163px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a28 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 163px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a500m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 211px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a145 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 211px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a1km {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 263px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .group11 .a250 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 263px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .distance {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 58px;
+  min-width           : 35px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 41px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .group25 .listings {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 58px;
+  min-width           : 35px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .group12 .bitmap {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1900px;
+  height              : 290px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 144px;
+}
+.index .group12 .group19 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 77px;
+  height              : 319px;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .group12 .group19 .price-statistics {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group19 .median-price-is68 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 47px;
+  height              : auto;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+}
+.index .group12 .group19 .avg-med-min-max {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 32.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 43.0px;
+}
+.index .group12 .group19 .a192682510216 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 160px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : right;
+  line-height         : 43.0px;
+}
+.index .group12 .group19 .label1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 132px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 43.0px;
+}
+.index .group12 .group20 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 444px;
+  height              : 386px;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .group12 .group20 .many-listings-are-co {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 47px;
+  height              : auto;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+}
+.index .group12 .group20 .room-type-statistics {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group20 .entire-home {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 203px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.index .group12 .group20 .private-room {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 203px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 103px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group20 .a726 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 235px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+}
+.index .group12 .group20 .label2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 275px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+  font-family         : "AppleSDGothicNeo-Light", serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 15.0px;
+}
+.index .group12 .group20 .listings-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 275px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 118px;
+  font-family         : "AppleSDGothicNeo-Light", serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 15.0px;
+}
+.index .group12 .group20 .listings-copy2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 275px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 221px;
+  font-family         : "AppleSDGothicNeo-Light", serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 15.0px;
+}
+.index .group12 .group20 .a191 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 235px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 105px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+}
+.index .group12 .group20 .a12 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 235px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 218px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+}
+.index .group12 .group20 .else {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 203px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 228px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.index .group12 .group20 .a184722710216 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 306px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 9px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : right;
+  line-height         : 20.0px;
+}
+.index .group12 .group20 .copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 306px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+}
+.index .group12 .group20 .a15449251363 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 306px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 121px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : right;
+  line-height         : 20.0px;
+}
+.index .group12 .group20 .copy2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 306px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+}
+.index .group12 .group20 .a13284231363756 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 306px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 224px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : right;
+  line-height         : 20.0px;
+}
+.index .group12 .group20 .copy3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 306px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 207px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+}
+.index .group12 .group20 .rectangle-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.index .group12 .group20 .image1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 155px;
+  height              : 40px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 121px;
+}
+.index .group12 .group20 .rectangle-copy2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 211px;
+}
+.index .group12 .group20 .oval2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 172px;
+  height              : 6px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 224px;
+}
+.index .group12 .group20 .oval2-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 172px;
+  height              : 6px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 236px;
+}
+.index .group12 .group20 .oval2-copy2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 172px;
+  height              : 6px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 248px;
+}
+.index .group12 .group20 .rectangle {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+}
+.index .group12 .group20 .path2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 154px;
+  height              : 21px;
+  width               : 42px;
+  position            : absolute;
+  margin              : 0;
+  left                : 13px;
+}
+.index .group12 .group20 .path3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 170px;
+  height              : 25px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+}
+.index .group12 .group20 .path3-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 170px;
+  height              : 25px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 39px;
+}
+.index .group12 .group20 .path4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 154px;
+  height              : 9px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 41px;
+}
+.index .group12 .group20 .image2 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 154px;
+  height              : 13px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 44px;
+}
+.index .group12 .group24 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 1571px;
+  height              : 196px;
+  width               : 271px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .group12 .group24 .extra-host-languages {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group12 .group24 .rectangle6 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 67px;
+  height              : 100px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.index .group12 .group24 .rectangle6-copy {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 100px;
+  height              : 67px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 40px;
+}
+.index .group12 .group24 .k-o {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a100 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 47px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .rectangle6-copy2 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 150px;
+  height              : 17px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 79px;
+}
+.index .group12 .group24 .rectangle6-copy3 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 154px;
+  height              : 13px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 118px;
+}
+.index .group12 .group24 .rectangle6-copy4 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 163px;
+  height              : 4px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 157px;
+}
+.index .group12 .group24 .rectangle6-copy5 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 166px;
+  height              : 1px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 196px;
+}
+.index .group12 .group24 .rectangle6-copy6 {
+  background          : rgba(255, 87, 91, 1.0);
+  top                 : 166px;
+  height              : 1px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+}
+.index .group12 .group24 .z-h {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 86px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a168 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 130px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 79px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .e-n {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 46px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a67 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 80px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 46px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .j-a {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 127px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a36 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 134px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 123px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .f-r {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 167px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a131 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 143px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 157px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .e-s {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 206px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a11 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 146px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 201px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .d-e {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 176px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 244px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.index .group12 .group24 .a01 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 146px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 240px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group18 {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 272px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .group18-layout-container {
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 575px;
+  align-items         : center;
+  height              : 152px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+}
+.index .group18 .not-easy-but-there {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 88px;
+  height              : auto;
+  width               : 272px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .group18 .scores {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 37px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 91px;
+  opacity             : 0.8;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 28.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 37.0px;
+}
+.index .group18 .a82 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", serif;
+  font-size           : 64.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  letter-spacing      : -1.0px;
+  line-height         : 85.0px;
+}
