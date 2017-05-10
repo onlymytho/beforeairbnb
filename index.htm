@@ -83,14 +83,16 @@
                 <div class="group12">
                     <div class="a929-listings">
                       <script>
-                        getJSON('https://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback',
+                        // getJSON('https://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback',
+                        getJSON('https://umbglg5ii4.execute-api.us-west-2.amazonaws.com/prod/beforeairbnb_getlistings?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=Yeonnamro-3-gil',
                         function(err, data) {
                         if (err != null) {
                           alert('Something went wrong: ' + err);
                         } else {
-                          document.getElementsByClassName('a929-listings') = data.result;
-                          alert('Your Json result is:  ' + data.result);
-                          alert('Your query count: ' + data.query.count);
+                          console.log(document.getElementsByClassName('a929-listings')[0].innerText);
+                          console.log(data);
+                          document.getElementsByClassName('a929-listings')[0].innerText = data.query.lang
+                          console.log(data.result);
                         }
                         });
                       </script>
