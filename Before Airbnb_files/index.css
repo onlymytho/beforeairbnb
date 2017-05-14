@@ -57,6 +57,7 @@ a {
 }
 .index .group17 .where-is-your-airbnb {
   background          : rgba(255, 255, 255, 0.0);
+  border              : none;
   top                 : 0px;
   height              : auto;
   width               : auto;
@@ -64,7 +65,7 @@ a {
   margin              : 0;
   left                : 0px;
   opacity             : 0.5;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(164, 173, 176, 1.0);
   text-align          : left;
