@@ -32,7 +32,7 @@
           var getJSON = function(url, callback) {
               var xhr = new XMLHttpRequest();
               xhr.open('GET', url, true);
-              xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+              // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
               // xhr.setRequestHeader('"Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE')
               xhr.responseType = 'json';
               xhr.onload = function() {
