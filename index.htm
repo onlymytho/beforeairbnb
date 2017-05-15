@@ -97,8 +97,7 @@
                           } else {
                             console.log(document.getElementsByClassName('a929-listings')[0].innerText);
                             console.log(data);
-                            console.log(data.result);
-                            document.getElementsByClassName('a929-listings')[0].innerText = data.result;
+                            document.getElementsByClassName('a929-listings')[0].innerText = data;
                             }
                           };
                         getJSON(host_url, callback_handling);
