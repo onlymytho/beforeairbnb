@@ -57,26 +57,11 @@
             </div>
             <div class="group17-layout-container">
                 <div class="group17">
-                  <script>
-                    var search_query = document.all.search_query.value;
-                    var result = {};
-                    var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get_results?location='+search_query;
-                    var callback_handling = function(err, data) {
-                      if (err != null) {
-                        alert('Something went wrong: ' + err);
-                      } else {
-                        result = data;
-                        console.log(document.getElementsByClassName('a929-listings')[0].innerText);
-                        console.log(data);
-                        document.getElementsByClassName('a929-listings')[0].innerText = data.length + ' listings';
-                        }
-                      };
-                  </script>
-                    <input type="text" name="search_query" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="" onkeyup="getJSON(host_url, callback_handling);">
-                  <script>
-                    console.log("'" + search_query +"' is sent.")
-                    console.log(result)
-                  </script>
+                    <input type="text" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <!-- <div class="where-is-your-airbnb">
+
+                        Where is your airbnb?
+                    </div> -->
                     <div class="rectangle2">
                     </div>
                     <div class="group">
@@ -103,6 +88,22 @@
             <div class="group12-layout-container">
                 <div class="group12">
                     <div class="a929-listings">
+                      <script>
+                        var result = {};
+                        var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=Yeonnamro-3-gil';
+                        var callback_handling = function(err, data) {
+                          if (err != null) {
+                            alert('Something went wrong: ' + err);
+                          } else {
+                            result = data;
+                            console.log(document.getElementsByClassName('a929-listings')[0].innerText);
+                            console.log(data);
+                            document.getElementsByClassName('a929-listings')[0].innerText = data.length + ' listings';
+                            }
+                          };
+                        getJSON(host_url, callback_handling);
+                        console.log(result)
+                      </script>
                         929 Listings
                     </div>
                     <div class="group2">
