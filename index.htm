@@ -99,6 +99,14 @@
                             console.log(document.getElementsByClassName('a929-listings')[0].innerText);
                             console.log(data);
                             document.getElementsByClassName('a929-listings')[0].innerText = data.length + ' listings';
+                            document.getElementsByClassName('a374')[0].innerText = 100-super_host.rate + '%';
+                            document.getElementsByClassName('a626')[0].innerText = super_host.rate + '%';
+                            document.getElementsByClassName('a309')[0].innerText = 100-business_travel.rate + '%';
+                            document.getElementsByClassName('a691')[0].innerText = business_travel.rate + '%';
+                            document.getElementsByClassName('a72')[0].innerText = 100-family_preferred.rate + '%';
+                            document.getElementsByClassName('a928')[0].innerText = family_preferred.rate + '%';
+                            document.getElementsByClassName('a192682510216')[0].innerText = prices.avg+<br>+prices.med+<br>+prices.min+<br>+prices.max;
+
                             }
                           };
                         getJSON(host_url, callback_handling);
