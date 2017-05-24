@@ -1,13 +1,13 @@
 # beforeairbnb
 
-Keywords
+### Keywords
 - Python
 - Airbnb API
 - AWS Lambda
 - Serverless
 - Anima Plugin
 
-## How To Use
+### How To Use
 1. Download this project.
 2. Deploy this folder to lambda by using serverless. (sls deploy)
 3. Call API and get JSON file, {result}.
