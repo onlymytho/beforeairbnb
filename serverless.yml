@@ -1,0 +1,16 @@
+service: before-airbnb
+
+frameworkVersion: ">=1.2.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: python3.6
+
+functions:
+  get_results:
+    handler: get_results.getresults
+    events:
+      - http:
+          path: before-airbnb-dev-get-results
+          method: get
+          cors: true
