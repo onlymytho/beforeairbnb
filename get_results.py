@@ -40,6 +40,7 @@ incremental_search = {'price_min': [1,5,10,15,20,25,30,35,40,45,50,100,200,350,5
 location = 'Yeonnamro-3'
 
 listings = []
+prices = []
 threads = []
 ids = []
 result = {'room_type':{}, 'price':{}, 'super_host':{}, 'business_travel':{}, 'family_preferred':{}, 'extra_host_language':{}}
@@ -187,10 +188,11 @@ def getresults(event, context):
     def analyze_price():
         global listings
         global result
+        global prices
 
         print ('Price Analysis is started.')
 
-        prices = []
+
         for l in listings:
             prices.append(int(l['pricing_quote']['rate'].get('amount_formatted')[1:]))
 
