@@ -160,7 +160,6 @@ def getresults(event, context):
         # Insert analyzed rt room_type data to results.
         print ("Insert analyzed rt room_type data to results.")
         for rt in room_type:
-
             sum = 0
             for item in prices[rt]:
                 sum = sum+float(item)
@@ -168,13 +167,13 @@ def getresults(event, context):
             if len(prices[rt]) != 0:
                 result['room_type'][rt]['price']['len'] = len(prices[rt])
                 result['room_type'][rt]['price']['sum'] = sum
-                result['room_type'][rt]['price']['avg'] = float(sum/len(prices[rt]))
+                result['room_type'][rt]['price']['avg'] = round(float(sum/len(prices[rt])), 0)
                 result['room_type'][rt]['price']['med'] = median(prices[rt])
                 result['room_type'][rt]['price']['std'] = math.sqrt(median(prices[rt]))
                 result['room_type'][rt]['price']['min'] = min(prices[rt])
                 result['room_type'][rt]['price']['max'] = max(prices[rt])
             else:
-                result['room_type'][rt]['len'] = 0
+                result['room_type'][rt]['price']['len'] = 0
                 result['room_type'][rt]['price']['sum'] = 0
                 result['room_type'][rt]['price']['avg'] = 0
                 result['room_type'][rt]['price']['med'] = 0
@@ -182,6 +181,7 @@ def getresults(event, context):
                 result['room_type'][rt]['price']['min'] = 0
                 result['room_type'][rt]['price']['max'] = 0
 
+            result['room_type']['top'] = max([result['room_type'][rt]['price']['len']])
         # room_type analysis is done
         print ('room_type analysis is done')
 
@@ -213,7 +213,7 @@ def getresults(event, context):
         if len(prices) != 0:
             result['price']['len'] = len(prices)
             result['price']['sum'] = sum
-            result['price']['avg'] = float(sum/len(prices))
+            result['price']['avg'] = round(float(sum/len(prices)), 0)
             result['price']['med'] = median(prices)
             result['price']['std'] = math.sqrt(median(prices))
             result['price']['min'] = min(prices)

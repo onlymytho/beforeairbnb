@@ -55,21 +55,6 @@
                 <div class="rectangle8">
                 </div>
             </div>
-            <div class="group17-layout-container">
-                <div class="group17">
-                    <input type="text" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
-                    <!-- <div class="where-is-your-airbnb">
-
-                        Where is your airbnb?
-                    </div> -->
-                    <div class="rectangle2">
-                    </div>
-                    <div class="group">
-                        <img class="oval" src="./Before Airbnb_files/indexoval@2x.png"><div class="loading-image" style="height: 16px; width: 16px; display: none;"></div>
-                        <img class="line" src="./Before Airbnb_files/indexline@2x.png"><div class="loading-image" style="height: 6px; width: 6px; display: none;"></div>
-                    </div>
-                </div>
-            </div>
             <div class="group16-layout-container">
                 <div class="group16">
                     <div class="before-airbnb">
@@ -85,33 +70,38 @@
                     </div>
                 </div>
             </div>
+
+            <div class="group17-layout-container">
+                <div class="group17">
+                    <input type="text" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <!-- <div class="where-is-your-airbnb">
+
+                        Where is your airbnb?
+                    </div> -->
+                    <div class="rectangle2">
+                    </div>
+                    <div class="group">
+                        <img class="oval" src="./Before Airbnb_files/indexoval@2x.png"><div class="loading-image" style="height: 16px; width: 16px; display: none;"></div>
+                        <img class="line" src="./Before Airbnb_files/indexline@2x.png"><div class="loading-image" style="height: 6px; width: 6px; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="group18-layout-container">
+                <div class="group18">
+                    <div class="not-easy-but-there">
+                        Not easy. But there’s still opportunity. Move on!
+                    </div>
+                    <div class="scores">
+                        Scores
+                    </div>
+                    <div class="a82">
+                        82
+                    </div>
+                </div>
+            </div>
             <div class="group12-layout-container">
                 <div class="group12">
                     <div class="a929-listings">
-                      <script>
-                        var result = {};
-                        var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=Yeonnamro-3-gil';
-                        var callback_handling = function(err, data) {
-                          if (err != null) {
-                            alert('Something went wrong: ' + err);
-                          } else {
-                            result = data;
-                            console.log(document.getElementsByClassName('a929-listings')[0].innerText);
-                            console.log(data);
-                            document.getElementsByClassName('a929-listings')[0].innerText = data.length + ' listings';
-                            document.getElementsByClassName('a374')[0].innerText = 100-super_host.rate + '%';
-                            document.getElementsByClassName('a626')[0].innerText = super_host.rate + '%';
-                            document.getElementsByClassName('a309')[0].innerText = 100-business_travel.rate + '%';
-                            document.getElementsByClassName('a691')[0].innerText = business_travel.rate + '%';
-                            document.getElementsByClassName('a72')[0].innerText = 100-family_preferred.rate + '%';
-                            document.getElementsByClassName('a928')[0].innerText = family_preferred.rate + '%';
-                            document.getElementsByClassName('a192682510216')[0].innerText = prices.avg+'\n'+prices.med+'\n'+prices.min+'\n'+prices.max;
-
-                            }
-                          };
-                        getJSON(host_url, callback_handling);
-                        console.log(result)
-                      </script>
                         929 Listings
                     </div>
                     <div class="group2">
@@ -485,20 +475,43 @@
                     </div>
                 </div>
             </div>
-            <div class="group18-layout-container">
-                <div class="group18">
-                    <div class="not-easy-but-there">
-                        Not easy. But there’s still opportunity. Move on!
-                    </div>
-                    <div class="scores">
-                        Scores
-                    </div>
-                    <div class="a82">
-                        82
-                    </div>
-                </div>
-            </div>
         </div>
+        <script>
+          console.log(document.getElementsByClassName('group18-layout-container')[0])
+          document.getElementsByClassName('group18-layout-container')[0].style.display = 'none';
+          document.getElementsByClassName('group12-layout-container')[0].style.display = 'none';
+        </script>
+        <script>
+          var result = {};
+          var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=Yeonnamro-3-gil';
+          var callback_handling = function(err, data) {
+            if (err != null) {
+              alert('Something went wrong: ' + err);
+            } else {
+              result = data;
+              console.log(data);
+              document.getElementsByClassName('group18-layout-container')[0].style.display = 'flex';
+              document.getElementsByClassName('group12-layout-container')[0].style.display = 'flex';
+              document.getElementsByClassName('a929-listings')[0].innerText = data.price.len + ' listings';
+              document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;
+              document.getElementsByClassName('a191')[0].innerText = data.room_type.private_room.price.len;
+              document.getElementsByClassName('a12')[0].innerText = data.room_type.else.price.len;
+              document.getElementsByClassName('a184722710216')[0].innerText = data.room_type.entire_home.price.avg+'\n'+data.room_type.entire_home.price.med+'\n'+data.room_type.entire_home.price.min+'\n'+data.room_type.entire_home.price.max;
+              document.getElementsByClassName('a15449251363')[0].innerText = data.room_type.private_room.price.avg+'\n'+data.room_type.private_room.price.med+'\n'+data.room_type.private_room.price.min+'\n'+data.room_type.private_room.price.max;
+              document.getElementsByClassName('a13284231363756')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
+              document.getElementsByClassName('a374')[0].innerText = 100-data.super_host.rate + '%';
+              document.getElementsByClassName('a626')[0].innerText = data.super_host.rate + '%';
+              document.getElementsByClassName('a309')[0].innerText = 100-data.business_travel.rate + '%';
+              document.getElementsByClassName('a691')[0].innerText = data.business_travel.rate + '%';
+              document.getElementsByClassName('a72')[0].innerText = 100-data.family_preferred.rate + '%';
+              document.getElementsByClassName('a928')[0].innerText = data.family_preferred.rate + '%';
+              document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
+
+              }
+            };
+          getJSON(host_url, callback_handling);
+          console.log(result)
+        </script>
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
