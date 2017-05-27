@@ -13,4 +13,7 @@ functions:
       - http:
           path: before-airbnb-dev-get-results
           method: get
+          integration: lambda
           cors: true
+          request:
+            application/json: '{ "location" : "$input.params(''location'')" }'
