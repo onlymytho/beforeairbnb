@@ -45,6 +45,8 @@ threads = []
 ids = []
 result = {'room_type':{}, 'price':{}, 'super_host':{}, 'business_travel':{}, 'family_preferred':{}, 'extra_host_language':{}}
 
+retry = 0
+
 def getresults(event, context):
 
     global result
@@ -100,7 +102,7 @@ def getresults(event, context):
                 listings = listings + neighbors
 
             threads.append(Thread(target=getlistingthread))
-            threads[n].daemon = True
+            threads[n].setDaemon(True)
             threads[n].start()
             time.sleep(0.5)
 
@@ -324,13 +326,21 @@ def getresults(event, context):
         result['total']['score'] = score
         result['total']['message'] = score_text
 
+
     def getneighborsRETRY():
+        global retry
+
         try:
             getneighbors()
         except RuntimeError as e:
-            print(e)
-            print("RuntimeError has occured. Trying again.")
-            getneighborsRETRY()
+            if retry == 3:
+                exit()
+            else:
+                print(e)
+                print("RuntimeError has occured. Trying again.")
+                getneighborsRETRY()
+                retry += 1
+
     getneighborsRETRY()
     analyze_roomtype()
     analyze_price()
