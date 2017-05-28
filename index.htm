@@ -3,9 +3,9 @@
 <html><head>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-7287688084356532",
-        enable_page_level_ads: true
+          (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7287688084356532",
+          enable_page_level_ads: true
         });
         </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -81,7 +81,7 @@
 
             <div class="group17-layout-container">
                 <div class="group17">
-                    <input type="text" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <input type="text" onkeyup="enterinputexec(event);"class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
                     <!-- <div class="where-is-your-airbnb">
 
                         Where is your airbnb?
@@ -491,7 +491,7 @@
         </script>
         <script>
           var result = {};
-          var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=Yeonnamro-3-gil';
+          var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location='+document.getElementsByClassName('where-is-your-airbnb')[0].value;
           var callback_handling = function(err, data) {
             if (err != null) {
               alert('Something went wrong: ' + err);
@@ -514,10 +514,22 @@
               document.getElementsByClassName('a72')[0].innerText = 100-data.family_preferred.rate + '%';
               document.getElementsByClassName('a928')[0].innerText = data.family_preferred.rate + '%';
               document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
+              document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is '+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.min+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.'
+              document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.'
+              document.getElementsByClassName('a82')[0].innerText = data.total.score ;
+              document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message + '%';
 
               }
             };
-          getJSON(host_url, callback_handling);
+            var enterinputexec = function(e) {
+              if (event.which == 13 || event.keyCode == 13) {
+                console.log("Start to call listing information");
+                getJSON(host_url, callback_handling);
+              }
+              else {
+                return false;
+              }
+            };
           console.log(result)
         </script>
         <script>
