@@ -1013,7 +1013,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : sans-serif, "FuturaLight", serif;
   font-size           : 14.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1078,7 +1078,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : sans-serif, "FuturaLight", serif;
   font-size           : 14.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
