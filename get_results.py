@@ -306,13 +306,39 @@ def getresults(event, context):
 
         print ('Done')
 
-    getneighbors()
+    def analyze_score():
+        listing_count = result['price']['len']
+        super_host_rate = result['super_host']['rate']
+        score = 100 - (listing_count%200 + super_host_rate/10)
+        score_text = ''
+
+        if score > 95:
+            score_text = "Perfect. Don't hesitate, just open your airbnb now."
+        elif score > 90:
+            score_text = "Fine. You can go with the unique edge of your airbnb."
+        elif score > 80:
+            score_text = "Not easy. But there’s still opportunity. Move on!"
+        else:
+            score_text = "Difficult. I think you should find other location."
+        result['total'] = {}
+        result['total']['score'] = score
+        result['total']['message'] = score_text
+
+    def getneighborsRETRY():
+        try:
+            getneighbors()
+        except RuntimeError as e:
+            print(e)
+            print("RuntimeError has occured. Trying again.")
+            getneighborsRETRY()
+    getneighborsRETRY()
     analyze_roomtype()
     analyze_price()
     analyze_super_host()
     analyze_business_travel()
     analyze_family_preferred()
     analyze_extra_host_language()
+    analyze_score()
 
     return result
     # return {
