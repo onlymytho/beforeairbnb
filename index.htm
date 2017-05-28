@@ -94,6 +94,8 @@
                     </div>
                 </div>
             </div>
+            <div class="loading">
+            </div>
             <div class="group18-layout-container">
                 <div class="group18">
                     <div class="not-easy-but-there">
@@ -498,6 +500,10 @@
               var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=' + document.getElementsByClassName('where-is-your-airbnb')[0].value;
               console.log(host_url)
               getJSON(host_url, callback_handling);
+              document.getElementsByClassName('group18-layout-container')[0].style.display = 'none';
+              document.getElementsByClassName('group12-layout-container')[0].style.display = 'none';
+              document.getElementsByClassName('loading')[0].style.display = 'flex';
+              document.getElementsByClassName('loading')[0].innerText = 'Searching for ' + document.getElementsByClassName('where-is-your-airbnb')[0].value + '...';
             }
             else {
               return false;
@@ -513,6 +519,7 @@
               // input interation
               document.getElementsByClassName('group18-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'flex';
+              document.getElementsByClassName('loading')[0].style.display = 'none';
 
               // total score
               document.getElementsByClassName('a82')[0].innerText = data.total.score;

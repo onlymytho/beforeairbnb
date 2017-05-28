@@ -43,7 +43,7 @@ a {
   pointer-events      : auto;
   position            : relative;
 }
-.index .group17-layout-container {
+.index .group17-layout-container{
   pointer-events      : none;
   flex-direction      : column;
   top                 : 484px;
@@ -55,6 +55,25 @@ a {
   display             : flex;
   left                : 0;
 }
+
+.index .loading{
+  pointer-events      : none;
+  flex-direction      : column;
+  top                 : 600px;
+  align-items         : center;
+  height              : 43px;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  display             : flex;
+  left                : 0;
+  font-family         : sans-serif, "FuturaLight", serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+}
+
 .index .group17 .where-is-your-airbnb {
   background          : rgba(255, 255, 255, 0.0);
   border              : none;
