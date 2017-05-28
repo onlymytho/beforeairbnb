@@ -309,7 +309,7 @@ def getresults(event, context):
     def analyze_score():
         listing_count = result['price']['len']
         super_host_rate = result['super_host']['rate']
-        score = 100 - (listing_count%200 + super_host_rate/10)
+        score = 100 - (int(listing_count/200) + int(super_host_rate/10))
         score_text = ''
 
         if score > 95:
