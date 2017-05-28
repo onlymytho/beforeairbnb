@@ -183,7 +183,9 @@ def getresults(event, context):
                 result['room_type'][rt]['price']['min'] = 0
                 result['room_type'][rt]['price']['max'] = 0
 
-            result['room_type']['top'] = max([result['room_type'][rt]['price']['len']])
+            listing_counts = {}
+            listing_counts[rt] = result['room_type'][rt]['price']['len']
+        result['room_type']['top'] = max(listing_counts)
         # room_type analysis is done
         print ('room_type analysis is done')
 
