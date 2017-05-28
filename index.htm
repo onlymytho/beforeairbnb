@@ -498,26 +498,50 @@
             } else {
               result = data;
               console.log(data);
+              // input interation
               document.getElementsByClassName('group18-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'flex';
+
+              // total score
+              document.getElementsByClassName('a82')[0].innerText = data.total.score;
+              document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message;
+
+              // listing count and price analysis
               document.getElementsByClassName('a929-listings')[0].innerText = data.price.len + ' listings';
+              document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
+              document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is '+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.min+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.'
+              document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.'
+              
+              // room_type analysis
               document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;
               document.getElementsByClassName('a191')[0].innerText = data.room_type.private_room.price.len;
               document.getElementsByClassName('a12')[0].innerText = data.room_type.else.price.len;
               document.getElementsByClassName('a184722710216')[0].innerText = data.room_type.entire_home.price.avg+'\n'+data.room_type.entire_home.price.med+'\n'+data.room_type.entire_home.price.min+'\n'+data.room_type.entire_home.price.max;
               document.getElementsByClassName('a15449251363')[0].innerText = data.room_type.private_room.price.avg+'\n'+data.room_type.private_room.price.med+'\n'+data.room_type.private_room.price.min+'\n'+data.room_type.private_room.price.max;
               document.getElementsByClassName('a13284231363756')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
+
+              // super_host analysis
               document.getElementsByClassName('a374')[0].innerText = 100-data.super_host.rate + '%';
-              document.getElementsByClassName('a626')[0].innerText = data.super_host.rate + '%';
+              document.getElementsByClassName('rectangle5')[0].style.width = 100-data.super_host.rate + '%'
+              document.getElementsByClassName('rectangle5-copy3')[0].style.width = data.super_host.rate + '%'
+              document.getElementsByClassName('rectangle5-copy3')[0].style.left = ''
+              document.getElementsByClassName('rectangle5-copy3')[0].style.right = '0px'
+
+              // business_travel analysis
               document.getElementsByClassName('a309')[0].innerText = 100-data.business_travel.rate + '%';
               document.getElementsByClassName('a691')[0].innerText = data.business_travel.rate + '%';
+              document.getElementsByClassName('rectangle5-copy')[0].style.width = 100-data.business_travel.rate + '%'
+              document.getElementsByClassName('rectangle5-copy4')[0].style.width = data.business_travel.rate + '%'
+              document.getElementsByClassName('rectangle5-copy4')[0].style.left = ''
+              document.getElementsByClassName('rectangle5-copy4')[0].style.right = '0px'
+
+              // family_preferred analysis
               document.getElementsByClassName('a72')[0].innerText = 100-data.family_preferred.rate + '%';
               document.getElementsByClassName('a928')[0].innerText = data.family_preferred.rate + '%';
-              document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
-              document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is '+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.min+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.'
-              document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.'
-              document.getElementsByClassName('a82')[0].innerText = data.total.score;
-              document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message;
+              document.getElementsByClassName('rectangle5-copy2')[0].style.width = 100-data.family_preferred.rate + '%'
+              document.getElementsByClassName('rectangle5-copy5')[0].style.width = data.family_preferred.rate + '%'
+              document.getElementsByClassName('rectangle5-copy5')[0].style.left = ''
+              document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px'
 
               }
             };
