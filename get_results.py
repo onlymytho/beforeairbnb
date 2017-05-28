@@ -50,7 +50,7 @@ retry = 0
 def getresults(event, context):
 
     global result
-
+    result['search_query'] = event['location']
     def getneighbors():
 
         print ('Neighbors calling is started.')
