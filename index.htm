@@ -54,6 +54,10 @@
               xhr.send();
           };
 
+          function numberWithCommas(x) {
+              return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          }
+
         </script>
         <link href="./Before Airbnb_files/image_reloader.css" rel="stylesheet" type="text/css">
     </head>
@@ -74,7 +78,14 @@
                         @onlymytho
                     </div>
                     <div class="research-neighborhoo">
-                        Research Neighborhoods to Succeed in Your Next Airbnb. Try Now!
+                        <script>
+                          if (userLang=='ko'){
+                            document.getElementsByClassName('research-neighborhoo')[0].innerText = '주변 경쟁자 분석을 통해\n에어비엔비를 효과적으로\n운영해보세요.'
+                          }
+                          else {
+                            document.getElementsByClassName('research-neighborhoo')[0].innerText = 'Research Neighborhoods to Succeed in Your Next Airbnb. Try Now!'
+                          }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -82,6 +93,11 @@
             <div class="group17-layout-container">
                 <div class="group17">
                     <input type="text" onkeyup="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <script>
+                      if (userLang=='ko'){
+                        document.getElementsByClassName('where-is-your-airbnb')[0].placeholder = "주소를 입력하세요"
+                      }
+                    </script>
                     <!-- <div class="where-is-your-airbnb">
 
                         Where is your airbnb?
@@ -509,7 +525,6 @@
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'none';
               document.getElementsByClassName('loading')[0].style.display = 'flex';
 
-
               var counter = 15;
               var id;
 
@@ -518,10 +533,14 @@
                   if(counter < 0) {
                       clearInterval(id);
                   } else {
-                    if (userLang == 'ko') {
-                      document.getElementsByClassName('loading')[0].innerText = document.getElementsByClassName('where-is-your-airbnb')[0].value + ' 검색중...\n' + counter.toString() + '초 남았습니다.';}
-                    else {
-                      document.getElementsByClassName('loading')[0].innerText = 'Searching for ' + document.getElementsByClassName('where-is-your-airbnb')[0].value + '...\n' + counter.toString() + ' seconds left';}
+                      if (userLang == 'ko') {
+                        document.getElementsByClassName('loading')[0].innerText = document.getElementsByClassName('where-is-your-airbnb')[0].value + ' 검색중...\n' + counter.toString() + '초 남았습니다.';
+                        document.getElementsByClassName('loading')[0].style.textAlign = 'center';
+                      }
+                      else {
+                        document.getElementsByClassName('loading')[0].innerText = 'Searching for ' + document.getElementsByClassName('where-is-your-airbnb')[0].value + '...\n' + counter.toString() + ' seconds left';
+                        document.getElementsByClassName('loading')[0].style.textAlign = 'center';
+                      }
                   }
                 }, 1000)
             }
@@ -540,58 +559,123 @@
               document.getElementsByClassName('group18-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('loading')[0].style.display = 'none';
-
-              // total score
-              document.getElementsByClassName('a82')[0].innerText = data.total.score;
               if (userLang == 'ko') {
-                document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.ko;}
+
+
+                // total score
+                document.getElementsByClassName('a82')[0].innerText = data.total.score;
+                document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.ko;
+
+                // listing count and price analysis
+                document.getElementsByClassName('price-statistics')[0].innerText = '가격 분석';
+                document.getElementsByClassName('avg-med-min-max')[0].innerText = '평균\n                중간\n                최소\n                최대';
+                document.getElementsByClassName('a929-listings')[0].innerText = numberWithCommas(data.price.len) + '개의 에어비엔비';
+                document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
+                document.getElementsByClassName('median-price-is68')[0].innerText = '평균 가격은 '+numberWithCommas(data.price.avg*1100)+'원입니다. 기본적으로 경쟁력을 확보하려면 '+numberWithCommas(data.price.min*1100)+'원에서 '+numberWithCommas(data.price.med*1100)+'원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 '+numberWithCommas(data.price.med*1100)+'원에서 '+numberWithCommas(data.price.max*1100)+'원 사이가 적당한 가격일 것입니다.';
+                document.getElementsByClassName('many-listings-are-co')[0].innerText = '많은 경쟁자들이 '+data.room_type.top+'형태의 방을 많이 소유하고 있습니다. 하지만 이에 관계 없이 당신이 제공할 수 있는 가장 최고의 경험을 줄 수 있는 형태를 준비하세요.';
+                document.getElementsByClassName('avg-med-min-max')[0].style.top = '157px';
+                document.getElementsByClassName('label1')[0].style.top = '157px';
+                document.getElementsByClassName('a192682510216')[0].style.top = '157px';
+
+
+                // room_type analysis
+                document.getElementsByClassName('room-type-statistics')[0].innerText = '방 종류 분석';
+                document.getElementsByClassName('entire-home')[0].innerText = '집 전체';
+                document.getElementsByClassName('private-room')[0].innerText = '개인방';
+                document.getElementsByClassName('else')[0].innerText = '기타';
+
+                document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;
+                document.getElementsByClassName('a191')[0].innerText = data.room_type.private_room.price.len;
+                document.getElementsByClassName('a12')[0].innerText = data.room_type.else.price.len;
+                document.getElementsByClassName('a184722710216')[0].innerText = data.room_type.entire_home.price.avg+'\n'+data.room_type.entire_home.price.med+'\n'+data.room_type.entire_home.price.min+'\n'+data.room_type.entire_home.price.max;
+                document.getElementsByClassName('a15449251363')[0].innerText = data.room_type.private_room.price.avg+'\n'+data.room_type.private_room.price.med+'\n'+data.room_type.private_room.price.min+'\n'+data.room_type.private_room.price.max;
+                document.getElementsByClassName('a13284231363756')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
+
+                // super_host analysis
+                document.getElementsByClassName('super-host-rate')[0].innerText = '슈퍼 호스트 비율';
+                document.getElementsByClassName('super-host')[0].innerText = '슈퍼 호스트';
+                document.getElementsByClassName('normal-host')[0].innerText = '일반 호스트';
+                document.getElementsByClassName('opportuinity')[0].innerText = '기회';
+
+                document.getElementsByClassName('a374')[0].innerText = data.super_host.rate + '%';
+                document.getElementsByClassName('a626')[0].innerText = 100-data.super_host.rate + '%';;
+                document.getElementsByClassName('rectangle5')[0].style.width = data.super_host.rate + '%';
+                document.getElementsByClassName('rectangle5-copy3')[0].style.width = 100-data.super_host.rate + '%';
+                document.getElementsByClassName('rectangle5-copy3')[0].style.left = 'null';
+                document.getElementsByClassName('rectangle5-copy3')[0].style.right = '0px';
+
+                // business_travel analysis
+                document.getElementsByClassName('business-preferred-r')[0].innerText = '비즈니스 여행 선호 비율';
+                document.getElementsByClassName('business-travel-pref')[0].innerText = '비즈니스 여행\n선호';
+                document.getElementsByClassName('business-travel-non')[0].innerText = '비즈니스 여행\n비선호';
+                document.getElementsByClassName('opportuinity-copy')[0].innerText = '기회';
+
+                document.getElementsByClassName('a309')[0].innerText = data.business_travel.rate + '%';
+                document.getElementsByClassName('a691')[0].innerText = 100-data.business_travel.rate + '%';;
+                document.getElementsByClassName('rectangle5-copy')[0].style.width = data.business_travel.rate + '%';
+                document.getElementsByClassName('rectangle5-copy4')[0].style.width = 100-data.business_travel.rate + '%';
+                document.getElementsByClassName('rectangle5-copy4')[0].style.left = 'null';
+                document.getElementsByClassName('rectangle5-copy4')[0].style.right = '0px';
+
+                // family_preferred analysis
+                document.getElementsByClassName('family-preferred-rat')[0].innerText = '가족 여행 선호 비율';
+                document.getElementsByClassName('family-travel-prefer')[0].innerText = '가족 여행\n선호';
+                document.getElementsByClassName('family-travel-non-pr')[0].innerText = '가족 여행\n비선호';
+                document.getElementsByClassName('opportuinity-copy2')[0].innerText = '기회';
+
+                document.getElementsByClassName('a72')[0].innerText = data.family_preferred.rate + '%';
+                document.getElementsByClassName('a928')[0].innerText = 100-data.family_preferred.rate + '%';
+                document.getElementsByClassName('rectangle5-copy2')[0].style.width = data.family_preferred.rate + '%';
+                document.getElementsByClassName('rectangle5-copy5')[0].style.width = 100-data.family_preferred.rate + '%';
+                document.getElementsByClassName('rectangle5-copy5')[0].style.left = 'null';
+                document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px';
+
+                }
               else {
-                document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.en;}
+                // total score
+                document.getElementsByClassName('a82')[0].innerText = data.total.score;
+                document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.en;
 
+                // listing count and price analysis
+                document.getElementsByClassName('a929-listings')[0].innerText = data.price.len + ' listings';
+                document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
+                document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is $'+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.med+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.';
+                document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.';
 
-              // listing count and price analysis
-              document.getElementsByClassName('a929-listings')[0].innerText = data.price.len + ' listings';
-              document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
-              if (userLang == 'ko') {
-                document.getElementsByClassName('median-price-is68')[0].innerText = '중간 가격은 '+data.price.med+'원입니다. 기본적으로 경쟁력을 확보하려면 '+data.price.min+'원에서 '+data.price.med+'원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 '+data.price.med+'원에서 '+data.price.max+'사이가 적당한 가격일 것입니다.'
-                document.getElementsByClassName('many-listings-are-co')[0].innerText = '많은 경쟁자들이 '+data.room_type.top+'형태의 방을 많이 소유하고 있습니다. 하지만 이에 관계 없이 당신이 제공할 수 있는 가장 최고의 경험을 줄 수 있는 형태를 준비하세요.'
-              }
-              else {
-                document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is $'+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.med+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.'
-                document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.'
-              }
+                // room_type analysis
+                document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;
+                document.getElementsByClassName('a191')[0].innerText = data.room_type.private_room.price.len;
+                document.getElementsByClassName('a12')[0].innerText = data.room_type.else.price.len;
+                document.getElementsByClassName('a184722710216')[0].innerText = data.room_type.entire_home.price.avg+'\n'+data.room_type.entire_home.price.med+'\n'+data.room_type.entire_home.price.min+'\n'+data.room_type.entire_home.price.max;
+                document.getElementsByClassName('a15449251363')[0].innerText = data.room_type.private_room.price.avg+'\n'+data.room_type.private_room.price.med+'\n'+data.room_type.private_room.price.min+'\n'+data.room_type.private_room.price.max;
+                document.getElementsByClassName('a13284231363756')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
 
-              // room_type analysis
-              document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;
-              document.getElementsByClassName('a191')[0].innerText = data.room_type.private_room.price.len;
-              document.getElementsByClassName('a12')[0].innerText = data.room_type.else.price.len;
-              document.getElementsByClassName('a184722710216')[0].innerText = data.room_type.entire_home.price.avg+'\n'+data.room_type.entire_home.price.med+'\n'+data.room_type.entire_home.price.min+'\n'+data.room_type.entire_home.price.max;
-              document.getElementsByClassName('a15449251363')[0].innerText = data.room_type.private_room.price.avg+'\n'+data.room_type.private_room.price.med+'\n'+data.room_type.private_room.price.min+'\n'+data.room_type.private_room.price.max;
-              document.getElementsByClassName('a13284231363756')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
+                // super_host analysis
+                document.getElementsByClassName('a374')[0].innerText = data.super_host.rate + '%';
+                document.getElementsByClassName('a626')[0].innerText = 100-data.super_host.rate + '%';
+                document.getElementsByClassName('rectangle5')[0].style.width = data.super_host.rate + '%';
+                document.getElementsByClassName('rectangle5-copy3')[0].style.width = 100-data.super_host.rate + '%';
+                document.getElementsByClassName('rectangle5-copy3')[0].style.left = 'null';
+                document.getElementsByClassName('rectangle5-copy3')[0].style.right = '0px';
 
-              // super_host analysis
-              document.getElementsByClassName('a374')[0].innerText = data.super_host.rate + '%';
-              document.getElementsByClassName('a626')[0].innerText = 100-data.super_host.rate + '%';
-              document.getElementsByClassName('rectangle5')[0].style.width = data.super_host.rate + '%'
-              document.getElementsByClassName('rectangle5-copy3')[0].style.width = 100-data.super_host.rate + '%'
-              document.getElementsByClassName('rectangle5-copy3')[0].style.left = 'null'
-              document.getElementsByClassName('rectangle5-copy3')[0].style.right = '0px'
+                // business_travel analysis
+                document.getElementsByClassName('a309')[0].innerText = data.business_travel.rate + '%';
+                document.getElementsByClassName('a691')[0].innerText = 100-data.business_travel.rate + '%';
+                document.getElementsByClassName('rectangle5-copy')[0].style.width = data.business_travel.rate + '%';
+                document.getElementsByClassName('rectangle5-copy4')[0].style.width = 100-data.business_travel.rate + '%';
+                document.getElementsByClassName('rectangle5-copy4')[0].style.left = 'null';
+                document.getElementsByClassName('rectangle5-copy4')[0].style.right = '0px';
 
-              // business_travel analysis
-              document.getElementsByClassName('a309')[0].innerText = data.business_travel.rate + '%';
-              document.getElementsByClassName('a691')[0].innerText = 100-data.business_travel.rate + '%';
-              document.getElementsByClassName('rectangle5-copy')[0].style.width = data.business_travel.rate + '%'
-              document.getElementsByClassName('rectangle5-copy4')[0].style.width = 100-data.business_travel.rate + '%'
-              document.getElementsByClassName('rectangle5-copy4')[0].style.left = 'null'
-              document.getElementsByClassName('rectangle5-copy4')[0].style.right = '0px'
+                // family_preferred analysis
+                document.getElementsByClassName('a72')[0].innerText = data.family_preferred.rate + '%';
+                document.getElementsByClassName('a928')[0].innerText = 100-data.family_preferred.rate + '%';
+                document.getElementsByClassName('rectangle5-copy2')[0].style.width = data.family_preferred.rate + '%';
+                document.getElementsByClassName('rectangle5-copy5')[0].style.width = 100-data.family_preferred.rate + '%';
+                document.getElementsByClassName('rectangle5-copy5')[0].style.left = 'null';
+                document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px';
 
-              // family_preferred analysis
-              document.getElementsByClassName('a72')[0].innerText = data.family_preferred.rate + '%';
-              document.getElementsByClassName('a928')[0].innerText = 100-data.family_preferred.rate + '%';
-              document.getElementsByClassName('rectangle5-copy2')[0].style.width = data.family_preferred.rate + '%'
-              document.getElementsByClassName('rectangle5-copy5')[0].style.width = 100-data.family_preferred.rate + '%'
-              document.getElementsByClassName('rectangle5-copy5')[0].style.left = 'null'
-              document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px'
+                }
+
               }
             };
           console.log(result)

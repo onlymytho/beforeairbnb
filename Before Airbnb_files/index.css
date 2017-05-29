@@ -67,7 +67,7 @@ a {
   margin              : 0;
   display             : flex;
   left                : 0;
-  font-family         : sans-serif, "FuturaLight", serif;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
   font-size           : 14.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -154,7 +154,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 54.0px;
   color               : rgba(255, 255, 255, 1.0);
   text-align          : left;
@@ -170,7 +170,7 @@ a {
   margin              : 0;
   left                : 228px;
   opacity             : 0.5;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(255, 255, 255, 1.0);
   text-align          : right;
@@ -184,7 +184,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(255, 255, 255, 1.0);
   text-align          : left;
@@ -217,7 +217,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 32.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -330,7 +330,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -379,7 +379,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -393,7 +393,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 225px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(160, 160, 160, 1.0);
   text-align          : right;
@@ -406,8 +406,8 @@ a {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 198px;
-  font-family         : "FuturaLight", serif;
+  right               : 28px;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(160, 160, 160, 1.0);
   text-align          : right;
@@ -421,7 +421,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -434,8 +434,8 @@ a {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 202px;
-  font-family         : "FuturaLight", serif;
+  right               : 28px;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(255, 255, 255, 1.0);
   text-align          : right;
@@ -458,7 +458,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -507,7 +507,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -521,7 +521,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 225px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : right;
@@ -534,8 +534,8 @@ a {
   width               : 120px;
   position            : absolute;
   margin              : 0;
-  left                : 174px;
-  font-family         : "FuturaLight", serif;
+  right               : 28px;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : right;
@@ -549,7 +549,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -562,8 +562,8 @@ a {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 202px;
-  font-family         : "FuturaLight", serif;
+  right               : 28px;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(255, 255, 255, 1.0);
   text-align          : right;
@@ -586,7 +586,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -635,7 +635,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -649,7 +649,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 225px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : right;
@@ -662,8 +662,8 @@ a {
   width               : 120px;
   position            : absolute;
   margin              : 0;
-  left                : 174px;
-  font-family         : "FuturaLight", serif;
+  right               : 29px;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : right;
@@ -677,7 +677,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 24px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -690,8 +690,8 @@ a {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 202px;
-  font-family         : "FuturaLight", serif;
+  right               : 28px;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 18.0px;
   color               : rgba(255, 255, 255, 1.0);
   text-align          : right;
@@ -723,7 +723,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -746,7 +746,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -760,7 +760,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -774,7 +774,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -788,7 +788,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -802,7 +802,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -816,7 +816,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -830,7 +830,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -844,7 +844,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -858,7 +858,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -872,7 +872,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -886,7 +886,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -900,7 +900,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -914,7 +914,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -928,7 +928,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -942,7 +942,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -956,7 +956,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 48px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -971,7 +971,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 41px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -986,7 +986,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 89px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 10.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : left;
@@ -1018,7 +1018,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1032,7 +1032,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : sans-serif, "FuturaLight", serif;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
   font-size           : 14.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1046,7 +1046,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 32.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1060,7 +1060,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 160px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 32.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : right;
@@ -1074,7 +1074,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 132px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 32.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -1097,7 +1097,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : sans-serif, "FuturaLight", serif;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
   font-size           : 14.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1111,7 +1111,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1125,7 +1125,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1139,7 +1139,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 103px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : center;
@@ -1153,7 +1153,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 3px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 32.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : center;
@@ -1167,7 +1167,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 16px;
-  font-family         : "AppleSDGothicNeo-Light", serif;
+  font-family         : "AppleSDGothicNeo-Light", sans-serif;
   font-size           : 12.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : center;
@@ -1181,7 +1181,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 118px;
-  font-family         : "AppleSDGothicNeo-Light", serif;
+  font-family         : "AppleSDGothicNeo-Light", sans-serif;
   font-size           : 12.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : center;
@@ -1195,7 +1195,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 221px;
-  font-family         : "AppleSDGothicNeo-Light", serif;
+  font-family         : "AppleSDGothicNeo-Light", sans-serif;
   font-size           : 12.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : center;
@@ -1209,7 +1209,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 105px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 32.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : center;
@@ -1223,7 +1223,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 218px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 32.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : center;
@@ -1237,7 +1237,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 228px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1251,7 +1251,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 9px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : right;
@@ -1265,7 +1265,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 2px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1279,7 +1279,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 121px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : right;
@@ -1293,7 +1293,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 104px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1307,7 +1307,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 224px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : right;
@@ -1321,7 +1321,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 207px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1452,7 +1452,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 24.0px;
   color               : rgba(155, 154, 155, 1.0);
   text-align          : left;
@@ -1484,7 +1484,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 7px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1498,7 +1498,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 3px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1557,7 +1557,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 86px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1571,7 +1571,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 79px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1585,7 +1585,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 46px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1599,7 +1599,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 46px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1613,7 +1613,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 127px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1627,7 +1627,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 123px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1641,7 +1641,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 167px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1655,7 +1655,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 157px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1669,7 +1669,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 206px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1683,7 +1683,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 201px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1697,7 +1697,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 244px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1711,7 +1711,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 240px;
-  font-family         : "FuturaLight", serif;
+  font-family         : "FuturaLight", sans-serif;
   font-size           : 12.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
@@ -1745,7 +1745,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : sans-serif, "FuturaLight", serif;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
   font-size           : 24.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -1760,7 +1760,7 @@ a {
   margin              : 0;
   left                : 91px;
   opacity             : 0.8;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 28.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
@@ -1774,7 +1774,7 @@ a {
   position            : absolute;
   margin              : 0;
   left                : 0px;
-  font-family         : "Futura-Medium", serif;
+  font-family         : "Futura-Medium", sans-serif;
   font-size           : 64.0px;
   color               : rgba(255, 87, 91, 1.0);
   text-align          : left;
