@@ -30,11 +30,11 @@
         <meta content="photo" name="twitter:card">
         <meta content="Before Airbnb" name="twitter:title">
         <meta content="Research Neighborhoods to Succedd in Your Next Airbnb. Try Now!" name="twitter:description">
-        <script async="" src="./Before Airbnb_files/analytics.js">
-        </script>
-        <script src="./Before Airbnb_files/jquery.min.js">
-        </script>
-        <script src="./Before Airbnb_files/jquery.imageReloader.js">
+        <script async="" src="./Before Airbnb_files/analytics.js"></script>
+        <script src="./Before Airbnb_files/jquery.min.js"></script>
+        <script src="./Before Airbnb_files/jquery.imageReloader.js"></script>
+        <script>
+          var userLang = navigator.language || navigator.userLanguage;
         </script>
         <script>
           var getJSON = function(url, callback) {
@@ -102,10 +102,15 @@
                         Not easy. But there’s still opportunity. Move on!
                     </div>
                     <div class="scores">
-                        Scores
+                        <script>
+                          if (userLang == 'ko'){
+                            document.getElementsByClassName('scores')[0].innerText = '점'}
+                          else {
+                            document.getElementsByClassName('scores')[0].innerText = 'Scores'}
+                        </script>
                     </div>
                     <div class="a82">
-                        82
+                        -
                     </div>
                 </div>
             </div>
@@ -503,7 +508,22 @@
               document.getElementsByClassName('group18-layout-container')[0].style.display = 'none';
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'none';
               document.getElementsByClassName('loading')[0].style.display = 'flex';
-              document.getElementsByClassName('loading')[0].innerText = 'Searching for ' + document.getElementsByClassName('where-is-your-airbnb')[0].value + '...';
+
+
+              var counter = 15;
+              var id;
+
+              id = setInterval(function() {
+                  counter--;
+                  if(counter < 0) {
+                      clearInterval(id);
+                  } else {
+                    if (userLang == 'ko') {
+                      document.getElementsByClassName('loading')[0].innerText = document.getElementsByClassName('where-is-your-airbnb')[0].value + ' 검색중...\n' + counter.toString() + '초 남았습니다.';}
+                    else {
+                      document.getElementsByClassName('loading')[0].innerText = 'Searching for ' + document.getElementsByClassName('where-is-your-airbnb')[0].value + '...\n' + counter.toString() + ' seconds left';}
+                  }
+                }, 1000)
             }
             else {
               return false;
@@ -523,13 +543,23 @@
 
               // total score
               document.getElementsByClassName('a82')[0].innerText = data.total.score;
-              document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message;
+              if (userLang == 'ko') {
+                document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.ko;}
+              else {
+                document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.en;}
+
 
               // listing count and price analysis
               document.getElementsByClassName('a929-listings')[0].innerText = data.price.len + ' listings';
               document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
-              document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is '+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.med+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.'
-              document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.'
+              if (userLang == 'ko') {
+                document.getElementsByClassName('median-price-is68')[0].innerText = '중간 가격은 '+data.price.med+'원입니다. 기본적으로 경쟁력을 확보하려면 '+data.price.min+'원에서 '+data.price.med+'원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 '+data.price.med+'원에서 '+data.price.max+'사이가 적당한 가격일 것입니다.'
+                document.getElementsByClassName('many-listings-are-co')[0].innerText = '많은 경쟁자들이 '+data.room_type.top+'형태의 방을 많이 소유하고 있습니다. 하지만 이에 관계 없이 당신이 제공할 수 있는 가장 최고의 경험을 줄 수 있는 형태를 준비하세요.'
+              }
+              else {
+                document.getElementsByClassName('median-price-is68')[0].innerText = 'Median price is $'+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.med+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.'
+                document.getElementsByClassName('many-listings-are-co')[0].innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.'
+              }
 
               // room_type analysis
               document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;

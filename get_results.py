@@ -314,19 +314,24 @@ def getresults(event, context):
         listing_count = result['price']['len']
         super_host_rate = result['super_host']['rate']
         score = 100 - (int(listing_count/200) + int(super_host_rate/10))
-        score_text = ''
+        score_text_ko = ''
+        score_text_en = ''
 
         if score > 95:
-            score_text = "Perfect. Don't hesitate, just open your airbnb now."
+            score_text_en = "Perfect. Don't hesitate, just open your airbnb now."
+            score_text_ko = "최적의 조건이네요! 지금 당장 에어비엔비 시작해보세요."
         elif score > 90:
-            score_text = "Fine. You can go with the unique edge of your airbnb."
+            score_text_en = "Fine. You can go with the unique edge of your airbnb."
+            score_text_ko = "괜찮네요. 포인트만 잘 잡으면 충분히 성공할 수 있어요."
         elif score > 80:
-            score_text = "Not easy. But there’s still opportunity. Move on!"
+            score_text_en = "Not easy. But there’s still opportunity. Move on!"
+            score_text_ko = "쉽지는 않겠지만 충분히 할 만해요. 도전해보세요!"
         else:
-            score_text = "Difficult. I think you should find other location."
+            score_text_en = "Difficult. I think you should find other location."
+            score_text_ko = "힘들어요. 하지만 정말 잘 할 자신이 있다면 시작하세요."
         result['total'] = {}
         result['total']['score'] = score
-        result['total']['message'] = score_text
+        result['total']['message'] = {'ko':score_text_ko, 'en':score_text_en}
 
 
     def getneighborsRETRY():
