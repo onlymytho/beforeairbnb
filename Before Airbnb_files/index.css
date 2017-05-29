@@ -336,9 +336,20 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
+.index .group12 .group21 .super-host-desc {
+  top                 : 47px;
+  position            : absolute;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+  margin-left         : 24px;
+  margin-right        : 24px;
+}
 .index .group12 .group21 .rectangle4 {
   background          : rgba(222, 222, 222, 1.0);
-  top                 : 47px;
+  top                 : 107px;
   height              : 1px;
   width               : 320px;
   position            : absolute;
@@ -347,7 +358,7 @@ a {
 }
 .index .group12 .group21 .rectangle4-copy {
   background          : rgba(222, 222, 222, 1.0);
-  top                 : 96px;
+  top                 : 156px;
   height              : 1px;
   width               : 320px;
   position            : absolute;
@@ -356,7 +367,7 @@ a {
 }
 .index .group12 .group21 .rectangle5 {
   background          : rgba(255, 87, 91, 0.1);
-  top                 : 48px;
+  top                 : 108px;
   height              : 48px;
   width               : 120px;
   position            : absolute;
@@ -365,7 +376,7 @@ a {
 }
 .index .group12 .group21 .rectangle5-copy3 {
   background          : rgba(255, 87, 91, 1.0);
-  top                 : 48px;
+  top                 : 108px;
   height              : 48px;
   width               : 200px;
   position            : absolute;
@@ -373,7 +384,7 @@ a {
 }
 .index .group12 .group21 .a374 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 112px;
+  top                 : 172px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -387,7 +398,7 @@ a {
 }
 .index .group12 .group21 .a626 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 112px;
+  top                 : 172px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -401,7 +412,7 @@ a {
 }
 .index .group12 .group21 .normal-host {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
+  top                 : 203px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -415,7 +426,7 @@ a {
 }
 .index .group12 .group21 .super-host {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
+  top                 : 203px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -429,7 +440,7 @@ a {
 }
 .index .group12 .group21 .opportuinity {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 60px;
+  top                 : 120px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -443,7 +454,7 @@ a {
 }
 .index .group12 .group22 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 1093px;
+  top                 : 1153px;
   height              : 191px;
   width               : 320px;
   position            : absolute;
@@ -464,9 +475,20 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
+.index .group12 .group22 .business-preferred-desc {
+  top                 : 47px;
+  position            : absolute;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+  margin-left         : 24px;
+  margin-right        : 24px;
+}
 .index .group12 .group22 .rectangle4-copy2 {
   background          : rgba(222, 222, 222, 1.0);
-  top                 : 47px;
+  top                 : 107px;
   height              : 1px;
   width               : 320px;
   position            : absolute;
@@ -475,7 +497,7 @@ a {
 }
 .index .group12 .group22 .rectangle4-copy3 {
   background          : rgba(222, 222, 222, 1.0);
-  top                 : 96px;
+  top                 : 156px;
   height              : 1px;
   width               : 320px;
   position            : absolute;
@@ -484,7 +506,7 @@ a {
 }
 .index .group12 .group22 .rectangle5-copy {
   background          : rgba(255, 87, 91, 0.1);
-  top                 : 48px;
+  top                 : 108px;
   height              : 48px;
   width               : 99px;
   position            : absolute;
@@ -493,7 +515,7 @@ a {
 }
 .index .group12 .group22 .rectangle5-copy4 {
   background          : rgba(255, 87, 91, 1.0);
-  top                 : 48px;
+  top                 : 108px;
   height              : 48px;
   width               : 221px;
   position            : absolute;
@@ -501,7 +523,7 @@ a {
 }
 .index .group12 .group22 .a309 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 112px;
+  top                 : 172px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -515,7 +537,7 @@ a {
 }
 .index .group12 .group22 .a691 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 112px;
+  top                 : 172px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -529,7 +551,7 @@ a {
 }
 .index .group12 .group22 .business-travel-non {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
+  top                 : 203px;
   height              : auto;
   width               : 120px;
   position            : absolute;
@@ -543,7 +565,7 @@ a {
 }
 .index .group12 .group22 .business-travel-pref {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
+  top                 : 203px;
   height              : auto;
   width               : 120px;
   position            : absolute;
@@ -557,7 +579,7 @@ a {
 }
 .index .group12 .group22 .opportuinity-copy {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 60px;
+  top                 : 120px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -571,7 +593,7 @@ a {
 }
 .index .group12 .group23 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 1332px;
+  top                 : 1452px;
   height              : 191px;
   width               : 320px;
   position            : absolute;
@@ -592,9 +614,20 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
+.index .group12 .group23 .family-preferred-desc {
+  top                 : 47px;
+  position            : absolute;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+  margin-left         : 24px;
+  margin-right        : 24px;
+}
 .index .group12 .group23 .rectangle4-copy4 {
   background          : rgba(222, 222, 222, 1.0);
-  top                 : 47px;
+  top                 : 107px;
   height              : 1px;
   width               : 320px;
   position            : absolute;
@@ -603,7 +636,7 @@ a {
 }
 .index .group12 .group23 .rectangle4-copy5 {
   background          : rgba(222, 222, 222, 1.0);
-  top                 : 96px;
+  top                 : 156px;
   height              : 1px;
   width               : 320px;
   position            : absolute;
@@ -612,7 +645,7 @@ a {
 }
 .index .group12 .group23 .rectangle5-copy2 {
   background          : rgba(255, 87, 91, 0.1);
-  top                 : 48px;
+  top                 : 108px;
   height              : 48px;
   width               : 23px;
   position            : absolute;
@@ -621,7 +654,7 @@ a {
 }
 .index .group12 .group23 .rectangle5-copy5 {
   background          : rgba(255, 87, 91, 1.0);
-  top                 : 48px;
+  top                 : 108px;
   height              : 48px;
   width               : 297px;
   position            : absolute;
@@ -629,7 +662,7 @@ a {
 }
 .index .group12 .group23 .a72 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 112px;
+  top                 : 172px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -643,7 +676,7 @@ a {
 }
 .index .group12 .group23 .a928 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 112px;
+  top                 : 172px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -657,7 +690,7 @@ a {
 }
 .index .group12 .group23 .family-travel-non-pr {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
+  top                 : 203px;
   height              : auto;
   width               : 120px;
   position            : absolute;
@@ -671,7 +704,7 @@ a {
 }
 .index .group12 .group23 .family-travel-prefer {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
+  top                 : 203px;
   height              : auto;
   width               : 120px;
   position            : absolute;
@@ -685,7 +718,7 @@ a {
 }
 .index .group12 .group23 .opportuinity-copy2 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 60px;
+  top                 : 120px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -699,7 +732,7 @@ a {
 }
 .index .group12 .group9 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 1618px;
+  top                 : 1738px;
   height              : 149px;
   width               : 270px;
   position            : absolute;
@@ -708,7 +741,7 @@ a {
 }
 .index .group12 .group25 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 1815px;
+  top                 : 1995px;
   height              : 364px;
   width               : 186px;
   position            : absolute;
@@ -994,7 +1027,7 @@ a {
 }
 .index .group12 .bitmap {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 1900px;
+  top                 : 2080px;
   height              : 290px;
   width               : 124px;
   position            : absolute;
@@ -1437,7 +1470,7 @@ a {
 }
 .index .group12 .group24 {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 1571px;
+  top                 : 1751px;
   height              : 196px;
   width               : 271px;
   position            : absolute;

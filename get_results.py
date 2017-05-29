@@ -248,6 +248,16 @@ def getresults(event, context):
         result['super_host']['count'] = len(super_host)
         result['super_host']['rate'] = round(len(super_host)/result['price']['len']*100, 1)
 
+        if result['super_host']['rate'] > 20:
+            result['super_host']['message'] = {
+                'ko': '슈퍼 호스트 비율이 상대적으로 높은 편입니다. 마냥 쉽지만은 않지만, 여전히 많은 기회가 있습니다.',
+                'en': 'Super host rate is relatively high. But there are lots of opportunity.'
+                }
+        else:
+            result['super_host']['message'] = {
+                'ko': '슈퍼 호스트 비율이 상대적으로 낮은 편입니다. 이 지역에서 당신이 최고 호스트가 될 수도 있습니다.',
+                'en': 'Super host rate is relatively low. You could be the top host of this area.'
+                }
         print ('Done')
 
     def analyze_business_travel():
@@ -267,6 +277,17 @@ def getresults(event, context):
         result['business_travel']['count'] = len(business_travel)
         result['business_travel']['rate'] = round(len(business_travel)/result['price']['len']*100, 1)
 
+        if result['business_travel']['rate'] > 20:
+            result['business_travel']['message'] = {
+                'ko': '비즈니스 여행 선호 비율이 상대적으로 높은 편입니다. 위기를 기회로 만드세요.',
+                'en': 'Business preffred rate is relatively high. Make crisis to an opportunity.'
+                }
+        else:
+            result['business_travel']['message'] = {
+                'ko': '비즈니스 여행 선호 비율이 상대적으로 낮은 편입니다. 비즈니스 여행객을 맞을 준비를 하세요.',
+                'en': 'Business preffred rate is relatively low. Ready to host business people.'
+                }
+
         print ('Done')
 
     def analyze_family_preferred():
@@ -285,6 +306,17 @@ def getresults(event, context):
                 pass
         result['family_preferred']['count'] = len(family_preferred)
         result['family_preferred']['rate'] = round(len(family_preferred)/result['price']['len']*100, 1)
+
+        if result['family_preferred']['rate'] > 20:
+            result['family_preferred']['message'] = {
+                'ko': '가족 여행 선호 비율이 상대적으로 높은 편입니다. 하지만 가족 여행객은 많습니다.',
+                'en': 'Family preffred rate is relatively high. But family need many rooms.'
+                }
+        else:
+            result['family_preferred']['message'] = {
+                'ko': '가족 여행 선호 비율이 상대적으로 낮은 편입니다. 가족 여행객을 맞을 준비를 하세요.',
+                'en': 'Family preffred rate is relatively low. Ready to host family travelers.'
+                }
 
         print ('Done')
 

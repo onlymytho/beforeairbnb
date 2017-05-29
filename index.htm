@@ -159,6 +159,8 @@
                         <div class="super-host-rate">
                             Super Host Rate
                         </div>
+                        <div class="super-host-desc">
+                        </div>
                         <div class="rectangle4">
                         </div>
                         <div class="rectangle4-copy">
@@ -186,6 +188,8 @@
                     <div class="group22">
                         <div class="business-preferred-r">
                             Business Preferred Rate
+                        </div>
+                        <div class="business-preferred-desc">
                         </div>
                         <div class="rectangle4-copy2">
                         </div>
@@ -215,6 +219,8 @@
                         <div class="family-preferred-rat">
                             Family Preferred Rate
                         </div>
+                        <div class="family-preferred-desc">
+                        </div>
                         <div class="rectangle4-copy4">
                         </div>
                         <div class="rectangle4-copy5">
@@ -239,7 +245,66 @@
                             Opportuinity
                         </div>
                     </div>
-                    <div class="group9">
+                    <div class="group24">
+                        <div class="extra-host-languages">
+                            Extra Host Languages
+                        </div>
+                        <div class="rectangle6">
+                        </div>
+                        <div class="rectangle6-copy">
+                        </div>
+                        <div class="k-o">
+                            KO
+                        </div>
+                        <div class="a100">
+                            100%
+                        </div>
+                        <div class="rectangle6-copy2">
+                        </div>
+                        <div class="rectangle6-copy3">
+                        </div>
+                        <div class="rectangle6-copy4">
+                        </div>
+                        <div class="rectangle6-copy5">
+                        </div>
+                        <div class="rectangle6-copy6">
+                        </div>
+                        <div class="z-h">
+                            ZH
+                        </div>
+                        <div class="a168">
+                            16.8%
+                        </div>
+                        <div class="e-n">
+                            EN
+                        </div>
+                        <div class="a67">
+                            67%
+                        </div>
+                        <div class="j-a">
+                            JA
+                        </div>
+                        <div class="a36">
+                            3.6%
+                        </div>
+                        <div class="f-r">
+                            FR
+                        </div>
+                        <div class="a131">
+                            13.1%
+                        </div>
+                        <div class="e-s">
+                            ES
+                        </div>
+                        <div class="a11">
+                            1.1%
+                        </div>
+                        <div class="d-e">
+                            DE
+                        </div>
+                        <div class="a01">
+                            0.1%
+                        </div>
                     </div>
                     <div class="group25">
                         <div class="listings-distances">
@@ -443,67 +508,7 @@
                         <img class="path4" src="./Before Airbnb_files/indexpath 4@2x.png"><div class="loading-image" style="height: 9px; width: 4px; display: none;"></div>
                         <img class="image2" src="./Before Airbnb_files/indexpath 4  1@2x.png"><div class="loading-image" style="height: 13px; width: 4px; display: none;"></div>
                     </div>
-                    <div class="group24">
-                        <div class="extra-host-languages">
-                            Extra Host Languages
-                        </div>
-                        <div class="rectangle6">
-                        </div>
-                        <div class="rectangle6-copy">
-                        </div>
-                        <div class="k-o">
-                            KO
-                        </div>
-                        <div class="a100">
-                            100%
-                        </div>
-                        <div class="rectangle6-copy2">
-                        </div>
-                        <div class="rectangle6-copy3">
-                        </div>
-                        <div class="rectangle6-copy4">
-                        </div>
-                        <div class="rectangle6-copy5">
-                        </div>
-                        <div class="rectangle6-copy6">
-                        </div>
-                        <div class="z-h">
-                            ZH
-                        </div>
-                        <div class="a168">
-                            16.8%
-                        </div>
-                        <div class="e-n">
-                            EN
-                        </div>
-                        <div class="a67">
-                            67%
-                        </div>
-                        <div class="j-a">
-                            JA
-                        </div>
-                        <div class="a36">
-                            3.6%
-                        </div>
-                        <div class="f-r">
-                            FR
-                        </div>
-                        <div class="a131">
-                            13.1%
-                        </div>
-                        <div class="e-s">
-                            ES
-                        </div>
-                        <div class="a11">
-                            1.1%
-                        </div>
-                        <div class="d-e">
-                            DE
-                        </div>
-                        <div class="a01">
-                            0.1%
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -571,8 +576,8 @@
                 document.getElementsByClassName('avg-med-min-max')[0].innerText = '평균\n                중간\n                최소\n                최대';
                 document.getElementsByClassName('a929-listings')[0].innerText = numberWithCommas(data.price.len) + '개의 에어비엔비';
                 document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
-                document.getElementsByClassName('median-price-is68')[0].innerText = '평균 가격은 '+numberWithCommas(data.price.avg*1100)+'원입니다. 기본적으로 경쟁력을 확보하려면 '+numberWithCommas(data.price.min*1100)+'원에서 '+numberWithCommas(data.price.med*1100)+'원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 '+numberWithCommas(data.price.med*1100)+'원에서 '+numberWithCommas(data.price.max*1100)+'원 사이가 적당한 가격일 것입니다.';
-                document.getElementsByClassName('many-listings-are-co')[0].innerText = '많은 경쟁자들이 '+data.room_type.top+'형태의 방을 많이 소유하고 있습니다. 하지만 이에 관계 없이 당신이 제공할 수 있는 가장 최고의 경험을 줄 수 있는 형태를 준비하세요.';
+                document.getElementsByClassName('median-price-is68')[0].innerText = '평균 가격은 '+numberWithCommas(data.price.avg*1100)+'원입니다. 기본적으로 경쟁력을 확보하려면 '+numberWithCommas(data.price.min*1100)+'원에서 '+numberWithCommas(data.price.med*1100)+'원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 '+numberWithCommas(data.price.med*1100)+'원에서 '+numberWithCommas(data.price.max*1100)+'원 사이가 적당한 가격입니다.';
+                document.getElementsByClassName('many-listings-are-co')[0].innerText = '많은 경쟁자들이 '+data.room_type.top+'형태의 방을 많이 소유하고 있습니다. 하지만 이와 관계 없이 당신이 제공할 수 있는 최고의 경험을 위한 방 형태를 준비해보세요.';
                 document.getElementsByClassName('avg-med-min-max')[0].style.top = '157px';
                 document.getElementsByClassName('label1')[0].style.top = '157px';
                 document.getElementsByClassName('a192682510216')[0].style.top = '157px';
@@ -593,6 +598,7 @@
 
                 // super_host analysis
                 document.getElementsByClassName('super-host-rate')[0].innerText = '슈퍼 호스트 비율';
+                document.getElementsByClassName('super-host-desc')[0].innerText = data.super_host.message.ko;
                 document.getElementsByClassName('super-host')[0].innerText = '슈퍼 호스트';
                 document.getElementsByClassName('normal-host')[0].innerText = '일반 호스트';
                 document.getElementsByClassName('opportuinity')[0].innerText = '기회';
@@ -606,6 +612,7 @@
 
                 // business_travel analysis
                 document.getElementsByClassName('business-preferred-r')[0].innerText = '비즈니스 여행 선호 비율';
+                document.getElementsByClassName('business-preferred-desc')[0].innerText = data.business_travel.message.ko;
                 document.getElementsByClassName('business-travel-pref')[0].innerText = '비즈니스 여행\n선호';
                 document.getElementsByClassName('business-travel-non')[0].innerText = '비즈니스 여행\n비선호';
                 document.getElementsByClassName('opportuinity-copy')[0].innerText = '기회';
@@ -619,6 +626,7 @@
 
                 // family_preferred analysis
                 document.getElementsByClassName('family-preferred-rat')[0].innerText = '가족 여행 선호 비율';
+                document.getElementsByClassName('family-preferred-desc')[0].innerText = data.family_preferred.message.ko;
                 document.getElementsByClassName('family-travel-prefer')[0].innerText = '가족 여행\n선호';
                 document.getElementsByClassName('family-travel-non-pr')[0].innerText = '가족 여행\n비선호';
                 document.getElementsByClassName('opportuinity-copy2')[0].innerText = '기회';
@@ -651,6 +659,8 @@
                 document.getElementsByClassName('a13284231363756')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
 
                 // super_host analysis
+                document.getElementsByClassName('super-host-desc')[0].innerText = data.super_host.message.en;
+
                 document.getElementsByClassName('a374')[0].innerText = data.super_host.rate + '%';
                 document.getElementsByClassName('a626')[0].innerText = 100-data.super_host.rate + '%';
                 document.getElementsByClassName('rectangle5')[0].style.width = data.super_host.rate + '%';
@@ -659,6 +669,8 @@
                 document.getElementsByClassName('rectangle5-copy3')[0].style.right = '0px';
 
                 // business_travel analysis
+                document.getElementsByClassName('business-travel-desc')[0].innerText = data.business_travel.message.en;
+
                 document.getElementsByClassName('a309')[0].innerText = data.business_travel.rate + '%';
                 document.getElementsByClassName('a691')[0].innerText = 100-data.business_travel.rate + '%';
                 document.getElementsByClassName('rectangle5-copy')[0].style.width = data.business_travel.rate + '%';
@@ -667,6 +679,8 @@
                 document.getElementsByClassName('rectangle5-copy4')[0].style.right = '0px';
 
                 // family_preferred analysis
+                document.getElementsByClassName('family-preferred-desc')[0].innerText = data.family_preferred.message.en;
+
                 document.getElementsByClassName('a72')[0].innerText = data.family_preferred.rate + '%';
                 document.getElementsByClassName('a928')[0].innerText = 100-data.family_preferred.rate + '%';
                 document.getElementsByClassName('rectangle5-copy2')[0].style.width = data.family_preferred.rate + '%';
