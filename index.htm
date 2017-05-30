@@ -79,7 +79,7 @@
                     </div>
                     <div class="research-neighborhoo">
                         <script>
-                          if (userLang=='ko'){
+                          if (userLang=='ko' || 'ko-kr'){
                             document.getElementsByClassName('research-neighborhoo')[0].innerText = '주변 경쟁자 분석을 통해\n에어비엔비를 효과적으로\n운영해보세요.'
                           }
                           else {
@@ -94,7 +94,7 @@
                 <div class="group17">
                     <input type="text" onkeyup="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
                     <script>
-                      if (userLang=='ko'){
+                      if (userLang=='ko' or 'ko-kr'){
                         document.getElementsByClassName('where-is-your-airbnb')[0].placeholder = "주소를 입력하세요"
                       }
                     </script>
@@ -118,12 +118,6 @@
                         Not easy. But there’s still opportunity. Move on!
                     </div>
                     <div class="scores">
-                        <script>
-                          if (userLang == 'ko'){
-                            document.getElementsByClassName('scores')[0].innerText = '점'}
-                          else {
-                            document.getElementsByClassName('scores')[0].innerText = 'Scores'}
-                        </script>
                     </div>
                     <div class="a82">
                         -
@@ -538,7 +532,7 @@
                   if(counter < 0) {
                       clearInterval(id);
                   } else {
-                      if (userLang == 'ko') {
+                      if (userLang == 'ko' or 'ko-kr') {
                         document.getElementsByClassName('loading')[0].innerText = document.getElementsByClassName('where-is-your-airbnb')[0].value + ' 검색중...\n' + counter.toString() + '초 남았습니다.';
                         document.getElementsByClassName('loading')[0].style.textAlign = 'center';
                       }
@@ -564,11 +558,12 @@
               document.getElementsByClassName('group18-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('loading')[0].style.display = 'none';
-              if (userLang == 'ko') {
+              if (userLang == 'ko' or 'ko-kr') {
 
 
                 // total score
                 document.getElementsByClassName('a82')[0].innerText = data.total.score;
+                document.getElementsByClassName('scores')[0].innerText = '점'}
                 document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.ko;
 
                 // listing count and price analysis
@@ -642,6 +637,7 @@
               else {
                 // total score
                 document.getElementsByClassName('a82')[0].innerText = data.total.score;
+                document.getElementsByClassName('scores')[0].innerText = 'Scores'}
                 document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.en;
 
                 // listing count and price analysis
