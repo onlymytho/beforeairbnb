@@ -94,7 +94,7 @@
                 <div class="group17">
                     <input type="text" onkeyup="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
                     <script>
-                      if (userLang=='ko' or 'ko-kr'){
+                      if (userLang=='ko' || 'ko-kr'){
                         document.getElementsByClassName('where-is-your-airbnb')[0].placeholder = "주소를 입력하세요"
                       }
                     </script>
@@ -532,7 +532,7 @@
                   if(counter < 0) {
                       clearInterval(id);
                   } else {
-                      if (userLang == 'ko' or 'ko-kr') {
+                      if (userLang=='ko' || 'ko-kr'){
                         document.getElementsByClassName('loading')[0].innerText = document.getElementsByClassName('where-is-your-airbnb')[0].value + ' 검색중...\n' + counter.toString() + '초 남았습니다.';
                         document.getElementsByClassName('loading')[0].style.textAlign = 'center';
                       }
@@ -558,7 +558,7 @@
               document.getElementsByClassName('group18-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('group12-layout-container')[0].style.display = 'flex';
               document.getElementsByClassName('loading')[0].style.display = 'none';
-              if (userLang == 'ko' or 'ko-kr') {
+              if (userLang=='ko' || 'ko-kr'){
 
 
                 // total score
