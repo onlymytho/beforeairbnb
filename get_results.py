@@ -37,7 +37,7 @@ incremental_search = {'price_min': [1,5,10,15,20,25,30,35,40,45,50,100,200,350,5
                           'price_max': [5,10,15,20,25,30,35,40,45,50,100,200,350,500,1000],
                           'price_step':[1,1,1,1,1,1,1,1,1,1,10,20,30,30,100]
                           }
-location = 'Yeonnamro-3'
+
 
 listings = []
 prices = []
@@ -53,6 +53,12 @@ def getresults(event, context):
     result['search_query'] = event['location']
     def getneighbors():
 
+        global threads
+        global listings
+
+        threads = []
+        listings = []
+        
         print ('Neighbors calling is started.')
 
         for n in range(len(incremental_search['price_min'])):
@@ -110,9 +116,6 @@ def getresults(event, context):
             threads[n].join()
 
     def analyze_roomtype():
-        # This way is just not to seperate get and analyze functions.
-        # You can seperate it by letting apis communicate each other.
-        # Hard point is to get data from B function although request is sent to A function.
 
         global listings
         global result
@@ -345,14 +348,14 @@ def getresults(event, context):
     def analyze_score():
         listing_count = result['price']['len']
         super_host_rate = result['super_host']['rate']
-        score = 100 - (int(listing_count/200) + int(super_host_rate/10))
+        score = 100 - (int(listing_count/150) + int(super_host_rate/10))
         score_text_ko = ''
         score_text_en = ''
 
         if score > 95:
             score_text_en = "Perfect. Don't hesitate, just open your airbnb now."
             score_text_ko = "최적의 조건이네요! 지금 당장 에어비엔비 시작해보세요."
-        elif score > 90:
+        elif score > 85:
             score_text_en = "Fine. You can go with the unique edge of your airbnb."
             score_text_ko = "괜찮네요. 포인트만 잘 잡으면 충분히 성공할 수 있어요."
         elif score > 80:
@@ -372,13 +375,12 @@ def getresults(event, context):
         try:
             getneighbors()
         except RuntimeError as e:
-            if retry == 3:
-                exit()
-            else:
+            if retry < 3:
                 print(e)
                 print("RuntimeError has occured. Trying again.")
                 getneighborsRETRY()
                 retry += 1
+                print ('Retry : ' + str(retry))
 
     getneighborsRETRY()
     analyze_roomtype()
