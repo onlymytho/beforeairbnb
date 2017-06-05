@@ -93,6 +93,7 @@ a {
   color               : rgba(164, 173, 176, 1.0);
   text-align          : left;
   line-height         : 32.0px;
+  overflow-x          : scroll;
 }
 .index .group17 .rectangle2 {
   background          : rgba(255, 87, 91, 1.0);
