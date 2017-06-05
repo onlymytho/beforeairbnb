@@ -148,11 +148,12 @@ def getresults(event, context):
         print ('Distribute listings to its room_type field.')
         for l in listings:
             rtc = l['listing'].get('room_type_category')
-            for rt in room_type:
-                if rtc == rt:
-                    room_type[rt].append(l)
-                else:
-                    pass
+            if rtc == 'entire_home':
+                room_type['entire_home'].append(l)
+            elif rtc == 'private_room':
+                room_type['private_room'].append(l)
+            else:
+                room_type['else'].append(l)
 
         # Get prices data from each room_type distributed room
         print ('Get prices data from each room_type distributed room')
@@ -363,15 +364,8 @@ def getresults(event, context):
         sorted_extra_host_language_count = sorted(result['extra_host_language']['count'].items(), key=operator.itemgetter(1), reverse=True )
         sorted_extra_host_language_rate = sorted(result['extra_host_language']['rate'].items(), key=operator.itemgetter(1), reverse=True)
 
-        print ('BEFORE SORTED (dict) : ' + str(result['extra_host_language']['rate']))
-        print ('AFTER SORTED (tuple) : ' + str(sorted_extra_host_language_rate))
-
-        for key, val in sorted_extra_host_language_count:
-            result['extra_host_language']['count'][str(key)] = val
-        for key, val in sorted_extra_host_language_rate:
-            result['extra_host_language']['rate'][str(key)] = val
-
-        print ('AFTER SORTED (dict) : ' + str(result['extra_host_language']['rate']))
+        result['extra_host_language']['count'] = dict((key, val) for key, val in sorted_extra_host_language_count)
+        result['extra_host_language']['rate'] = dict((key, val) for key, val in sorted_extra_host_language_rate)
 
         for k in result['extra_host_language']['rate'].keys():
             result['extra_host_language']['list'].append(k)

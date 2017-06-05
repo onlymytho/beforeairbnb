@@ -748,6 +748,7 @@ a {
   margin              : 0;
   left                : 24px;
 }
+
 .index .group12 .group25 .listings-distances {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 0px;
@@ -762,6 +763,11 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
+
+.index .group12 .group25 table tr td th {
+  border: 1px solid rgba(155, 155, 155, 1.0);
+}
+
 .index .group12 .group25 .group11 {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 88px;

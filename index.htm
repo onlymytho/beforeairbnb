@@ -278,10 +278,17 @@
                         <div class="ex-lang7-rate">0.1%</div>
 
                     </div>
-                    <div class="group25">
+                    <!-- <div class="group25">
                         <div class="listings-distances">
                             Listings Distances
                         </div>
+                        <table class='listings-distances-table'>
+                          <tr>
+                            <th id='distance'>Distance</th>
+                            <th id='count'>Count</th>
+                          </tr>
+                        </table>
+
                         <div class="group11">
                             <div class="a10m">
                                 10m
@@ -340,6 +347,7 @@
                         </div>
                     </div>
                     <img class="bitmap" src="./Before Airbnb_files/indexbitmap@2x.png"><div class="loading-image" style="height: 290px; width: 124px; display: none;"></div>
+                     -->
                     <div class="group19">
                         <div class="price-statistics">
                             Price Statistics
@@ -617,16 +625,28 @@
                 document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px';
 
                 // Extra host langauage analysis
+                document.getElementsByClassName('extra-host-languages')[0].innerText = '제 2외국어 능력 비율'
                 var list_keys = Object.keys(data.extra_host_language.list);
                 var list_values = Object.values(data.extra_host_language.list);
                 var rate_values = Object.values(data.extra_host_language.rate);
-                for (var num=1; num<7; num++){
+                for (var num=1; num<8; num++){
                   document.getElementsByClassName('ex-lang' + num + '-graph')[0].style.height = rate_values[num-1] + 'px';
-                  document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = list_values[num-1];
+                  document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = list_values[num-1].toUpperCase();
                   document.getElementsByClassName('ex-lang' + num + '-rate')[0].innerText = rate_values[num-1] + '%';
                   document.getElementsByClassName('ex-lang' + num + '-rate')[0].style.bottom = 29+5+rate_values[num-1] + 'px';
 
                   };
+
+                // Listings distances analysis
+                // var table = document.getElementsByClassName("listings-distances-table")[0];
+                // var num = 0;
+                //
+                // for (d in result.distance) {
+                //   var tr = table.insertRow(-1);
+                //   tr.insertCell(-1).innerHTML = Object.keys(d)[num];
+                //   tr.insertCell(-1).innerHTML = Object.values(d)[num];
+                //   num = num + 1;
+                //   }
                 }
               else {
                 // total score
@@ -678,12 +698,28 @@
                 document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px';
 
                 // Extra host langauage analysis
-                for (var num=1; num<8; num++){
-                  document.getElementsByClassName('ex-lang' + num + '-graph')[0].style.height = data.extra_host_language.rate[num-1] + 'px';
-                  document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = data.extra_host_language.list[num];
-                  document.getElementsByClassName('ex-lang' + num + '-rate')[0].innerText = data.extra_host_language.rate[num-1] + '%';
+                var list_keys = Object.keys(data.extra_host_language.list);
+                var list_values = Object.values(data.extra_host_language.list);
+                var rate_values = Object.values(data.extra_host_language.rate);
+                for (var num=1; num<7; num++){
+                  document.getElementsByClassName('ex-lang' + num + '-graph')[0].style.height = rate_values[num-1] + 'px';
+                  document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = list_values[num-1];
+                  document.getElementsByClassName('ex-lang' + num + '-rate')[0].innerText = rate_values[num-1] + '%';
+                  document.getElementsByClassName('ex-lang' + num + '-rate')[0].style.bottom = 29+5+rate_values[num-1] + 'px';
 
                   };
+
+                // Listings distances analysis
+                // var table = document.getElementsByClassName("listings-distances-table")[0];
+                // var num = 0;
+                //
+                // for (d in result.distance) {
+                //   var tr = table.insertRow(-1);
+                //   tr.insertCell(-1).innerHTML = Object.keys(d)[num];
+                //   tr.insertCell(-1).innerHTML = Object.values(d)[num];
+                //   num = num + 1;
+                //   }
+
                 }
 
               }
