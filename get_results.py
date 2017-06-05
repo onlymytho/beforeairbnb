@@ -8,13 +8,16 @@ import requests
 import json
 import time
 import math
+import operator
 from threading import Thread
 from collections import Counter
+from geopy.distance import vincenty
 
 my_user_api_key = 'd306zoyjsyarp7ifhu67rjxn52tv0t20'
 end_point_url = 'https://api.airbnb.com/v2/search_results'
 
 
+# Default query parameters
 locale='ko'
 currency='USD'
 _format='for_search_results_with_minimal_pricing'
@@ -43,22 +46,33 @@ listings = []
 prices = []
 threads = []
 ids = []
-result = {'room_type':{}, 'price':{}, 'super_host':{}, 'business_travel':{}, 'family_preferred':{}, 'extra_host_language':{}}
+result = {}
+
+
+neighbors_location = {}
+neighbors_diff = []
+my_location = {}
+
 
 retry = 0
 
 def getresults(event, context):
 
-    global result
-    result['search_query'] = event['location']
+
     def getneighbors():
 
         global threads
         global listings
+        global result
+        result = {'search_query':event['location'], 'total':{}, 'room_type':{}, 'price':{}, 'super_host':{}, 'business_travel':{}, 'family_preferred':{}, 'extra_host_language':{}}
+
+        print ('BEFORE : ITEM COUNT OF LISTING :' + str(len(listings)))
 
         threads = []
         listings = []
-        
+
+        print ('INIT : ITEM COUNT OF LISTING :' + str(len(listings)))
+
         print ('Neighbors calling is started.')
 
         for n in range(len(incremental_search['price_min'])):
@@ -66,7 +80,9 @@ def getresults(event, context):
                 global listings
                 global threads
                 global ids
+
                 neighbors = []
+                ids = []
                 price_min=incremental_search['price_min'][n]
                 price_max=incremental_search['price_max'][n]
                 price_step=incremental_search['price_step'][n]
@@ -92,11 +108,10 @@ def getresults(event, context):
                                      '&user_lat='+str(user_lat)+
                                      '&user_lng='+str(user_lng)
                                      )
-
                     datadict = r.json()
                     datajson = json.dumps(datadict, indent=4)
                     listing_result = datadict['search_results']
-
+                    # print ('ITEM COUNT OF listing_result in %s : '%n + str(len(listing_result)))
                     for l in listing_result:
                         id = l['listing'].get('id')
                         if id in ids:
@@ -104,16 +119,17 @@ def getresults(event, context):
                         else:
                             ids.append(id)
                             neighbors.append(l)
-
                 listings = listings + neighbors
+                print ('ITEM COUNT OF NEIGHBORS %s :'%n + str(len(neighbors)))
 
             threads.append(Thread(target=getlistingthread))
             threads[n].setDaemon(True)
             threads[n].start()
-            time.sleep(0.5)
 
         for n in range(len(incremental_search['price_min'])):
             threads[n].join()
+
+        print ('AFTER : ITEM COUNT OF LISTING :' + str(len(listings)))
 
     def analyze_roomtype():
 
@@ -147,7 +163,6 @@ def getresults(event, context):
 
         # Initiate room_type field to results.
         print ('Initiate room_type field to results.')
-        print (result)
         for rt in room_type:
             result['room_type'][rt] = {'price':{}}
 
@@ -198,7 +213,7 @@ def getresults(event, context):
         global prices
 
         print ('Price Analysis is started.')
-
+        prices = []
 
         for l in listings:
             prices.append(int(l['pricing_quote']['rate'].get('amount_formatted')[1:]))
@@ -338,12 +353,31 @@ def getresults(event, context):
 
         keys = list(Counter(extra_host_languages).keys())
         values = list(Counter(extra_host_languages).values())
+        result['extra_host_language']['list'] = []
+        result['extra_host_language']['count'] = {}
+        result['extra_host_language']['rate'] = {}
         for num in range(0, len(keys)):
-            result['extra_host_language'][keys[num]] = {}
-            result['extra_host_language'][keys[num]]['count'] = values[num]
-            result['extra_host_language'][keys[num]]['rate'] = round((values[num]/result['price']['len'])*100, 1)
+            result['extra_host_language']['count'][str(keys[num])] = values[num]
+            result['extra_host_language']['rate'][str(keys[num])] = round((values[num]/result['price']['len'])*100, 1)
+
+        sorted_extra_host_language_count = sorted(result['extra_host_language']['count'].items(), key=operator.itemgetter(1), reverse=True )
+        sorted_extra_host_language_rate = sorted(result['extra_host_language']['rate'].items(), key=operator.itemgetter(1), reverse=True)
+
+        print ('BEFORE SORTED (dict) : ' + str(result['extra_host_language']['rate']))
+        print ('AFTER SORTED (tuple) : ' + str(sorted_extra_host_language_rate))
+
+        for key, val in sorted_extra_host_language_count:
+            result['extra_host_language']['count'][str(key)] = val
+        for key, val in sorted_extra_host_language_rate:
+            result['extra_host_language']['rate'][str(key)] = val
+
+        print ('AFTER SORTED (dict) : ' + str(result['extra_host_language']['rate']))
+
+        for k in result['extra_host_language']['rate'].keys():
+            result['extra_host_language']['list'].append(k)
 
         print ('Done')
+
 
     def analyze_score():
         listing_count = result['price']['len']
@@ -369,6 +403,53 @@ def getresults(event, context):
         result['total']['message'] = {'ko':score_text_ko, 'en':score_text_en}
 
 
+
+    def analyze_distance():
+        global my_location
+        global neighbors_location
+        global neighbors_diff
+
+        # Get my location
+        r = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address='+event['location'])
+        rjson = r.json()
+        my_location = rjson['results'][0]['geometry']['location']
+        my_location = (my_location['lat'], my_location['lng'])
+        print ('My location : ' + str(my_location))
+
+        # Get other listings' locations
+        for l in listings:
+            id = l['listing'].get('id')
+            lat = l['listing'].get('lat')
+            lng = l['listing'].get('lng')
+            neighbors_location[str(id)] = {'lat':lat, 'lng':lng}
+        print ('Count of other listings : ' + str(len(neighbors_location)))
+
+        # Calculate distances
+        neighbors_diff = []
+        for loc in neighbors_location.values():
+            loc = (loc['lat'], loc['lng'])
+            d = vincenty(my_location, loc).meters
+            neighbors_diff.append(d)
+        print ("Count of other listings' diff : " + str(len(neighbors_diff)))
+        print ("Mininum of diff : " + str(min(neighbors_diff)))
+        print ("Maximum of diff : " + str(max(neighbors_diff)))
+
+
+        # Select listings in distances and insert to the result
+        neighbors_by_distances = {}
+        result['distance'] = {}
+
+        distances = [10, 20, 50, 100, 200, 300, 500, 1000, 2000, 3000]
+        for distance in distances:
+            neighbors_by_distances[str(distance)] = []
+            for d in neighbors_diff:
+                if d < distance:
+                    neighbors_by_distances[str(distance)].append(d)
+                else:
+                    pass
+            result['distance'][str(distance)] = len(neighbors_by_distances[str(distance)])
+
+
     def getneighborsRETRY():
         global retry
 
@@ -390,10 +471,7 @@ def getresults(event, context):
     analyze_family_preferred()
     analyze_extra_host_language()
     analyze_score()
+    analyze_distance()
 
+    print (result)
     return result
-    # return {
-    #     'statusCode': 200,
-    #     'headers': { 'Content-Type': 'application/json', 'Access-Control-Allow-*': '*',  },
-    #     'body': json.dumps(result)
-    # }

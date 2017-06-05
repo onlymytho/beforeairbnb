@@ -33,6 +33,10 @@
         <script async="" src="./Before Airbnb_files/analytics.js"></script>
         <script src="./Before Airbnb_files/jquery.min.js"></script>
         <script src="./Before Airbnb_files/jquery.imageReloader.js"></script>
+
+        <!-- D3.js -->
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+
         <script>
           var userLang = navigator.language || navigator.userLanguage;
         </script>
@@ -249,62 +253,30 @@
                         <div class="extra-host-languages">
                             Extra Host Languages
                         </div>
-                        <div class="rectangle6">
-                        </div>
-                        <div class="rectangle6-copy">
-                        </div>
-                        <div class="k-o">
-                            KO
-                        </div>
-                        <div class="a100">
-                            100%
-                        </div>
-                        <div class="rectangle6-copy2">
-                        </div>
-                        <div class="rectangle6-copy3">
-                        </div>
-                        <div class="rectangle6-copy4">
-                        </div>
-                        <div class="rectangle6-copy5">
-                        </div>
-                        <div class="rectangle6-copy6">
-                        </div>
-                        <div class="z-h">
-                            ZH
-                        </div>
-                        <div class="a168">
-                            16.8%
-                        </div>
-                        <div class="e-n">
-                            EN
-                        </div>
-                        <div class="a67">
-                            67%
-                        </div>
-                        <div class="j-a">
-                            JA
-                        </div>
-                        <div class="a36">
-                            3.6%
-                        </div>
-                        <div class="f-r">
-                            FR
-                        </div>
-                        <div class="a131">
-                            13.1%
-                        </div>
-                        <div class="e-s">
-                            ES
-                        </div>
-                        <div class="a11">
-                            1.1%
-                        </div>
-                        <div class="d-e">
-                            DE
-                        </div>
-                        <div class="a01">
-                            0.1%
-                        </div>
+                        <div class="ex-lang1-graph"></div>
+                        <div class="ex-lang2-graph"></div>
+                        <div class="ex-lang3-graph"></div>
+                        <div class="ex-lang4-graph"></div>
+                        <div class="ex-lang5-graph"></div>
+                        <div class="ex-lang6-graph"></div>
+                        <div class="ex-lang7-graph"></div>
+
+                        <div class="ex-lang1-label">KO</div>
+                        <div class="ex-lang2-label">EN</div>
+                        <div class="ex-lang3-label">ZH</div>
+                        <div class="ex-lang4-label">JA</div>
+                        <div class="ex-lang5-label">FR</div>
+                        <div class="ex-lang6-label">ES</div>
+                        <div class="ex-lang7-label">DE</div>
+
+                        <div class="ex-lang1-rate">100%</div>
+                        <div class="ex-lang2-rate">67%</div>
+                        <div class="ex-lang3-rate">16.8%</div>
+                        <div class="ex-lang4-rate">13.1%</div>
+                        <div class="ex-lang5-rate">3.6%</div>
+                        <div class="ex-lang6-rate">1.1%</div>
+                        <div class="ex-lang7-rate">0.1%</div>
+
                     </div>
                     <div class="group25">
                         <div class="listings-distances">
@@ -573,7 +545,6 @@
               document.getElementsByClassName('loading')[0].style.display = 'none';
               if (userLang=='ko' || 'ko-kr'){
 
-
                 // total score
                 document.getElementsByClassName('a82')[0].innerText = data.total.score;
                 document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.ko;
@@ -645,6 +616,17 @@
                 document.getElementsByClassName('rectangle5-copy5')[0].style.left = 'null';
                 document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px';
 
+                // Extra host langauage analysis
+                var list_keys = Object.keys(data.extra_host_language.list);
+                var list_values = Object.values(data.extra_host_language.list);
+                var rate_values = Object.values(data.extra_host_language.rate);
+                for (var num=1; num<7; num++){
+                  document.getElementsByClassName('ex-lang' + num + '-graph')[0].style.height = rate_values[num-1] + 'px';
+                  document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = list_values[num-1];
+                  document.getElementsByClassName('ex-lang' + num + '-rate')[0].innerText = rate_values[num-1] + '%';
+                  document.getElementsByClassName('ex-lang' + num + '-rate')[0].style.bottom = 29+5+rate_values[num-1] + 'px';
+
+                  };
                 }
               else {
                 // total score
@@ -695,6 +677,13 @@
                 document.getElementsByClassName('rectangle5-copy5')[0].style.left = 'null';
                 document.getElementsByClassName('rectangle5-copy5')[0].style.right = '0px';
 
+                // Extra host langauage analysis
+                for (var num=1; num<8; num++){
+                  document.getElementsByClassName('ex-lang' + num + '-graph')[0].style.height = data.extra_host_language.rate[num-1] + 'px';
+                  document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = data.extra_host_language.list[num];
+                  document.getElementsByClassName('ex-lang' + num + '-rate')[0].innerText = data.extra_host_language.rate[num-1] + '%';
+
+                  };
                 }
 
               }

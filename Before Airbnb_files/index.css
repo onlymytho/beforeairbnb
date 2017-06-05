@@ -1491,25 +1491,71 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
-.index .group12 .group24 .rectangle6 {
+.index .group12 .group24 .ex-lang1-graph {
   background          : rgba(255, 87, 91, 1.0);
-  top                 : 67px;
+  bottom              : 29px;
   height              : 100px;
   width               : 36px;
   position            : absolute;
   margin              : 0;
   left                : 1px;
 }
-.index .group12 .group24 .rectangle6-copy {
+.index .group12 .group24 .ex-lang2-graph {
   background          : rgba(255, 87, 91, 1.0);
-  top                 : 100px;
+  bottom              : 29px;
   height              : 67px;
   width               : 36px;
   position            : absolute;
   margin              : 0;
   left                : 40px;
 }
-.index .group12 .group24 .k-o {
+.index .group12 .group24 .ex-lang3-graph {
+  background          : rgba(255, 87, 91, 1.0);
+  bottom              : 29px;
+  height              : 17px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 79px;
+}
+.index .group12 .group24 .ex-lang4-graph {
+  background          : rgba(255, 87, 91, 1.0);
+  bottom              : 29px;
+  height              : 13px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 118px;
+}
+.index .group12 .group24 .ex-lang5-graph {
+  background          : rgba(255, 87, 91, 1.0);
+  bottom              : 29px;
+  height              : 4px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 157px;
+}
+.index .group12 .group24 .ex-lang6-graph {
+  background          : rgba(255, 87, 91, 1.0);
+  bottom              : 29px;
+  height              : 1px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 196px;
+}
+.index .group12 .group24 .ex-lang7-graph {
+  background          : rgba(255, 87, 91, 1.0);
+  bottom              : 29px;
+  height              : 1px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 235px;
+}
+
+.index .group12 .group24 .ex-lang1-label {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 176px;
   height              : auto;
@@ -1523,66 +1569,21 @@ a {
   text-align          : center;
   line-height         : 20.0px;
 }
-.index .group12 .group24 .a100 {
+.index .group12 .group24 .ex-lang2-label {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 47px;
+  top                 : 176px;
   height              : auto;
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 3px;
+  left                : 46px;
   font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
+  font-size           : 16.0px;
   color               : rgba(155, 155, 155, 1.0);
   text-align          : center;
-  line-height         : 16.0px;
+  line-height         : 20.0px;
 }
-.index .group12 .group24 .rectangle6-copy2 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 150px;
-  height              : 17px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 79px;
-}
-.index .group12 .group24 .rectangle6-copy3 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 154px;
-  height              : 13px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 118px;
-}
-.index .group12 .group24 .rectangle6-copy4 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 163px;
-  height              : 4px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 157px;
-}
-.index .group12 .group24 .rectangle6-copy5 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 166px;
-  height              : 1px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 196px;
-}
-.index .group12 .group24 .rectangle6-copy6 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 166px;
-  height              : 1px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 235px;
-}
-.index .group12 .group24 .z-h {
+.index .group12 .group24 .ex-lang3-label {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 176px;
   height              : auto;
@@ -1596,49 +1597,7 @@ a {
   text-align          : center;
   line-height         : 20.0px;
 }
-.index .group12 .group24 .a168 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 130px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 79px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .e-n {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 46px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .a67 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 80px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 46px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .j-a {
+.index .group12 .group24 .ex-lang4-label {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 176px;
   height              : auto;
@@ -1652,21 +1611,7 @@ a {
   text-align          : center;
   line-height         : 20.0px;
 }
-.index .group12 .group24 .a36 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 134px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 123px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .f-r {
+.index .group12 .group24 .ex-lang5-label {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 176px;
   height              : auto;
@@ -1680,21 +1625,7 @@ a {
   text-align          : center;
   line-height         : 20.0px;
 }
-.index .group12 .group24 .a131 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 143px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 157px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .e-s {
+.index .group12 .group24 .ex-lang6-label {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 176px;
   height              : auto;
@@ -1708,21 +1639,7 @@ a {
   text-align          : center;
   line-height         : 20.0px;
 }
-.index .group12 .group24 .a11 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 146px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 201px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .d-e {
+.index .group12 .group24 .ex-lang7-label {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 176px;
   height              : auto;
@@ -1736,9 +1653,94 @@ a {
   text-align          : center;
   line-height         : 20.0px;
 }
-.index .group12 .group24 .a01 {
+
+.index .group12 .group24 .ex-lang1-rate {
   background          : rgba(255, 255, 255, 0.0);
-  top                 : 146px;
+  bottom              : 47px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .ex-lang2-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  bottom              : 80px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 46px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .ex-lang3-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  bottom              : 130px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 79px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .ex-lang4-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  bottom              : 134px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 123px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .ex-lang5-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  bottom              : 143px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 157px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .ex-lang6-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  bottom              : 146px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 201px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .group12 .group24 .ex-lang7-rate {
+  background          : rgba(255, 255, 255, 0.0);
+  bottom              : 146px;
   height              : auto;
   width               : auto;
   position            : absolute;
@@ -1750,6 +1752,7 @@ a {
   text-align          : center;
   line-height         : 16.0px;
 }
+
 .index .group18 {
   background          : rgba(255, 255, 255, 0.0);
   width               : 272px;
