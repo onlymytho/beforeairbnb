@@ -278,18 +278,65 @@
                         <div class="ex-lang7-rate">0.1%</div>
 
                     </div>
-                    <!-- <div class="group25">
+                    <div class="group25">
                         <div class="listings-distances">
                             Listings Distances
                         </div>
-                        <table class='listings-distances-table'>
-                          <tr>
-                            <th id='distance'>Distance</th>
-                            <th id='count'>Count</th>
-                          </tr>
-                        </table>
+                        <div class="listings-distances-desc">
 
-                        <div class="group11">
+                        </div>
+                        <div class="listings-distances-table-div">
+
+                          <table class='listings-distances-table'>
+                            <tr>
+                              <th id='distance'>Distance</th>
+                              <th id='count'>Count</th>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-10'>10m</td>
+                              <td class='count' id='count-10'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-20'>20m</td>
+                              <td class='count' id='count-20'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-50'>50m</td>
+                              <td class='count' id='count-50'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-100'>100m</td>
+                              <td class='count' id='count-100'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-200'>200m</td>
+                              <td class='count' id='count-200'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-300'>300m</td>
+                              <td class='count' id='count-300'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-500'>500m</td>
+                              <td class='count' id='count-500'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-1000'>1km</td>
+                              <td class='count' id='count-1000'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-2000'>2km</td>
+                              <td class='count' id='count-2000'></td>
+                            </tr>
+                            <tr>
+                              <td class='distance' id='distance-3000'>3km</td>
+                              <td class='count' id='count-3000'></td>
+                            </tr>
+
+
+                          </table>
+                        </div>
+                        <!-- <div class="group11">
                             <div class="a10m">
                                 10m
                             </div>
@@ -339,15 +386,15 @@
                                 250
                             </div>
                         </div>
-                        <div class="distance">
+                        <div class="distance-text">
                             Distance
                         </div>
-                        <div class="listings">
+                        <div class="listings-text">
                             Listings
-                        </div>
+                        </div> -->
                     </div>
-                    <img class="bitmap" src="./Before Airbnb_files/indexbitmap@2x.png"><div class="loading-image" style="height: 290px; width: 124px; display: none;"></div>
-                     -->
+                    <!-- <img class="bitmap" src="./Before Airbnb_files/indexbitmap@2x.png"><div class="loading-image" style="height: 290px; width: 124px; display: none;"></div> -->
+
                     <div class="group19">
                         <div class="price-statistics">
                             Price Statistics
@@ -634,8 +681,22 @@
                   document.getElementsByClassName('ex-lang' + num + '-label')[0].innerText = list_values[num-1].toUpperCase();
                   document.getElementsByClassName('ex-lang' + num + '-rate')[0].innerText = rate_values[num-1] + '%';
                   document.getElementsByClassName('ex-lang' + num + '-rate')[0].style.bottom = 29+5+rate_values[num-1] + 'px';
-
                   };
+
+                // Listings distances analysis
+                document.getElementsByClassName('listings-distances')[0].innerText = '거리에 따른 방 수';
+                document.getElementById('distance').innerText = '거리';
+                document.getElementById('count').innerText = '개수';
+                document.getElementById('count-10').innerText = numberWithCommas(data.distance[10]) + '개';
+                document.getElementById('count-20').innerText = numberWithCommas(data.distance[20]) + '개';
+                document.getElementById('count-50').innerText = numberWithCommas(data.distance[50]) + '개';
+                document.getElementById('count-100').innerText = numberWithCommas(data.distance[100]) + '개';
+                document.getElementById('count-200').innerText = numberWithCommas(data.distance[200]) + '개';
+                document.getElementById('count-300').innerText = numberWithCommas(data.distance[300]) + '개';
+                document.getElementById('count-500').innerText = numberWithCommas(data.distance[500]) + '개';
+                document.getElementById('count-1000').innerText = numberWithCommas(data.distance[1000]) + '개';
+                document.getElementById('count-2000').innerText = numberWithCommas(data.distance[2000]) + '개';
+                document.getElementById('count-3000').innerText = numberWithCommas(data.distance[3000]) + '개';
 
                 // Listings distances analysis
                 // var table = document.getElementsByClassName("listings-distances-table")[0];
@@ -709,6 +770,17 @@
 
                   };
 
+                // Listings distances analysis
+                document.getElementById('count-10').innerText = numberWithCommas(data.distance[10]);
+                document.getElementById('count-20').innerText = numberWithCommas(data.distance[20]);
+                document.getElementById('count-50').innerText = numberWithCommas(data.distance[50]);
+                document.getElementById('count-100').innerText = numberWithCommas(data.distance[100]);
+                document.getElementById('count-200').innerText = numberWithCommas(data.distance[200]);
+                document.getElementById('count-300').innerText = numberWithCommas(data.distance[300]);
+                document.getElementById('count-500').innerText = numberWithCommas(data.distance[500]);
+                document.getElementById('count-1000').innerText = numberWithCommas(data.distance[1000]);
+                document.getElementById('count-2000').innerText = numberWithCommas(data.distance[2000]);
+                document.getElementById('count-3000').innerText = numberWithCommas(data.distance[3000]);
                 // Listings distances analysis
                 // var table = document.getElementsByClassName("listings-distances-table")[0];
                 // var num = 0;

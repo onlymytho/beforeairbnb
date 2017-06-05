@@ -180,6 +180,8 @@ def getresults(event, context):
 
         # Insert analyzed rt room_type data to results.
         print ("Insert analyzed rt room_type data to results.")
+        listing_counts = {}
+
         for rt in room_type:
             sum = 0
             for item in prices[rt]:
@@ -202,9 +204,9 @@ def getresults(event, context):
                 result['room_type'][rt]['price']['min'] = 0
                 result['room_type'][rt]['price']['max'] = 0
 
-            listing_counts = {}
             listing_counts[rt] = result['room_type'][rt]['price']['len']
-        result['room_type']['top'] = max(listing_counts)
+        print ('Listing counts are : ' + str(listing_counts))
+        result['room_type']['top'] = max(listing_counts, key=listing_counts.get)
         # room_type analysis is done
         print ('room_type analysis is done')
 
