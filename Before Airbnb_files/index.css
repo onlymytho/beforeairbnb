@@ -11,6 +11,7 @@
   min-height          : 300px;
   position            : relative;
   overflow            : scroll;
+  overflow-x          : hidden;
   margin              : 0px;
   background          : rgba(255, 255, 255, 1.0);
   -webkit-overflow-scrolling: touch;
