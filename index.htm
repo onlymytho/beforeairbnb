@@ -9,7 +9,8 @@
         });
         </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="https://animaapp.s3.amazonaws.com/home/favicon.png" rel="shortcut icon" type="image/png">
+        <!-- <link href="https://animaapp.s3.amazonaws.com/home/favicon.png" rel="shortcut icon" type="image/png"> -->
+        <link href="./Before Airbnb_files/favicon2.png" rel="shortcut icon" type="image/png">
 
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
         <link href="./Before Airbnb_files/index.css" rel="stylesheet" type="text/css">
@@ -26,6 +27,7 @@
         <meta content="Research Neighborhoods to Succedd in Your Next Airbnb. Try Now!" property="og:description">
         <meta content="" property="og:url">
         <meta content="website" property="og:type">
+        <meta src="./Before Airbnb_files/og-image.png" property="og:image">
         <!-- Twitter -->
         <meta content="photo" name="twitter:card">
         <meta content="Before Airbnb" name="twitter:title">
@@ -96,7 +98,7 @@
 
             <div class="group17-layout-container">
                 <div class="group17">
-                    <input type="text" onkeyup="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <input type="text" onkeyup="enterinputexec();" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
                     <script>
                       if (userLang=='ko' || 'ko-kr'){
                         document.getElementsByClassName('where-is-your-airbnb')[0].placeholder = "주소를 입력하세요"
@@ -607,7 +609,7 @@
             else {
               console.log(giphy_data)
               var rand = Math.floor(Math.random() * 24);
-              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img style="margin: 0 auto; width:320px; " src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
             }
           };
 
