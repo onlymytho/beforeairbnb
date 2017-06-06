@@ -78,6 +78,28 @@ a {
   line-height         : 19.0px;
 }
 
+.index .loading-giphy {
+  width               : 100%;
+  height              : 300px;
+  position            : relative;
+  top                 : 640px;
+  align-items         : center;
+  margin              : 0;
+  padding-bottom      : 50px;
+  display             : flex;
+  left                : 0;
+}
+
+.index .loading-giphy .giphy {
+  margin      : auto;
+  width       : 320px;
+  top         : 0;
+  bottom      : 0;
+  left        : 0;
+  right       :0;
+
+}
+
 .index .group17 .where-is-your-airbnb {
   background          : rgba(255, 255, 255, 0.0);
   border              : none;
