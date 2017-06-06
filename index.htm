@@ -39,6 +39,32 @@
         <!-- D3.js -->
         <script src="http://d3js.org/d3.v3.min.js"></script>
 
+        <!-- GA Tracking : Scrolling -->
+        <script>
+            var runned_0 = false;
+            var runned_250 = false;
+            var runned_500 = false;
+            var runned_1000 = false;
+            var runned_1500 = false;
+            var runned_2000 = false;
+            var runned_2500 = false;
+            var runned_3000 = false;
+            var runned_3500 = false;
+            var runned_4000 = false;
+
+            $( window ).scroll( function() {
+            if ( $( document ).scrollTop() >= 0 && runned_0 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 0px', eventAction: 'Scroll' });runned_0 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_250 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 250px', eventAction: 'Scroll' });runned_250 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 500px', eventAction: 'Scroll' });runned_500 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_1000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 1000px', eventAction: 'Scroll' });runned_1000 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_1500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 1500px', eventAction: 'Scroll' });runned_1500 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_2000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 2000px', eventAction: 'Scroll' });runned_2000 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_2500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 2500px', eventAction: 'Scroll' });runned_2500 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_3000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 3000px', eventAction: 'Scroll' });runned_3000 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_3500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 3500px', eventAction: 'Scroll' });runned_3500 = true;}
+            if ( $( document ).scrollTop() >= 0 && runned_4000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 4000px', eventAction: 'Scroll' });runned_4000 = true;}
+            });
+        </script>
         <script>
           var userLang = navigator.language || navigator.userLanguage;
         </script>
@@ -98,7 +124,7 @@
 
             <div class="group17-layout-container">
                 <div class="group17">
-                    <input type="text" onkeyup="enterinputexec();" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <input type="text" onkeyup="enterinputexec(); ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
                     <script>
                       if (userLang=='ko' || 'ko-kr'){
                         document.getElementsByClassName('where-is-your-airbnb')[0].placeholder = "주소를 입력하세요"
