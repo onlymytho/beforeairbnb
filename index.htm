@@ -124,8 +124,26 @@
 
             <div class="group17-layout-container">
                 <div class="group17">
-                    <input type="text" onkeyup="enterinputexec(); ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <input type="text" onemptied="input_started_init()" onkeyup="enterinputexec(); if (event.which == 13 || event.keyCode == 13) {ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value)};" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
                     <script>
+                      var input_started = 0
+
+                      if (document.getElementsByClassName('where-is-your-airbnb')[0].value == null) {
+                        input_started = 0
+                      }
+                      else {
+                        if (input_started == 0) {
+                          ga(‘send’, ‘event’, ‘search’, ‘write’);
+                          input_started = 1
+                        }
+                      };
+
+                      var input_started_init = function() {
+                        input_started = 0
+                      }
+
+
+
                       if (userLang=='ko' || 'ko-kr'){
                         document.getElementsByClassName('where-is-your-airbnb')[0].placeholder = "주소를 입력하세요"
                       }
