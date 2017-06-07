@@ -68,18 +68,21 @@
             var runned_3500 = false;
             var runned_4000 = false;
 
-            $( window ).scroll( function() {
-            if ( $( document ).scrollTop() >= 0 && runned_0 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 0px', eventAction: 'Scroll' });runned_0 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_250 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 250px', eventAction: 'Scroll' });runned_250 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 500px', eventAction: 'Scroll' });runned_500 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_1000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 1000px', eventAction: 'Scroll' });runned_1000 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_1500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 1500px', eventAction: 'Scroll' });runned_1500 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_2000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 2000px', eventAction: 'Scroll' });runned_2000 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_2500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 2500px', eventAction: 'Scroll' });runned_2500 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_3000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 3000px', eventAction: 'Scroll' });runned_3000 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_3500 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 3500px', eventAction: 'Scroll' });runned_3500 = true;}
-            if ( $( document ).scrollTop() >= 0 && runned_4000 == false ) {ga('send', 'event', { eventCategory: 'Scrolled 4000px', eventAction: 'Scroll' });runned_4000 = true;}
-            });
+            var ga_scroll = function() {
+              if (window.scrollY >= 0 && runned_0 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 0px' );runned_0 = true;}
+              if (window.scrollY >= 0 && runned_250 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 250px' );runned_250 = true;}
+              if (window.scrollY >= 0 && runned_500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 500px' );runned_500 = true;}
+              if (window.scrollY >= 0 && runned_1000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 1000px' );runned_1000 = true;}
+              if (window.scrollY >= 0 && runned_1500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 1500px' );runned_1500 = true;}
+              if (window.scrollY >= 0 && runned_2000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 2000px' );runned_2000 = true;}
+              if (window.scrollY >= 0 && runned_2500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 2500px' );runned_2500 = true;}
+              if (window.scrollY >= 0 && runned_3000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 3000px' );runned_3000 = true;}
+              if (window.scrollY >= 0 && runned_3500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 3500px' );runned_3500 = true;}
+              if (window.scrollY >= 0 && runned_4000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 4000px' );runned_4000 = true;}
+            };
+
+            ga_scroll();
+
         </script>
         <script>
           var userLang = navigator.language || navigator.userLanguage;
@@ -614,6 +617,7 @@
           var result = {};
           var enterinputexec = function(e) {
             if (e.which == 13 || e.keyCode == 13) {
+              ga('send', 'event', 'search', 'click', document.getElementsByClassName('where-is-your-airbnb')[0].value);
               console.log("Start to call listing information");
               console.log(e)
               var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=' + document.getElementsByClassName('where-is-your-airbnb')[0].value;
