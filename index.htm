@@ -683,7 +683,7 @@
             else {
               console.log(giphy_data)
               var rand = Math.floor(Math.random() * 24);
-              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img style="margin: 0 auto; width:320px; " src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img class="giphy" style="margin: 0 auto; width:320px; " src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
             }
           };
 
