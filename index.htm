@@ -21,6 +21,7 @@
           })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
           ga('create', 'UA-63621212-2', 'auto');
           ga('send', 'pageview');
+          ga('send', 'event', 'test_category', 'test_action', 'test_label');
 
         </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -139,23 +140,24 @@
 
             <div class="group17-layout-container">
                 <div class="group17">
-                    <input type="text" onemptied="input_started_init()" onkeyup="enterinputexec(); if (event.which == 13 || event.keyCode == 13) {ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value)};" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style="">
+                    <!-- <input type="text" onemptied="input_started_init()" onkeyup="enterinputexec(); if (event.which == 13 || event.keyCode == 13) {ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value)};" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style=""> -->
+                    <input type="text" onkeyup="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched"placeholder="Where is your airbnb?">
                     <script>
-                      var input_started = 0
-
-                      if (document.getElementsByClassName('where-is-your-airbnb')[0].value == null) {
-                        input_started = 0
-                      }
-                      else {
-                        if (input_started == 0) {
-                          ga(‘send’, ‘event’, ‘search’, ‘write’);
-                          input_started = 1
-                        }
-                      };
-
-                      var input_started_init = function() {
-                        input_started = 0
-                      }
+                      // var input_started = 0
+                      //
+                      // if (document.getElementsByClassName('where-is-your-airbnb')[0].value == null) {
+                      //   input_started = 0
+                      // }
+                      // else {
+                      //   if (input_started == 0) {
+                      //     ga(‘send’, ‘event’, ‘search’, ‘write’);
+                      //     input_started = 1
+                      //   }
+                      // };
+                      //
+                      // var input_started_init = function() {
+                      //   input_started = 0
+                      // }
 
 
 
@@ -403,8 +405,7 @@
                           </table>
                         </div>
                         <!-- <div class="group11">
-                            <div class="a10m">
-                                10m
+                            <div class="a10m">10m
                             </div>
                             <div class="a0m">
                                 0m
@@ -612,7 +613,7 @@
         <script>
           var result = {};
           var enterinputexec = function(e) {
-            if (event.which == 13 || event.keyCode == 13) {
+            if (e.which == 13 || e.keyCode == 13) {
               console.log("Start to call listing information");
               console.log(e)
               var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=' + document.getElementsByClassName('where-is-your-airbnb')[0].value;
