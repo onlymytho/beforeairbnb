@@ -157,7 +157,6 @@
 
             <div class="group17-layout-container">
                 <div class="group17">
-                    <!-- <input type="text" onemptied="input_started_init()" onkeyup="enterinputexec(); if (event.which == 13 || event.keyCode == 13) {ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value)};" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style=""> -->
                     <input type="text" onfocus="input_started_init(1)" onemptied="input_started_init(1)" onkeypress="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched"placeholder="Where is your airbnb?">
                     <script>
 
@@ -182,10 +181,12 @@
                     </div> -->
                     <div class="rectangle2">
                     </div>
-                    <div class="group">
-                        <img class="oval" src="./Before Airbnb_files/indexoval@2x.png"><div class="loading-image" style="height: 16px; width: 16px; display: none;"></div>
-                        <img class="line" src="./Before Airbnb_files/indexline@2x.png"><div class="loading-image" style="height: 6px; width: 6px; display: none;"></div>
-                    </div>
+                    <a href="javascript:" onclick="enterinputexec(event); return false">
+                      <div class="group">
+                          <img class="oval" src="./Before Airbnb_files/indexoval@2x.png"><div class="loading-image" style="height: 16px; width: 16px; display: none;"></div>
+                          <img class="line" src="./Before Airbnb_files/indexline@2x.png"><div class="loading-image" style="height: 6px; width: 6px; display: none;"></div>
+                      </div>
+                    </a>
                 </div>
             </div>
             <div class="loading">
@@ -624,7 +625,7 @@
         <script>
           var result = {};
           var enterinputexec = function(e) {
-            if (e.which == 13 || e.keyCode == 13) {
+            if (e.which == 13 || e.keyCode == 13 || e.type == 'click') {
               ga('send', 'event', 'user_action_search', 'search', document.getElementsByClassName('where-is-your-airbnb')[0].value);
 
 
