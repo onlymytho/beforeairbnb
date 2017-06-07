@@ -84,6 +84,20 @@
             ga_scroll();
 
         </script>
+
+        <!-- GA Tracking : Page Duration time -->
+        <script type="text/javascript">
+            var startTime = new Date();        //Start the clock!
+            window.onbeforeunload = function()        //When the user leaves the page(closes the window/tab, clicks a link)...
+            {
+                var endTime = new Date();        //Get the current time.
+                var timeSpent=(endTime - startTime);        //Find out how long it's been.
+                ga('send', 'event', 'user_action_duration', 'duration', timeSpent);        //Pop up a window with the time spent in microseconds.
+                ga('send', 'event', 'user_action_duration', 'duration', 'easy_avg_view', timeSpent);        //Pop up a window with the time spent in microseconds.
+
+            }
+        </script>
+
         <script>
           var userLang = navigator.language || navigator.userLanguage;
         </script>
@@ -144,24 +158,18 @@
             <div class="group17-layout-container">
                 <div class="group17">
                     <!-- <input type="text" onemptied="input_started_init()" onkeyup="enterinputexec(); if (event.which == 13 || event.keyCode == 13) {ga(‘send’, ‘event’, ‘search’, ‘click’, document.getElementsByClassName('where-is-your-airbnb')[0].value)};" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched" ng-model="query" placeholder="Where is your airbnb?" vi-focus="true" vi-composition-updater="" style=""> -->
-                    <input type="text" onkeypress="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched"placeholder="Where is your airbnb?">
+                    <input type="text" onfocus="input_started_init(1)" onemptied="input_started_init(1)" onkeypress="enterinputexec(event);" autocomplete="off" class="where-is-your-airbnb ng-pristine ng-valid ng-isolate-scope ng-touched"placeholder="Where is your airbnb?">
                     <script>
-                      // var input_started = 0
-                      //
-                      // if (document.getElementsByClassName('where-is-your-airbnb')[0].value == null) {
-                      //   input_started = 0
-                      // }
-                      // else {
-                      //   if (input_started == 0) {
-                      //     ga(‘send’, ‘event’, ‘search’, ‘write’);
-                      //     input_started = 1
-                      //   }
-                      // };
-                      //
-                      // var input_started_init = function() {
-                      //   input_started = 0
-                      // }
 
+                    var input_started = 0
+                    var input_started_init = function(input_started) {
+                        if (input_started == 1) {
+                          console.log("input_started_init() started : input_started = " + input_started);
+                          ga('send', 'event', 'user_action_search', 'focus');
+                          input_started = 0;
+                          console.log("ga('send', 'event', 'user_action_search', 'focus') : input_started = " + input_started);
+                        }
+                      };
 
 
                       if (userLang=='ko' || 'ko-kr'){
@@ -617,7 +625,9 @@
           var result = {};
           var enterinputexec = function(e) {
             if (e.which == 13 || e.keyCode == 13) {
-              ga('send', 'event', 'search', 'click', document.getElementsByClassName('where-is-your-airbnb')[0].value);
+              ga('send', 'event', 'user_action_search', 'search', document.getElementsByClassName('where-is-your-airbnb')[0].value);
+
+
               console.log("Start to call listing information");
               console.log(e)
               var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=' + document.getElementsByClassName('where-is-your-airbnb')[0].value;
