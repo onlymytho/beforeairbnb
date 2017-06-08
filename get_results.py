@@ -108,6 +108,7 @@ def getresults(event, context):
                                      '&user_lat='+str(user_lat)+
                                      '&user_lng='+str(user_lng)
                                      )
+                    print(r)
                     datadict = r.json()
                     datajson = json.dumps(datadict, indent=4)
                     listing_result = datadict['search_results']
