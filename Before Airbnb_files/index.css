@@ -34,7 +34,7 @@ a {
   align-items         : center;
   height              : 436px;
   width               : 100%;
-  position            : absolute;
+  position            : relative;
   margin              : 0;
   display             : flex;
   left                : 0;
@@ -49,12 +49,12 @@ a {
 .index .group17-layout-container{
   pointer-events      : none;
   flex-direction      : column;
-  top                 : 484px;
   align-items         : center;
   height              : 43px;
   width               : 100%;
-  position            : absolute;
+  position            : relative;
   margin              : 0;
+  margin-top          : 48px;
   display             : flex;
   left                : 0;
 }
@@ -83,9 +83,9 @@ a {
   height              : 300px;
   max-height          : 300px;
   position            : relative;
-  top                 : 640px;
   align-items         : center;
   margin              : 0;
+  margin-top          : 120px;
   padding-bottom      : 50px;
   display             : none;
   left                : 0;
@@ -170,12 +170,12 @@ a {
 .index .group16-layout-container {
   pointer-events      : none;
   flex-direction      : column;
-  top                 : 120px;
   align-items         : center;
   height              : 284px;
   width               : 100%;
-  position            : absolute;
+  position            : relative;
   margin              : 0;
+  margin-top          : 120px;
   display             : flex;
   left                : 0;
 }
