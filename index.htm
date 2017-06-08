@@ -1,6 +1,7 @@
 
 <!-- saved from url=(0049)https://launchpad.animaapp.com/beforeairbnb/index -->
 <html><head>
+
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
           (adsbygoogle = window.adsbygoogle || []).push({
@@ -68,20 +69,20 @@
             var runned_3500 = false;
             var runned_4000 = false;
 
-            var ga_scroll = function() {
-              if (window.scrollY >= 0 && runned_0 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 0px' );runned_0 = true;}
-              if (window.scrollY >= 0 && runned_250 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 250px' );runned_250 = true;}
-              if (window.scrollY >= 0 && runned_500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 500px' );runned_500 = true;}
-              if (window.scrollY >= 0 && runned_1000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 1000px' );runned_1000 = true;}
-              if (window.scrollY >= 0 && runned_1500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 1500px' );runned_1500 = true;}
-              if (window.scrollY >= 0 && runned_2000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 2000px' );runned_2000 = true;}
-              if (window.scrollY >= 0 && runned_2500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 2500px' );runned_2500 = true;}
-              if (window.scrollY >= 0 && runned_3000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 3000px' );runned_3000 = true;}
-              if (window.scrollY >= 0 && runned_3500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 3500px' );runned_3500 = true;}
-              if (window.scrollY >= 0 && runned_4000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 4000px' );runned_4000 = true;}
-            };
+            var ga_scroll = function(e) {
+              console.log(e.scrollTop);
 
-            ga_scroll();
+              if (e.scrollTop >= 0 && runned_0 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 0px' );runned_0 = true; console.log('Scrolled 0px');}
+              if (e.scrollTop >= 250 && runned_250 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 250px' );runned_250 = true; console.log('Scrolled 250px');}
+              if (e.scrollTop >= 500 && runned_500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 500px' );runned_500 = true; console.log('Scrolled 500px');}
+              if (e.scrollTop >= 1000 && runned_1000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 1000px' );runned_1000 = true; console.log('Scrolled 1000px');}
+              if (e.scrollTop >= 1500 && runned_1500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 1500px' );runned_1500 = true; console.log('Scrolled 1500px');}
+              if (e.scrollTop >= 2000 && runned_2000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 2000px' );runned_2000 = true; console.log('Scrolled 2000px');}
+              if (e.scrollTop >= 2500 && runned_2500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 2500px' );runned_2500 = true; console.log('Scrolled 2500px');}
+              if (e.scrollTop >= 3000 && runned_3000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 3000px' );runned_3000 = true; console.log('Scrolled 3000px');}
+              if (e.scrollTop >= 3500 && runned_3500 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 3500px' );runned_3500 = true; console.log('Scrolled 3500px');}
+              if (e.scrollTop >= 4000 && runned_4000 == false ) {ga('send', 'event', 'user_action_scroll', 'Scroll', 'Scrolled 4000px' );runned_4000 = true; console.log('Scrolled 4000px');}
+            };
 
         </script>
 
@@ -127,7 +128,7 @@
         <link href="./Before Airbnb_files/image_reloader.css" rel="stylesheet" type="text/css">
     </head>
     <body style="margin: 0px;">
-        <div class="index">
+        <div class="index" onscroll="ga_scroll(this)">
             <div class="rectangle8-layout-container">
                 <div class="rectangle8">
                 </div>
@@ -163,10 +164,8 @@
                     var input_started = 0
                     var input_started_init = function(input_started) {
                         if (input_started == 1) {
-                          console.log("input_started_init() started : input_started = " + input_started);
                           ga('send', 'event', 'user_action_search', 'focus');
                           input_started = 0;
-                          console.log("ga('send', 'event', 'user_action_search', 'focus') : input_started = " + input_started);
                         }
                       };
 
@@ -630,7 +629,6 @@
 
 
               console.log("Start to call listing information");
-              console.log(e)
               var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=' + document.getElementsByClassName('where-is-your-airbnb')[0].value;
               console.log(host_url)
               getJSON(host_url, callback_handling);
