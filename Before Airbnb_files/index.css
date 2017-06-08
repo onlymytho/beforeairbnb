@@ -62,13 +62,12 @@ a {
 .index .loading{
   pointer-events      : none;
   flex-direction      : column;
-  top                 : 600px;
   align-items         : center;
   height              : 43px;
   width               : 100%;
-  position            : absolute;
+  position            : relative;
   margin              : 0;
-  padding-bottom      : 50px;
+  margin-top          : 40px;
   display             : flex;
   left                : 0;
   font-family         : sans-serif, "FuturaLight", sans-serif;
@@ -85,7 +84,7 @@ a {
   position            : relative;
   align-items         : center;
   margin              : 0;
-  margin-top          : 120px;
+  margin-top          : 40px;
   padding-bottom      : 50px;
   display             : none;
   left                : 0;
@@ -96,9 +95,22 @@ a {
   width       : 320px;
   max-height  : 100%;
   top         : 0;
+  left        : 0;
+  right       : 0;
+  position    : relative;
+
+}
+
+.index .last-giphy .giphy {
+  margin      : auto;
+  width       : 320px;
+  max-height  : 100%;
+  top         : 0;
   bottom      : 0;
   left        : 0;
   right       : 0;
+  position    : absolute;
+  top         : 2560px;
 
 }
 
@@ -236,7 +248,7 @@ a {
   flex-direction      : column;
   top                 : 781px;
   align-items         : center;
-  height              : 2190px;
+  height              : 2900px;
   width               : 100%;
   position            : absolute;
   margin              : 0;

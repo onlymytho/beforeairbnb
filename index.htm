@@ -195,7 +195,6 @@
             </div>
             <div class="loading-giphy">
 
-
             </div>
             <div class="group18-layout-container">
                 <div class="group18">
@@ -615,8 +614,11 @@
                         <img class="path4" src="./Before Airbnb_files/indexpath 4@2x.png"><div class="loading-image" style="height: 9px; width: 4px; display: none;"></div>
                         <img class="image2" src="./Before Airbnb_files/indexpath 4  1@2x.png"><div class="loading-image" style="height: 13px; width: 4px; display: none;"></div>
                     </div>
+                    <div class="last-giphy">
 
+                    </div>
                 </div>
+
             </div>
         </div>
         <script>
@@ -679,12 +681,15 @@
 
           var giphy_callback = function(err, giphy_data) {
             if (err != null) {
-              alert('Something went wrong: ' + err);
+              console.log('Something went wrong: ' + err);
             }
             else {
-              console.log(giphy_data)
+              console.log(giphy_data);
               var rand = Math.floor(Math.random() * 24);
-              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img class="giphy" style="margin: 0 auto; width:320px; " src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+              rand = Math.floor(Math.random() * 24);
+              document.getElementsByClassName('last-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+
             }
           };
 
