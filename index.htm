@@ -610,7 +610,9 @@
               document.getElementsByClassName('analysis_result_layout_container')[0].style.display = 'none';
               document.getElementsByClassName('loading')[0].style.display = 'flex';
               document.getElementsByClassName('loading-giphy')[0].style.display = 'flex';
-              getJSON('http://api.giphy.com/v1/gifs/search?q=cute+cat&api_key=dc6zaTOxFJmzC', giphy_callback);
+              var giphy_search = ['cute+cat', 'cute+corgi']
+              var s_rand = Math.floor(Math.random() * 2);
+              getJSON('http://api.giphy.com/v1/gifs/search?q='+giphy_search[s_rand]+'&api_key=dc6zaTOxFJmzC', giphy_callback);
 
 
               var counter = 15;
@@ -656,9 +658,9 @@
             else {
               console.log(giphy_data);
               var rand = Math.floor(Math.random() * 24);
-              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+              document.getElementsByClassName('loading-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Giphy ">'
               rand = Math.floor(Math.random() * 24);
-              document.getElementsByClassName('last-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Cat Giphy ">'
+              document.getElementsByClassName('last-giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.fixed_width.url + ' alt="Cute Giphy ">'
 
             }
           };
