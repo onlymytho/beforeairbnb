@@ -78,27 +78,26 @@ a {
 }
 
 .index .loading-giphy {
-  width               : 100%;
-  height              : 300px;
-  max-height          : 300px;
-  position            : relative;
-  align-items         : center;
-  margin              : 0;
-  margin-top          : 40px;
-  padding-bottom      : 50px;
+  width               : 320px;
+  margin              : auto;
+  margin-top          : 48px;
+  margin-bottom       : 48px;
   display             : none;
-  left                : 0;
 }
 
 .index .loading-giphy .giphy {
-  margin      : auto;
-  width       : 320px;
-  max-height  : 100%;
-  top         : 0;
-  left        : 0;
-  right       : 0;
-  position    : relative;
+  width       : 100%;
+  max-height  : 300px;
+}
 
+.index .last-giphy {
+  width               : 100%;
+  height              : 300px;
+  max-height          : 300px;
+  align-items         : center;
+  margin              : 0;
+  margin-top          : 48px;
+  left                : 0;
 }
 
 .index .last-giphy .giphy {
@@ -109,8 +108,6 @@ a {
   bottom      : 0;
   left        : 0;
   right       : 0;
-  position    : absolute;
-  top         : 2560px;
 
 }
 
@@ -236,1632 +233,27 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
-.index .group12 {
-  background          : rgba(255, 255, 255, 0.0);
-  width               : 320px;
-  height              : 100%;
-  pointer-events      : auto;
-  position            : relative;
-}
-.index .group12-layout-container {
-  pointer-events      : none;
-  flex-direction      : column;
-  top                 : 781px;
-  align-items         : center;
-  height              : 2900px;
-  width               : 100%;
-  position            : absolute;
-  margin              : 0;
-  display             : flex;
-  left                : 0;
-}
-.index .group12 .a929-listings {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 42.0px;
-}
-.index .group12 .group2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 224px;
-  height              : 172px;
-  width               : 272px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-}
-.index .group12 .group8 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 591px;
-  height              : 239px;
-  width               : 271px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-}
-.index .group12 .group8 .group5 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 159px;
-  height              : 80px;
-  width               : 64px;
-  position            : absolute;
-  margin              : 0;
-  left                : 2px;
-}
-.index .group12 .group8 .group4 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 159px;
-  height              : 80px;
-  width               : 64px;
-  position            : absolute;
-  margin              : 0;
-  left                : 104px;
-}
-.index .group12 .group8 .group6 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 159px;
-  height              : 80px;
-  width               : 64px;
-  position            : absolute;
-  margin              : 0;
-  left                : 207px;
-}
-.index .group12 .group8 .group15 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : 54px;
-  width               : 54px;
-  position            : absolute;
-  margin              : 0;
-  left                : 109px;
-}
-.index .group12 .group8 .group14 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : 54px;
-  width               : 54px;
-  position            : absolute;
-  margin              : 0;
-  left                : 211px;
-}
-.index .group12 .group8 .group14 .group3 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 25px;
-  height              : 6px;
-  width               : 30px;
-  position            : relative;
-  margin              : 0;
-  left                : 13px;
-}
-.index .group12 .group8 .group13 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : 54px;
-  width               : 54px;
-  position            : absolute;
-  margin              : 0;
-  left                : 7px;
-}
-.index .group12 .group8 .group13 .group7 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 8px;
-  height              : 40px;
-  width               : 42px;
-  position            : relative;
-  margin              : 0;
-  left                : 6px;
-}
-.index .group12 .group21 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 878px;
-  height              : 167px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group21 .super-host-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group21 .super-host-desc {
-  top                 : 47px;
-  position            : absolute;
-  font-family         : sans-serif, "FuturaLight", sans-serif;
-  font-size           : 14.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 19.0px;
-  margin-left         : 24px;
-  margin-right        : 24px;
-}
-.index .group12 .group21 .rectangle4 {
-  background          : rgba(222, 222, 222, 1.0);
-  top                 : 107px;
-  height              : 1px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group21 .rectangle4-copy {
-  background          : rgba(222, 222, 222, 1.0);
-  top                 : 156px;
-  height              : 1px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group21 .rectangle5 {
-  background          : rgba(255, 87, 91, 0.1);
-  top                 : 108px;
-  height              : 48px;
-  width               : 120px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group21 .rectangle5-copy3 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 108px;
-  height              : 48px;
-  width               : 200px;
-  position            : absolute;
-  margin              : 0;
-}
-.index .group12 .group21 .a374 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group21 .a626 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 225px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(160, 160, 160, 1.0);
-  text-align          : right;
-  line-height         : 32.0px;
-}
-.index .group12 .group21 .normal-host {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  right               : 28px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(160, 160, 160, 1.0);
-  text-align          : right;
-  line-height         : 24.0px;
-}
-.index .group12 .group21 .super-host {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 24.0px;
-}
-.index .group12 .group21 .opportuinity {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 120px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  right               : 28px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(255, 255, 255, 1.0);
-  text-align          : right;
-  line-height         : 24.0px;
-}
-.index .group12 .group22 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 1153px;
-  height              : 191px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group22 .business-preferred-r {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group22 .business-preferred-desc {
-  top                 : 47px;
-  position            : absolute;
-  font-family         : sans-serif, "FuturaLight", sans-serif;
-  font-size           : 14.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 19.0px;
-  margin-left         : 24px;
-  margin-right        : 24px;
-}
-.index .group12 .group22 .rectangle4-copy2 {
-  background          : rgba(222, 222, 222, 1.0);
-  top                 : 107px;
-  height              : 1px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group22 .rectangle4-copy3 {
-  background          : rgba(222, 222, 222, 1.0);
-  top                 : 156px;
-  height              : 1px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group22 .rectangle5-copy {
-  background          : rgba(255, 87, 91, 0.1);
-  top                 : 108px;
-  height              : 48px;
-  width               : 99px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group22 .rectangle5-copy4 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 108px;
-  height              : 48px;
-  width               : 221px;
-  position            : absolute;
-  margin              : 0;
-}
-.index .group12 .group22 .a309 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group22 .a691 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 225px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : right;
-  line-height         : 32.0px;
-}
-.index .group12 .group22 .business-travel-non {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : 120px;
-  position            : absolute;
-  margin              : 0;
-  right               : 28px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : right;
-  line-height         : 24.0px;
-}
-.index .group12 .group22 .business-travel-pref {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : 120px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 24.0px;
-}
-.index .group12 .group22 .opportuinity-copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 120px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  right               : 28px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(255, 255, 255, 1.0);
-  text-align          : right;
-  line-height         : 24.0px;
-}
-.index .group12 .group23 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 1452px;
-  height              : 191px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group23 .family-preferred-rat {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group23 .family-preferred-desc {
-  top                 : 47px;
-  position            : absolute;
-  font-family         : sans-serif, "FuturaLight", sans-serif;
-  font-size           : 14.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 19.0px;
-  margin-left         : 24px;
-  margin-right        : 24px;
-}
-.index .group12 .group23 .rectangle4-copy4 {
-  background          : rgba(222, 222, 222, 1.0);
-  top                 : 107px;
-  height              : 1px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group23 .rectangle4-copy5 {
-  background          : rgba(222, 222, 222, 1.0);
-  top                 : 156px;
-  height              : 1px;
-  width               : 320px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group23 .rectangle5-copy2 {
-  background          : rgba(255, 87, 91, 0.1);
-  top                 : 108px;
-  height              : 48px;
-  width               : 23px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-}
-.index .group12 .group23 .rectangle5-copy5 {
-  background          : rgba(255, 87, 91, 1.0);
-  top                 : 108px;
-  height              : 48px;
-  width               : 297px;
-  position            : absolute;
-  margin              : 0;
-}
-.index .group12 .group23 .a72 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group23 .a928 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 225px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : right;
-  line-height         : 32.0px;
-}
-.index .group12 .group23 .family-travel-non-pr {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : 120px;
-  position            : absolute;
-  margin              : 0;
-  right               : 29px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : right;
-  line-height         : 24.0px;
-}
-.index .group12 .group23 .family-travel-prefer {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : 120px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 24.0px;
-}
-.index .group12 .group23 .opportuinity-copy2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 120px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  right               : 28px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 18.0px;
-  color               : rgba(255, 255, 255, 1.0);
-  text-align          : right;
-  line-height         : 24.0px;
-}
-.index .group12 .group9 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 1738px;
-  height              : 149px;
-  width               : 270px;
-  position            : absolute;
-  margin              : 0;
-  left                : 25px;
-}
-.index .group12 .group25 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 1995px;
-  height              : 364px;
-  width               : 186px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-}
-
-.index .group12 .group25 .listings-distances {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-
-.listings-distances-table-div {
-  display             : block;
-  margin-top          : 60px;
-  padding-bottom      : 100px;
-}
-
-.index .group12 .group25 table {
-  border-collapse: collapse;
-  width: 272px;
-}
-
-.index .group12 .group25 th {
-  border              : 1px solid rgba(230, 230, 230, 1.0);
-  padding             : 10px;
-  width               : 160px;
-  height              : 30px;
-  vertical-align      : top;
-  font-family         : sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 20.0px;
-}
-
-.index .group12 .group25 td {
-  border              : 1px solid rgba(230, 230, 230, 1.0);
-  padding             : 10px;
-  width               : 160px;
-  height              : 30px;
-  vertical-align      : top;
-  font-family         : sans-serif;
-  font-size           : 16.0px;
-  font-weight         : 300;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 20.0px;
-}
-.index .group12 .group25 .count {
-  text-align          : right;
-}
-.index .group12 .group25 .group11 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 88px;
-  height              : 276px;
-  width               : 67px;
-  position            : absolute;
-  margin              : 0;
-  left                : 41px;
-}
-.index .group12 .group25 .group11 .a10m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 22px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a0m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a0 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 22px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a0-copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a20m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 49px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a1 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 49px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a50m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 82px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a6 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 82px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a100m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 117px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a13 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 117px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a200m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 163px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a28 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 163px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a500m {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 211px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a145 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 211px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a1km {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 263px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .group11 .a250 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 263px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 48px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .distance-text {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 58px;
-  min-width           : 35px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 41px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .group25 .listings-text {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 58px;
-  min-width           : 35px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 89px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 10.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : left;
-  line-height         : 13.0px;
-}
-.index .group12 .bitmap {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 2080px;
-  height              : 290px;
-  width               : 124px;
-  position            : absolute;
-  margin              : 0;
-  left                : 144px;
-}
-.index .group12 .group19 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 77px;
-  height              : 319px;
-  width               : 272px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-}
-.index .group12 .group19 .price-statistics {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group19 .median-price-is68 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 47px;
-  height              : auto;
-  width               : 272px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : sans-serif, "FuturaLight", sans-serif;
-  font-size           : 14.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 19.0px;
-}
-.index .group12 .group19 .avg-med-min-max {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 147px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 43.0px;
-}
-.index .group12 .group19 .a192682510216 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 147px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 160px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : right;
-  line-height         : 43.0px;
-}
-.index .group12 .group19 .label1 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 147px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 132px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : left;
-  line-height         : 43.0px;
-}
-.index .group12 .group20 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 444px;
-  height              : 386px;
-  width               : 272px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-}
-.index .group12 .group20 .many-listings-are-co {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 47px;
-  height              : auto;
-  width               : 272px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : sans-serif, "FuturaLight", sans-serif;
-  font-size           : 14.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 19.0px;
-}
-.index .group12 .group20 .room-type-statistics {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group20 .entire-home {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 16.0px;
-}
-.index .group12 .group20 .private-room {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 103px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group20 .a726 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 235px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 3px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : center;
-  line-height         : 43.0px;
-}
-.index .group12 .group20 .label2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 275px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 16px;
-  font-family         : "AppleSDGothicNeo-Light", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : center;
-  line-height         : 15.0px;
-}
-.index .group12 .group20 .listings-copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 275px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 118px;
-  font-family         : "AppleSDGothicNeo-Light", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : center;
-  line-height         : 15.0px;
-}
-.index .group12 .group20 .listings-copy2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 275px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 221px;
-  font-family         : "AppleSDGothicNeo-Light", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : center;
-  line-height         : 15.0px;
-}
-.index .group12 .group20 .a191 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 235px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 105px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : center;
-  line-height         : 43.0px;
-}
-.index .group12 .group20 .a12 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 235px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 218px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 32.0px;
-  color               : rgba(255, 87, 91, 1.0);
-  text-align          : center;
-  line-height         : 43.0px;
-}
-.index .group12 .group20 .else {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 203px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 228px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 16.0px;
-}
-.index .group12 .group20 .a184722710216 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 306px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 9px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : right;
-  line-height         : 20.0px;
-}
-.index .group12 .group20 .copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 306px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 2px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 20.0px;
-}
-.index .group12 .group20 .a15449251363 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 306px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 121px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : right;
-  line-height         : 20.0px;
-}
-.index .group12 .group20 .copy2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 306px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 104px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 20.0px;
-}
-.index .group12 .group20 .a13284231363756 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 306px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 224px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : right;
-  line-height         : 20.0px;
-}
-.index .group12 .group20 .copy3 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 306px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 207px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 20.0px;
-}
-.index .group12 .group20 .rectangle-copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 147px;
-  height              : 54px;
-  width               : 54px;
-  position            : absolute;
-  margin              : 0;
-  left                : 109px;
-}
-.index .group12 .group20 .image1 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 155px;
-  height              : 40px;
-  width               : 30px;
-  position            : absolute;
-  margin              : 0;
-  left                : 121px;
-}
-.index .group12 .group20 .rectangle-copy2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 147px;
-  height              : 54px;
-  width               : 54px;
-  position            : absolute;
-  margin              : 0;
-  left                : 211px;
-}
-.index .group12 .group20 .oval2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : 6px;
-  width               : 6px;
-  position            : absolute;
-  margin              : 0;
-  left                : 224px;
-}
-.index .group12 .group20 .oval2-copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : 6px;
-  width               : 6px;
-  position            : absolute;
-  margin              : 0;
-  left                : 236px;
-}
-.index .group12 .group20 .oval2-copy2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 172px;
-  height              : 6px;
-  width               : 6px;
-  position            : absolute;
-  margin              : 0;
-  left                : 248px;
-}
-.index .group12 .group20 .rectangle {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 147px;
-  height              : 54px;
-  width               : 54px;
-  position            : absolute;
-  margin              : 0;
-  left                : 7px;
-}
-.index .group12 .group20 .path2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 154px;
-  height              : 21px;
-  width               : 42px;
-  position            : absolute;
-  margin              : 0;
-  left                : 13px;
-}
-.index .group12 .group20 .path3 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 170px;
-  height              : 25px;
-  width               : 22px;
-  position            : absolute;
-  margin              : 0;
-  left                : 18px;
-}
-.index .group12 .group20 .path3-copy {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 170px;
-  height              : 25px;
-  width               : 12px;
-  position            : absolute;
-  margin              : 0;
-  left                : 39px;
-}
-.index .group12 .group20 .path4 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 154px;
-  height              : 9px;
-  width               : 4px;
-  position            : absolute;
-  margin              : 0;
-  left                : 41px;
-}
-.index .group12 .group20 .image2 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 154px;
-  height              : 13px;
-  width               : 4px;
-  position            : absolute;
-  margin              : 0;
-  left                : 44px;
-}
-.index .group12 .group24 {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 1751px;
-  height              : 196px;
-  width               : 271px;
-  position            : absolute;
-  margin              : 0;
-  left                : 24px;
-}
-.index .group12 .group24 .extra-host-languages {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  font-family         : "Futura-Medium", sans-serif;
-  font-size           : 24.0px;
-  color               : rgba(155, 154, 155, 1.0);
-  text-align          : left;
-  line-height         : 32.0px;
-}
-.index .group12 .group24 .ex-lang1-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 100px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 1px;
-}
-.index .group12 .group24 .ex-lang2-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 67px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 40px;
-}
-.index .group12 .group24 .ex-lang3-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 17px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 79px;
-}
-.index .group12 .group24 .ex-lang4-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 13px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 118px;
-}
-.index .group12 .group24 .ex-lang5-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 4px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 157px;
-}
-.index .group12 .group24 .ex-lang6-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 1px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 196px;
-}
-.index .group12 .group24 .ex-lang7-graph {
-  background          : rgba(255, 87, 91, 1.0);
-  bottom              : 29px;
-  height              : 1px;
-  width               : 36px;
-  position            : absolute;
-  margin              : 0;
-  left                : 235px;
-}
-
-.index .group12 .group24 .ex-lang1-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 7px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .ex-lang2-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 46px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .ex-lang3-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 86px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .ex-lang4-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 127px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .ex-lang5-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 167px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .ex-lang6-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 206px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-.index .group12 .group24 .ex-lang7-label {
-  background          : rgba(255, 255, 255, 0.0);
-  top                 : 176px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 244px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 16.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 20.0px;
-}
-
-.index .group12 .group24 .ex-lang1-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 47px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 3px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .ex-lang2-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 80px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 46px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .ex-lang3-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 130px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 79px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .ex-lang4-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 134px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 123px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .ex-lang5-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 143px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 157px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .ex-lang6-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 146px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 201px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-.index .group12 .group24 .ex-lang7-rate {
-  background          : rgba(255, 255, 255, 0.0);
-  bottom              : 146px;
-  height              : auto;
-  width               : auto;
-  position            : absolute;
-  margin              : 0;
-  left                : 240px;
-  font-family         : "FuturaLight", sans-serif;
-  font-size           : 12.0px;
-  color               : rgba(155, 155, 155, 1.0);
-  text-align          : center;
-  line-height         : 16.0px;
-}
-
-.index .group18 {
-  background          : rgba(255, 255, 255, 0.0);
-  width               : 272px;
-  height              : 100%;
-  pointer-events      : auto;
-  position            : relative;
-}
-.index .group18-layout-container {
+.index .total_result_layout_container {
   pointer-events      : none;
   flex-direction      : column;
   top                 : 575px;
   align-items         : center;
   height              : 152px;
   width               : 100%;
-  position            : absolute;
   margin              : 0;
+  margin-top          : 48px;
   display             : flex;
   left                : 0;
   visibility          : visible;
 }
-.index .group18 .not-easy-but-there {
+.index .total_result {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 272px;
+  height              : 100%;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .total_result .not-easy-but-there {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 88px;
   height              : auto;
@@ -1875,7 +267,7 @@ a {
   text-align          : left;
   line-height         : 32.0px;
 }
-.index .group18 .scores {
+.index .total_result .scores {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 37px;
   height              : auto;
@@ -1890,7 +282,7 @@ a {
   text-align          : left;
   line-height         : 37.0px;
 }
-.index .group18 .a82 {
+.index .total_result .a82 {
   background          : rgba(255, 255, 255, 0.0);
   top                 : 0px;
   height              : auto;
@@ -1904,4 +296,992 @@ a {
   text-align          : left;
   letter-spacing      : -1.0px;
   line-height         : 85.0px;
+}
+
+.index .analysis_result_layout_container {
+  pointer-events      : none;
+  flex-direction      : column;
+  align-items         : center;
+  height              : auto;
+  width               : 100%;
+  margin              : 0;
+  margin-top          : 48px;
+  margin-bottom       : 48px;
+  display             : flex;
+  left                : 0;
+}
+.index .analysis_result {
+  background          : rgba(255, 255, 255, 0.0);
+  width               : 320px;
+  pointer-events      : auto;
+  position            : relative;
+}
+.index .analysis_result .a929-listings {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin-left         : 24px;
+  font-family         : "Futura-Medium", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 42.0px;
+}
+.index .analysis_result .group8 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 591px;
+  height              : 239px;
+  width               : 271px;
+  position            : absolute;
+  margin              : 0;
+  left                : 24px;
+}
+.index .analysis_result .group8 .group5 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 159px;
+  height              : 80px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.index .analysis_result .group8 .group4 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 159px;
+  height              : 80px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+}
+.index .analysis_result .group8 .group6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 159px;
+  height              : 80px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 207px;
+}
+.index .analysis_result .group8 .group15 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 109px;
+}
+.index .analysis_result .group8 .group14 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 211px;
+}
+.index .analysis_result .group8 .group14 .group3 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 25px;
+  height              : 6px;
+  width               : 30px;
+  position            : relative;
+  margin              : 0;
+  left                : 13px;
+}
+.index .analysis_result .group8 .group13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : 54px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 7px;
+}
+.index .analysis_result .group8 .group13 .group7 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 8px;
+  height              : 40px;
+  width               : 42px;
+  position            : relative;
+  margin              : 0;
+  left                : 6px;
+}
+/*analysis_div_320*/
+.index .analysis_result .analysis_div_320 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 320px;
+  margin              : 0;
+  margin-top          : 48px;
+  left                : 0px;
+}
+.index .analysis_result .analysis_div_320 .title {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  margin-left         : 24px;
+  font-family         : "Futura-Medium", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .analysis_result .analysis_div_320 .desc {
+  font-family         : sans-serif, "FuturaLight", sans-serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+  margin-top          : 14px;
+  margin-left         : 24px;
+  margin-right        : 24px;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph {
+  width               : 320px;
+  height              : 50px;
+  margin-top          : 14px;
+}
+
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph .border_top {
+  background          : rgba(222, 222, 222, 1.0);
+  height              : 1px;
+  width               : 100%;
+  margin              : 0;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph .body {
+  width               : auto;
+  height              : 48px;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph .body_first {
+  background          : rgba(255, 87, 91, 0.1);
+  display             : inline-block;
+  height              : 48px;
+  width               : 120px;
+  margin              : 0;
+  float               : left;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph .body_last {
+  background          : rgba(255, 87, 91, 1.0);
+  height              : 48px;
+  width               : 200px;
+  float               : right;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph .border_bottom {
+  background          : rgba(222, 222, 222, 1.0);
+  height              : 1px;
+  width               : 100%;
+  margin              : 0;
+  bottom              : 0;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph .body_last .opportunity {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  margin-right        : 24px;
+  margin-top          : 12px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+  float               : right;
+}
+
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph_data {
+  margin-top          : 14px;
+}
+
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph_data .first {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  margin-left         : 24px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+  display             : inline-block;
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph_data .last {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 172px;
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  margin-right        : 24px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(160, 160, 160, 1.0);
+  text-align          : right;
+  line-height         : 32.0px;
+  display             : inline-block;
+  float               : right;
+}
+
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph_label .first {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 203px;
+  height              : auto;
+  width               : auto;
+  margin-left         : 24px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 18.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+  display             : inline-block;
+
+}
+.index .analysis_result .analysis_div_320 .horizontal_bar_one_graph_label .last {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  margin-right        : 24px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 18.0px;
+  color               : rgba(160, 160, 160, 1.0);
+  text-align          : right;
+  line-height         : 24.0px;
+  display             : inline-block;
+  float               : right;
+}
+
+.index .analysis_result .analysis_div_320 .listings-distances {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+
+.index .analysis_result .analysis_div_320 .listings-distances-table-div {
+  display             : block;
+  margin-top          : 28px;
+  margin-left         : 24px;
+}
+
+.index .analysis_result .analysis_div_320 table {
+  border-collapse: collapse;
+  width: 272px;
+}
+
+.index .analysis_result .analysis_div_320 th {
+  border              : 1px solid rgba(230, 230, 230, 1.0);
+  padding             : 10px;
+  width               : 160px;
+  height              : 30px;
+  vertical-align      : top;
+  font-family         : sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+}
+
+.index .analysis_result .analysis_div_320 td {
+  border              : 1px solid rgba(230, 230, 230, 1.0);
+  padding             : 10px;
+  width               : 160px;
+  height              : 30px;
+  vertical-align      : top;
+  font-family         : sans-serif;
+  font-size           : 16.0px;
+  font-weight         : 300;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+}
+.index .analysis_result .analysis_div_320 .count {
+  text-align          : right;
+}
+.index .analysis_result .analysis_div_320 .group11 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 88px;
+  height              : 276px;
+  width               : 67px;
+  position            : absolute;
+  margin              : 0;
+  left                : 41px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a10m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a0m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a0 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 22px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a0-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a20m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 49px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a50m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 82px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a6 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 82px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a100m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 117px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a13 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 117px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a200m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 163px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a28 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 163px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a500m {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 211px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a145 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 211px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a1km {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 263px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .group11 .a250 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 263px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .distance-text {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 58px;
+  min-width           : 35px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 41px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .analysis_div_320 .listings-text {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 58px;
+  min-width           : 35px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 10.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : left;
+  line-height         : 13.0px;
+}
+.index .analysis_result .bitmap {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 2080px;
+  height              : 290px;
+  width               : 124px;
+  position            : absolute;
+  margin              : 0;
+  left                : 144px;
+}
+.index .analysis_result .analysis_div_272 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;;
+  width               : 272px;
+  position            : relative;
+  margin              : 0;
+  margin-top          : 48px;
+  left                : 24px;
+}
+.index .analysis_result .analysis_div_272 .title {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .analysis_result .analysis_div_272 .desc {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 272px;
+  position            : relative;
+  margin              : 0;
+  margin-top          : 14px;
+  left                : 0px;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+}
+.index .analysis_result .analysis_div_272 .avg-med-min-max {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin              : 0;
+  margin-top          : 16px;
+  left                : 0px;
+  display             : inline-block;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 43.0px;
+}
+.index .analysis_result .analysis_div_272 .dollars {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin              : 0;
+  margin-top          : 16px;
+  margin-left         : 84px;
+  display             : inline-block;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : left;
+  line-height         : 43.0px;
+}
+.index .analysis_result .analysis_div_272 .prices {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin              : 0;
+  margin-top          : 16px;
+  right               : 0px;
+  float               : right;
+  display             : inline-block;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : right;
+  line-height         : 43.0px;
+}
+
+
+
+
+
+.index .analysis_result .analysis_div_272 .room_type_statistics {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .analysis_result .analysis_div_272 .many-listings-are-co {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : 272px;
+  margin              : 0;
+  margin-top          : 14px;
+  left                : 0px;
+  font-family         : sans-serif, "FuturaLight", sans-serif;
+  font-size           : 14.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 19.0px;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div {
+  display: inline-block;
+  width: 60px;
+  margin-top: 28px;
+  float: left;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .entire_home_img {
+  height              : 50px;
+  width               : 50px;
+  margin              : auto;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .entire_home_img img {
+  width               : 100%;
+  height              : 100%;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .entire-home {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+  margin-top          : 14px;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .a726 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+  margin-top          : 14px;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .label2 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "AppleSDGothicNeo-Light", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 15.0px;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .entire_home_prices {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : right;
+  line-height         : 20.0px;
+  margin-top          : 14px;
+  float               : right;
+}
+.index .analysis_result .analysis_div_272 .entire_home_div .entire_home_dollars {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+  margin-top          : 14px;
+  float               : left;
+}
+
+.index .analysis_result .analysis_div_272 .private_room_div {
+  display: inline-block;
+  width: 62px;
+  margin : 0 45px 0 45px;
+  margin-top: 28px;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .private_room_img {
+  height              : 50px;
+  width               : 50px;
+  margin              : auto;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .private_room_img img {
+  width: 100%;
+  height: 100%;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .private-room {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+  margin-top          : 14px;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .listings-copy {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "AppleSDGothicNeo-Light", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 15.0px;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .a191 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+  margin-top          : 14px;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .private_room_prices_div {
+  width: 60px;
+  margin: auto;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .private_room_prices {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : right;
+  line-height         : 20.0px;
+  margin-top          : 14px;
+  float               : right;
+}
+.index .analysis_result .analysis_div_272 .private_room_div .private_room_dollars {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+  margin-top          : 14px;
+  float               : left;
+}
+.index .analysis_result .analysis_div_272 .else_div {
+  display: inline-block;
+  width: 60px;
+  margin-top: 28px;
+  float: right;
+}
+.index .analysis_result .analysis_div_272 .else_div .else_img {
+  height              : 50px;
+  width               : 50px;
+  margin              : auto;
+}
+.index .analysis_result .analysis_div_272 .else_div .else_img img {
+  width: 100%;
+  height: 100%;
+}
+.index .analysis_result .analysis_div_272 .else_div .else {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+  margin-top          : 14px;
+}
+.index .analysis_result .analysis_div_272 .else_div .listings-copy2 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "AppleSDGothicNeo-Light", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 15.0px;
+}
+.index .analysis_result .analysis_div_272 .else_div .a12 {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 32.0px;
+  color               : rgba(255, 87, 91, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+  margin-top          : 14px;
+}
+.index .analysis_result .analysis_div_272 .else_div .else_prices {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : right;
+  line-height         : 20.0px;
+  margin-top          : 14px;
+  float               : right;
+}
+.index .analysis_result .analysis_div_272 .else_div .else_dollars {
+  background          : rgba(255, 255, 255, 0.0);
+  height              : auto;
+  width               : auto;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 20.0px;
+  margin-top          : 14px;
+  float               : left;
+}
+.index .analysis_result .analysis_div_272 .else_div .image1 {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 155px;
+  height              : 40px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 121px;
+}
+.index .analysis_result .analysis_div_272 .else_div .else_img {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 147px;
+  height              : 54px;
+  width               : 54px;
+  margin              : 0;
+  left                : 211px;
+}
+
+.index .analysis_result .analysis_div_320 #ex-lang-area-div {
+  height: 300px;
+}
+.index .analysis_result .analysis_div_320 .extra-host-languages {
+  background          : rgba(255, 255, 255, 0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  font-family         : "Futura-Medium", sans-serif;
+  font-size           : 24.0px;
+  color               : rgba(155, 154, 155, 1.0);
+  text-align          : left;
+  line-height         : 32.0px;
+}
+.index .analysis_result .analysis_div_320 .ex-lang-graph-div {
+  margin-left: 24px;
+  margin-top: 28px;
+}
+.index .analysis_result .analysis_div_320 .ex-lang-div {
+  width               : 36px;
+  height              : auto;
+  bottom              : 0;
+  display             : inline-block;
+}
+.index .analysis_result .analysis_div_320 .ex-lang-div #ex-lang7-div{
+  margin-right        : 0;
+}
+
+.index .analysis_result .analysis_div_320 .ex-lang-rate {
+  margin              : 0;
+  left                : 3px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 12.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.index .analysis_result .analysis_div_320 .ex-lang-graph {
+  background          : rgba(255, 87, 91, 1.0);
+  width               : 100%;
+}
+.index .analysis_result .analysis_div_320 .ex-lang-label {
+  margin              : 0;
+  left                : 7px;
+  font-family         : "FuturaLight", sans-serif;
+  font-size           : 16.0px;
+  color               : rgba(155, 155, 155, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+  margin-top: 7px;
 }
