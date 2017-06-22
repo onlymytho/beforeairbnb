@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>[NEW] Before Airbnb</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <link href="https://animaapp.s3.amazonaws.com/home/favicon.png" rel="shortcut icon" type="image/png"> -->
+    <link href="./Before Airbnb_files/favicon2.png" rel="shortcut icon" type="image/png">
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link href="./Before Airbnb_files/index.css" rel="stylesheet" type="text/css">
+    <title>
+        Before Airbnb
+    </title>
+    <meta content="Research Neighborhoods to Succeed in Your Next Airbnb. Try Now!" name="description">
+    <meta content="English" name="language">
+    <meta name="Access-Control-Allow-Origin" content="*">
+
+    <!-- GA -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments);
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-63621212-2', 'auto');
+      ga('send', 'pageview');
+      ga('send', 'event', 'test_category', 'test_action', 'test_label');
+
+    </script>
+
+    <!-- userLang, getJSON, numberWithCommas, Google Maps -->
+    <script>
+      var userLang = navigator.language || navigator.userLanguage;
+    </script>
+    <script>
+      var getJSON = function(url, callback) {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', url, true);
+          // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+          // xhr.setRequestHeader('"Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE')
+          xhr.responseType = 'json';
+          xhr.onload = function() {
+            var status = xhr.status;
+            if (status == 200) {
+              callback(null, xhr.response);
+            } else {
+              callback(status);
+            }
+          };
+          xhr.send();
+      };
+
+      function numberWithCommas(x) {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+
+    </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBPhG7tgEazABFFgVRArbCe8aLhbGSvJPE&v=3"></script>
+    <!-- Facebook -->
+    <meta content="Before Airbnb" property="og:site_name">
+    <meta content="Before Airbnb" property="og:title">
+    <meta content="Research Neighborhoods to Succedd in Your Next Airbnb. Try Now!" property="og:description">
+    <meta content="http://beforeairbnb.com" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="http://beforeairbnb.com/Before%20Airbnb_files/og-image.png" property="og:image">
+    <!-- Twitter -->
+    <meta content="photo" name="twitter:card">
+    <meta content="Before Airbnb" name="twitter:title">
+    <meta content="Research Neighborhoods to Succedd in Your Next Airbnb. Try Now!" name="twitter:description">
+    <script async="" src="./Before Airbnb_files/analytics.js"></script>
+    <script src="./Before Airbnb_files/jquery.min.js"></script>
+    <script src="./Before Airbnb_files/jquery.imageReloader.js"></script>
+
+    <style media="screen">
+      html {
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        margin:0;
+      }
+      .background {
+        outline:0;
+        margin:0;
+        padding:0;
+        position:fixed;
+        width: 100%;
+        z-index: 0;
+      }
+      .content_wrapper {
+        width: 996px;
+        margin: 0 auto;
+      }
+      .background_content {
+        position: fixed;
+      }
+      .background_colorbox {
+        top:0;
+        width: 100%;
+        height:480px;
+        background-color: #FF585B;
+      }
+      .background_title {
+        position: relative;
+        padding-top: 164px;
+        font-size: 54px;
+        color: #ffffff;
+        font-family: "Futura", sans-serif;
+        font-weight: 500;
+      }
+      .background_desc {
+        margin-top: 32px;
+        font-size: 24px;
+        font-family: "FuturaLight", sans-serif;
+        font-weight: lighter;
+        color: #ffffff;
+        opacity: 0.9;
+        width: 408px;
+        height: auto;
+        line-height: 36px;
+      }
+      .background_search {
+        margin-top: 100px;
+      }
+      .background_search .search_input {
+        background          : rgba(255, 255, 255, 0.0);
+        border              : none;
+        height              : auto;
+        width               : calc(100% - 48px);
+        margin              : 0;
+        opacity             : 0.5;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 24.0px;
+        color               : #FF585B;
+        line-height         : 32.0px;
+        overflow-x          : scroll;
+        outline: none;
+      }
+      .background_search .border_bottom {
+        background          : #ebebeb;
+        height              : 2px;
+        width               : 100%;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+        transition : all 1s ease;
+      }
+      .background_search .icon {
+        background          : rgba(255, 255, 255, 0.0);
+        top                 : 0px;
+        height              : 42px;
+        width               : 42px;
+        margin              : 0;
+        float: right;
+      }
+
+      .background_search .icon .search_icon {
+        width: 100%;
+        height: 100%;
+      }
+      .content {
+        position: relative;
+        display: inline-block;
+        overflow: scroll;
+        float: right;
+        padding-top: 170px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 28px;
+        width: 520px;
+      }
+      .content_box {
+        width: 464px;
+        height: auto;
+        padding: 28px;
+        background-color: #ffffff;
+        float: right;
+        margin-bottom: 28px;
+        box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25);
+        transition: margin-right .2s ease,
+            				margin-top .2s ease,
+            				box-shadow .2s ease;
+        display: none;
+      }
+      .content_box:hover {
+        margin-right:5px;
+        margin-top:-5px;
+        box-shadow: 3px 5px 45px rgba(0, 0, 0, 0.30);
+      }
+      #content_loading {
+        opacity: 0;
+        margin-top: 10px;
+        margin-right: -10px;
+        -webkit-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        display: block;
+      }
+      #content_loading.appear {
+        opacity: 1 !important;
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+      }
+      .content_box .loading_giphy {
+        margin-top: 14px;
+        height: auto;
+        opacity: 1;
+        -webkit-transition: all 0.5s ease,
+                    opacity 0.3s ease;
+        -moz-transition: all 0.5s ease,
+                    opacity 0.3s ease;
+        -ms-transition: all 0.5s ease,
+                    opacity 0.3s ease;
+        -o-transition: all 0.5s ease,
+                    opacity 0.3s ease;
+        transition: all 0.5s ease,
+                    opacity 0.3s ease;
+      }
+      .content_box .loading_giphy.collapse {
+        height: 0 !important;
+        margin: 0 !important;
+        opacity: 0 !important;
+      }
+      .content_box .loading_giphy .giphy {
+        width: 100%;
+        height: 100%;
+      }
+      .content_box .last_giphy .giphy {
+        width: 100%;
+        height: 100%;
+      }
+      .content_box .title {
+        font-size: 24px;
+        font-family: "Apple SD Gothic Neo", sans-serif;
+        color: #9B9B9B
+      }
+      .content_box .desc {
+        font-size: 16px;
+        color: #9B9B9B;
+        line-height: 22px;
+        margin-top: 20px;
+      }
+      .content_box .total_score_number {
+        display: inline-block;
+        font-size: 48px;
+        color: #FF585B;
+      }
+      .content_box .total_score_text {
+        display: inline-block;
+        font-size: 24px;
+        color: #FF585B;
+        line-height: 62px;
+      }
+      .content_box .total_comment {
+        font-size: 24px;
+        color: #FF585B;
+        line-height: 30px;
+      }
+      .content_box .result_text {
+        display: inline-block;
+        font-size: 32px;
+        font-family: "FuturaLight", sans-serif;
+        color: #9B9B9B;
+        width: 70px;
+        margin-top: 28px;
+        line-height: 44px;
+      }
+      .content_box .result_numbers_wrapper {
+        display: inline-block;
+        margin-top: 28px;
+        float:right;
+      }
+      .content_box .result_dollars {
+        display: inline-block;
+        font-size: 32px;
+        font-family: "FuturaLight", sans-serif;
+        color: #FF585B;
+        line-height: 44px;
+      }
+      .content_box .result_numbers {
+        display: inline-block;
+        font-size: 32px;
+        font-family: "FuturaLight", sans-serif;
+        color: #FF585B;
+        width: 100px;
+        line-height: 44px;
+        float: right;
+        text-align: right;
+      }
+      .content_box .roomtype_div {
+        display: inline-block;
+        margin-top: 28px;
+        margin-left: 32px;
+      }
+      .content_box #roomtype_category_div {
+        margin-left: 0;
+      }
+      .content_box .roomtype_div .img {
+        height              : 50px;
+        width               : 50px;
+        margin:0 auto;
+      }
+      .content_box .roomtype_div img {
+        width               : 100%;
+        height              : 100%;
+      }
+      .content_box .roomtype_div .roomtype {
+        font-size: 14px;
+        font-family: "FuturaLight", sans-serif;
+        color: #9B9B9B;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 4px;
+      }
+      .content_box .roomtype_div .count_number {
+        font-size: 32px;
+        font-family: "FuturaLight", sans-serif;
+        color: #FF585B;
+        line-height: 36px;
+        text-align: center;
+        margin-top: 14px;
+      }
+      .content_box .roomtype_div .count_text {
+        font-size: 14px;
+        font-family: "FuturaLight", sans-serif;
+        color: #FF585B;
+        line-height: 20px;
+        text-align: center;
+      }
+      .content_box .roomtype_div .result_div {
+        margin-top: 14px;
+      }
+      .content_box .roomtype_div .result_text {
+        font-size: 20px;
+        font-family: "FuturaLight", sans-serif;
+        color: #9B9B9B;
+        line-height: 28px;
+        text-align: left;
+      }
+      .content_box .roomtype_div .result_div .result_dollars {
+        font-size: 20px;
+        font-family: "FuturaLight", sans-serif;
+        color: #9B9B9B;
+        line-height: 28px;
+        text-align: left;
+      }
+      .content_box .roomtype_div .result_div .result_numbers {
+        font-size: 20px;
+        font-family: "FuturaLight", sans-serif;
+        color: #9B9B9B;
+        line-height: 28px;
+        text-align: right;
+        width: 80px;
+        float: right;
+      }
+      .content_box .horizontal_bar_one_graph {
+        width               : 100%;
+        height              : 50px;
+        margin-top          : 14px;
+      }
+      .content_box .horizontal_bar_one_graph .border_top {
+        background          : #efefef;
+        height              : 1px;
+        width               : 100%;
+        margin              : 0;
+      }
+      .content_box .horizontal_bar_one_graph .body {
+        width               : auto;
+        height              : 48px;
+      }
+      .content_box .horizontal_bar_one_graph .body_first {
+        background          : rgba(255, 87, 91, 0.1);
+        display             : inline-block;
+        height              : 48px;
+        width               : 30%;
+        margin              : 0;
+        float               : left;
+      }
+      .content_box .horizontal_bar_one_graph .body_last {
+        background          : rgba(255, 87, 91, 1.0);
+        height              : 48px;
+        width               : 70%;
+        float               : right;
+      }
+      .content_box .horizontal_bar_one_graph .border_bottom {
+        background          : #efefef;
+        height              : 1px;
+        width               : 100%;
+        margin              : 0;
+        bottom              : 0;
+      }
+      .content_box .horizontal_bar_one_graph .body_last .opportunity {
+        background          : rgba(255, 255, 255, 0.0);
+        height              : auto;
+        width               : auto;
+        margin              : 0;
+        margin-right        : 24px;
+        margin-top          : 12px;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 18.0px;
+        color               : rgba(255, 255, 255, 1.0);
+        text-align          : right;
+        line-height         : 24.0px;
+        float               : right;
+      }
+      .content_box .horizontal_bar_one_graph_data {
+        margin-top          : 14px;
+      }
+      .content_box .horizontal_bar_one_graph_data .first {
+        background          : rgba(255, 255, 255, 0.0);
+        height              : auto;
+        width               : auto;
+        margin              : 0;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 24.0px;
+        color               : rgba(255, 87, 91, 1.0);
+        text-align          : left;
+        line-height         : 32.0px;
+        display             : inline-block;
+      }
+      .content_box .horizontal_bar_one_graph_data .last {
+        background          : rgba(255, 255, 255, 0.0);
+        top                 : 172px;
+        height              : auto;
+        width               : auto;
+        margin              : 0;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 24.0px;
+        color               : rgba(160, 160, 160, 1.0);
+        text-align          : right;
+        line-height         : 32.0px;
+        display             : inline-block;
+        float               : right;
+      }
+      .content_box .horizontal_bar_one_graph_label .first {
+        background          : rgba(255, 255, 255, 0.0);
+        top                 : 203px;
+        height              : auto;
+        width               : auto;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 18.0px;
+        color               : rgba(255, 87, 91, 1.0);
+        text-align          : left;
+        line-height         : 24.0px;
+        display             : inline-block;
+      }
+      .content_box .horizontal_bar_one_graph_label .last {
+        background          : rgba(255, 255, 255, 0.0);
+        height              : auto;
+        width               : auto;
+        margin              : 0;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 18.0px;
+        color               : rgba(160, 160, 160, 1.0);
+        text-align          : right;
+        line-height         : 24.0px;
+        display             : inline-block;
+        float               : right;
+      }
+      .content_box .ex_lang_graph_div {
+        margin-top: 28px;
+      }
+      .content_box .ex_lang_div {
+        height: 36px;
+        margin-bottom: 8px;
+      }
+      .content_box #ex_lang7_div {
+        margin-right        : 0;
+      }
+      .content_box .ex_lang_label {
+        margin              : 0;
+        width: 36px;
+        margin-right: 4px;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 18.0px;
+        color               : rgba(155, 155, 155, 1.0);
+        line-height         : 20.0px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .content_box .ex_lang_graph {
+        background          : rgba(255, 87, 91, 1.0);
+        width               : 100%;
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .content_box .ex_lang_rate {
+        margin-left                : 3px;
+        font-family         : "FuturaLight", sans-serif;
+        font-size           : 18.0px;
+        color               : rgba(155, 155, 155, 1.0);
+        line-height         : 16.0px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .content_box .table_div {
+        display             : block;
+        margin-top          : 28px;
+      }
+      .content_box .table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .content_box .table th {
+        border              : 1px solid rgba(230, 230, 230, 1.0);
+        padding             : 10px;
+        width               : 160px;
+        height              : 28px;
+        vertical-align      : top;
+        font-family         : sans-serif;
+        font-size           : 16.0px;
+        color               : rgba(155, 154, 155, 1.0);
+        text-align          : left;
+        line-height         : 20.0px;
+        vertical-align: middle;
+      }
+      .content_box .table td {
+        border              : 1px solid rgba(230, 230, 230, 1.0);
+        padding             : 10px;
+        width               : 160px;
+        height              : 28px;
+        vertical-align      : top;
+        font-family         : sans-serif;
+        font-size           : 16.0px;
+        font-weight         : 300;
+        color               : rgba(155, 154, 155, 1.0);
+        text-align          : left;
+        line-height         : 20.0px;
+        vertical-align: middle;
+      }
+      .content_box .table .count {
+        text-align          : right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="background_colorbox"></div>
+    </div>
+
+    <div class="content_wrapper">
+
+        <div class="background_content">
+          <div class="background_title">
+            Before<br>Airbnb
+          </div>
+          <div class="background_desc">
+            <script>
+              if (userLang=='ko' || 'ko-kr'){
+                document.getElementsByClassName('background_desc')[0].innerText = '주변 경쟁자 분석을 통해\n에어비엔비를 효과적으로 운영해보세요.'
+                document.getElementsByClassName('background_desc')[0].style['font-weight'] = '300'
+              }
+              else {
+                document.getElementsByClassName('background_desc')[0].innerText = 'Research Neighborhoods to Succeed in Your Next Airbnb. Try Now!'
+              }
+            </script>
+          </div>
+          <div class="background_search">
+            <input type="text" onkeypress="enterinputexec(event);" autocomplete="off" class="search_input" placeholder="Where is your airbnb?">
+            <script>
+
+            var input_started = 0
+            var input_started_init = function(input_started) {
+                if (input_started == 1) {
+                  ga('send', 'event', 'user_action_search', 'focus');
+                  input_started = 0;
+                }
+              };
+
+
+              if (userLang=='ko' || 'ko-kr'){
+                document.getElementsByClassName('search_input')[0].placeholder = "주소를 입력해보세요"
+              }
+            </script>
+            <a href="javascript:" onclick="enterinputexec(event); return false">
+              <div class="icon">
+                <img class="search_icon" src="./Before Airbnb_files/search.svg" alt="Search">
+              </div>
+            </a>
+            <script type="text/javascript">
+              var a = function(){
+                document.querySelector('.background_search .border_bottom').style['background-color'] = '#FF585B';
+                // document.querySelector('.background_search .border_bottom').style['box-shadow'] = "0px 1px 3px rgba(255, 88, 91, 0.25)"
+              }
+            </script>
+            <div class="border_bottom" onmouseover="a();"></div>
+          </div>
+          <script type="text/javascript">
+          </script>
+        </div>
+
+        <div class="content">
+            <div class="content_box" id="content_loading">
+              <div class="title"></div>
+              <div class="desc">검색중입니다.</div>
+              <div class="loading_giphy">
+
+              </div>
+            </div>
+            <div class="content_box" id="content_total">
+              <div class="total_score_number">
+                91
+              </div>
+              <div class="total_score_text">
+                점
+              </div>
+              <div class="total_comment">
+                괜찮네요. <br>포인트만 잘 잡으면 충분히 성공할 수 있어요.
+              </div>
+            </div>
+            <div class="content_box" id="content_price">
+              <div class="title">
+                가격 분석
+              </div>
+              <div class="desc">
+                평균 가격은 127,600원입니다. 기본적으로 경쟁력을 확보하려면 4,400원에서 55,000원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 55,000원에서 1,098,900원 사이가 적당한 가격입니다.
+              </div>
+              <div class="result_text">
+                평균<br>중간<br>최소<br>최대
+              </div>
+              <div class="result_numbers_wrapper">
+                <div class="result_dollars">
+                  $<br>$<br>$<br>$
+                </div>
+                <div class="result_numbers">
+                  116<br>50<br>4<br>999
+                </div>
+
+              </div>
+            </div>
+            <div class="content_box" id="content_roomtype">
+              <div class="title">
+                방 종류 분석
+              </div>
+              <div class="desc">
+                많은 경쟁자들이 entire_home형태의 방을 많이 소유하고 있습니다. 하지만 이와 관계 없이 당신이 제공할 수 있는 최고의 경험을 위한 방 형태를 준비해보세요.
+              </div>
+              <div class="roomtype_div" id="roomtype_category_div">
+                <div class="result_text">
+                  평균<br>중간<br>최소<br>최대
+                </div>
+              </div>
+              <div class="roomtype_div" id="roomtype_entire_home_div">
+                <div class="img">
+                  <img src="./Before Airbnb_files/entire_home_img.jpg" alt="Entire home">
+                </div>
+                <div class="roomtype">
+                    Entire Home
+                </div>
+                <div class="count_number">
+                    726
+                </div>
+                <div class="count_text">
+                    listings
+                </div>
+                <div class="result_div">
+                  <div class="result_dollars">
+                      $<br>$<br>$<br>$
+                  </div>
+                  <div class="result_numbers">
+                      184<br>72<br>27<br>10,216
+                  </div>
+                </div>
+
+              </div>
+              <div class="roomtype_div" id="roomtype_private_room_div">
+                <div class="img">
+                  <img src="./Before Airbnb_files/private_room_img.jpg" alt="Private room">
+                </div>
+                <div class="roomtype">
+                    Private Room
+                </div>
+                <div class="count_number">
+                    191
+                </div>
+                <div class="count_text">
+                    listings
+                </div>
+                <div class="result_div">
+                  <div class="result_dollars">
+                    $<br>$<br>$<br>$
+                  </div>
+                  <div class="result_numbers">
+                      154<br>49<br>25<br>1,363
+                  </div>
+                </div>
+              </div>
+              <div class="roomtype_div" id="roomtype_else_div">
+                <div class="img">
+                  <img src="./Before Airbnb_files/else_img.jpg" alt="Else">
+                </div>
+                <div class="roomtype">
+                    Else
+                </div>
+                <div class="count_number">
+                    12
+                </div>
+                <div class="count_text">
+                    listings
+                </div>
+                <div class="result_div">
+                  <div class="result_dollars">
+                    $<br>$<br>$<br>$
+                  </div>
+                  <div class="result_numbers">
+                      1,328<br>423<br>136<br>3,756
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content_box" id="content_superhost">
+              <div class="title">
+                슈퍼 호스트 비율
+              </div>
+              <div class="desc">
+                슈퍼 호스트 비율이 상대적으로 높은 편입니다. 마냥 쉽지만은 않지만, 여전히 많은 기회가 있습니다.
+              </div>
+              <div class="horizontal_bar_one_graph">
+                    <div class="border_top">
+                    </div>
+                    <div class="body">
+                      <div class="body_first" id="super_host_graph_body_first">
+                      </div>
+                      <div class="body_last" id="super_host_graph_body_last">
+                        <div class="opportunity">
+                            Opportunity
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border_bottom">
+                    </div>
+              </div>
+              <div class="horizontal_bar_one_graph_data">
+                    <div class="first" id="super_host_data_first">
+                        37.4%
+                    </div>
+                    <div class="last" id="super_host_data_last">
+                        62.6%
+                    </div>
+              </div>
+              <div class="horizontal_bar_one_graph_label">
+                    <div class="first" id="super_host_label_first">
+                        Normal Host
+                    </div>
+                    <div class="last" id="super_host_label_last">
+                        Super Host
+                    </div>
+              </div>
+            </div>
+            <div class="content_box" id="content_business_preferred">
+              <div class="title" id="business_preferred_rate">
+                    Business Preferred Rate
+                </div>
+              <div class="desc" id="business_preferred_desc">
+              </div>
+              <div class="horizontal_bar_one_graph">
+                    <div class="border_top">
+                    </div>
+                    <div class="body">
+                      <div class="body_first" id="business_preferred_graph_body_first">
+                      </div>
+                      <div class="body_last" id="business_preferred_graph_body_last">
+                        <div class="opportunity">
+                            Opportunity
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border_bottom">
+                    </div>
+              </div>
+              <div class="horizontal_bar_one_graph_data">
+                    <div class="first" id="business_preferred_data_first">
+                        37.4%
+                    </div>
+                    <div class="last" id="business_preferred_data_last">
+                        62.6%
+                    </div>
+              </div>
+              <div class="horizontal_bar_one_graph_label">
+                    <div class="first" id="business_preferred_label_first">
+                        Business Preffered
+                    </div>
+                    <div class="last" id="business_preferred_label_last">
+                        Business Non_Preffered
+                    </div>
+              </div>
+            </div>
+            <div class="content_box" id="content_family_preferred">
+              <div class="title" id="family_preferred_rate">
+                  Family Preffered Rate
+              </div>
+              <div class="desc" id="family_preferred_desc">
+              </div>
+              <div class="horizontal_bar_one_graph">
+                    <div class="border_top">
+                    </div>
+                    <div class="body">
+                      <div class="body_first" id="family_preferred_graph_body_first">
+                      </div>
+                      <div class="body_last" id="family_preferred_graph_body_last">
+                        <div class="opportunity">
+                            Opportunity
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border_bottom">
+                    </div>
+              </div>
+              <div class="horizontal_bar_one_graph_data">
+                    <div class="first" id="family_preferred_data_first">
+                        37.4%
+                    </div>
+                    <div class="last" id="family_preferred_data_last">
+                        62.6%
+                    </div>
+              </div>
+              <div class="horizontal_bar_one_graph_label">
+                    <div class="first" id="family_preferred_label_first">
+                        Family Preffered
+                    </div>
+                    <div class="last" id="family_preferred_label_last">
+                        Family Non_Preffered
+                    </div>
+              </div>
+            </div>
+            <div class="content_box" id="content_extra_host_language">
+              <div class="title" id="extra_host_languages">
+                  Extra Host Languages
+              </div>
+              <div class="ex_lang_graph_div">
+                <div class="ex_lang_div" id="ex_lang1_div">
+                  <div class="ex_lang_label" id="ex_lang1_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang1_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang1_rate"></div>
+                </div>
+                <div class="ex_lang_div" id="ex_lang2_div">
+                  <div class="ex_lang_label" id="ex_lang2_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang2_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang2_rate"></div>
+                </div>
+                <div class="ex_lang_div" id="ex_lang3_div">
+                  <div class="ex_lang_label" id="ex_lang3_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang3_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang3_rate"></div>
+                </div>
+                <div class="ex_lang_div" id="ex_lang4_div">
+                  <div class="ex_lang_label" id="ex_lang4_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang4_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang4_rate"></div>
+                </div>
+                <div class="ex_lang_div" id="ex_lang5_div">
+                  <div class="ex_lang_label" id="ex_lang5_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang5_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang5_rate"></div>
+                </div>
+                <div class="ex_lang_div" id="ex_lang6_div">
+                  <div class="ex_lang_label" id="ex_lang6_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang6_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang6_rate"></div>
+                </div>
+                <div class="ex_lang_div" id="ex_lang7_div">
+                  <div class="ex_lang_label" id="ex_lang7_label"></div>
+                  <div class="ex_lang_graph" id="ex_lang7_graph"></div>
+                  <div class="ex_lang_rate" id="ex_lang7_rate"></div>
+                </div>
+              </div>
+            </div>
+            <div class="content_box" id="content_listing_distance">
+              <div class="title">
+                  Listings Distances
+              </div>
+              <div class="desc">
+
+              </div>
+              <div class="map_canvas_div" style="width: 100%; height: 400px">
+
+
+                <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPhG7tgEazABFFgVRArbCe8aLhbGSvJPE&callback=initialize"> -->
+
+                </script>
+              </div>
+              <div class="table_div">
+
+                  <table class='table'>
+                    <tr>
+                      <th id='distance'>Distance</th>
+                      <th id='count'>Count</th>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_10'>10m</td>
+                      <td class='count' id='count_10'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_20'>20m</td>
+                      <td class='count' id='count_20'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_50'>50m</td>
+                      <td class='count' id='count_50'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_100'>100m</td>
+                      <td class='count' id='count_100'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_200'>200m</td>
+                      <td class='count' id='count_200'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_300'>300m</td>
+                      <td class='count' id='count_300'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_500'>500m</td>
+                      <td class='count' id='count_500'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_1000'>1km</td>
+                      <td class='count' id='count_1000'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_2000'>2km</td>
+                      <td class='count' id='count_2000'></td>
+                    </tr>
+                    <tr>
+                      <td class='distance' id='distance_3000'>3km</td>
+                      <td class='count' id='count_3000'></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+            <div class="content_box" id="content_last_giphy">
+              <div class="last_giphy">
+
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Logic -->
+    <script type="text/javascript">
+        var result = {};
+
+        var enterinputexec = function(e) {
+          if (e.which == 13 || e.keyCode == 13 || e.type == 'click') {
+            ga('send', 'event', 'user_action_search', 'search', document.getElementsByClassName('search_input')[0].value);
+
+
+            console.log("Start to call listing information");
+            var host_url = 'https://hplfmoc09e.execute-api.us-east-1.amazonaws.com/dev/before-airbnb-dev-get-results?x-api-key=uMM6O9xrIJ6f12Fcf9uos7aPCxSBBWKLmdKVAslc&location=' + document.getElementsByClassName('search_input')[0].value;
+            console.log(host_url)
+            getJSON(host_url, callback_handling);
+            document.querySelector('#content_loading .title').innerText = document.getElementsByClassName('search_input')[0].value;
+            document.querySelector('#content_loading').classList.add('appear');
+            document.querySelector('#content_loading .desc').style.display = 'block';
+            document.getElementsByClassName('loading_giphy')[0].classList.remove('collapse');
+            var cb = document.getElementsByClassName('content_box')
+            for (var num=1; num<cb.length; num++){
+              document.getElementsByClassName('content_box')[num].style.display = 'none';
+            }
+            var giphy_search = ['cute+cat', 'cute+corgi']
+            var s_rand = Math.floor(Math.random() * 2);
+            getJSON('http://api.giphy.com/v1/gifs/search?q='+giphy_search[s_rand]+'&api_key=dc6zaTOxFJmzC', giphy_callback);
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+            getJSON('https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBPhG7tgEazABFFgVRArbCe8aLhbGSvJPE&address=' + document.getElementsByClassName('search_input')[0].value, latlng_callback);
+
+
+
+            var counter = 15;
+            var id;
+
+            id = setInterval(function() {
+                counter--;
+                if(counter < 0) {
+                    clearInterval(id);
+                    if (userLang=='ko' || 'ko-kr'){
+                      document.querySelector('#content_loading .desc').innerText = '검색중입니다. 잠시만 기다려주세요.';
+                    }
+                    else {
+                      document.querySelector('#content_loading .desc').innerText = "Searching... It's Almomst done";
+                    }
+                } else {
+                    if (userLang=='ko' || 'ko-kr'){
+                      document.querySelector('#content_loading .desc').innerText = '검색중입니다. (' + counter.toString() + '초 남음)';
+                    }
+                    else {
+                      document.querySelector('#content_loading .desc').innerText = 'Searching... (' + counter.toString() + ' seconds left)';
+                    }
+                }
+              }, 1000);
+          }
+          else {
+            return false;
+          }
+        };
+
+        function initialize() {
+
+          var mapLocation, markLocation
+
+
+          // var mapLocation = new google.maps.LatLng('36.322473', '127.412501'); // 지도에서 가운데로 위치할 위도와 경도
+          var markLocation = new google.maps.LatLng('36.322473', '127.412501'); // 마커가 위치할 위도와 경도
+
+          var mapOptions = {
+            center: mapLocation, // 지도에서 가운데로 위치할 위도와 경도(변수)
+            zoom: 10, // 지도 zoom단계
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementsByClassName("map_canvas_div")[0], // id: map-canvas, body에 있는 div태그의 id와 같아야 함
+              mapOptions);
+
+          var size_x = 60; // 마커로 사용할 이미지의 가로 크기
+          var size_y = 60; // 마커로 사용할 이미지의 세로 크기
+
+          // 마커로 사용할 이미지 주소
+          var image = new google.maps.MarkerImage( 'http://www.larva.re.kr/home/img/boximage3.png',
+                              new google.maps.Size(size_x, size_y),
+                              '',
+                              '',
+                              new google.maps.Size(size_x, size_y));
+
+  //         var marker;
+  //         marker = new google.maps.Marker({
+  //                position: markLocation, // 마커가 위치할 위도와 경도(변수)
+  //                map: map,
+  //                icon: image, // 마커로 사용할 이미지(변수)
+  // //             info: '말풍선 안에 들어갈 내용',
+  //                title: '서대전네거리역이지롱~' // 마커에 마우스 포인트를 갖다댔을 때 뜨는 타이틀
+  //         });
+
+          var content = "이곳은 서대전네거리역이다! <br/> 지하철 타러 가자~"; // 말풍선 안에 들어갈 내용
+
+          // 마커를 클릭했을 때의 이벤트. 말풍선 뿅~
+          var infowindow = new google.maps.InfoWindow({ content: content});
+
+          // google.maps.event.addListener(marker, "click", function() {
+          //     infowindow.open(map,marker);
+          // });
+        }
+
+        var latlng_callback = function(err, latlng_data){
+          if (err != null) {
+            console.log('Something went wrong: ' + err);
+          }
+          else {
+            console.log(latlng_data);
+            var mylat = latlng_data.results[0].geometry.location.lat;
+            var mylng = latlng_data.results[0].geometry.location.lng;
+            mapLocation = new google.maps.LatLng(mylat, mylng);
+          }
+        };
+
+        var giphy_callback = function(err, giphy_data) {
+          if (err != null) {
+            console.log('Something went wrong: ' + err);
+          }
+          else {
+            console.log(giphy_data);
+            var rand = Math.floor(Math.random() * 24);
+            document.getElementsByClassName('loading_giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.original.url + ' alt="Cute Giphy ">'
+            document.getElementsByClassName('loading_giphy')[0].style.height = giphy_data.data[rand].images.original.height + 'px'
+            rand = Math.floor(Math.random() * 24);
+            document.getElementsByClassName('last_giphy')[0].innerHTML = '<img class="giphy" src='+ giphy_data.data[rand].images.original.url + ' alt="Cute Giphy ">'
+
+          }
+        };
+
+        var callback_handling = function(err, data) {
+          if (err != null) {
+            alert('Something went wrong: ' + err);
+          }
+          else {
+            result = data;
+            console.log(data);
+            // input interation
+            var cb = document.getElementsByClassName('content_box')
+            for (var num=1; num<cb.length; num++){
+              document.getElementsByClassName('content_box')[num].style.display = 'block';
+            }
+            document.querySelector('#content_loading .desc').style.display = 'none';
+            document.getElementsByClassName('loading_giphy')[0].classList.add('collapse');
+
+
+            if (userLang=='ko' || 'ko-kr'){
+
+              // total score
+              document.querySelector('#content_total .total_score_number').innerText = data.total.score;
+              document.querySelector('#content_total .total_comment').innerText = data.total.message.ko;
+
+              // listing count and price analysis
+              document.querySelector('#content_price .title').innerText = '가격 분석';
+              document.querySelector('#content_price .desc').innerText = '평균 가격은 '+numberWithCommas(data.price.avg*1100)+'원입니다. 기본적으로 경쟁력을 확보하려면 '+numberWithCommas(data.price.min*1100)+'원에서 '+numberWithCommas(data.price.med*1100)+'원 사이가 적당한 가격일 것입니다. 만약 프리미엄 고객을 노리고 있다면 '+numberWithCommas(data.price.med*1100)+'원에서 '+numberWithCommas(data.price.max*1100)+'원 사이가 적당한 가격입니다.';
+              document.querySelector('#content_price .result_text').innerText = '평균\n중간\n최소\n최대';
+              // document.getElementsByClassName('a929-listings')[0].innerText = numberWithCommas(data.price.len) + '개의 에어비엔비';
+              document.querySelector('#content_price .result_numbers').innerText = numberWithCommas(data.price.avg)+'\n'+numberWithCommas(data.price.med)+'\n'+numberWithCommas(data.price.min)+'\n'+numberWithCommas(data.price.max);
+
+
+              // room_type analysis
+              document.querySelector('#content_roomtype .title').innerText = '방 종류 분석';
+              document.querySelector('#content_roomtype .desc').innerText = '많은 경쟁자들이 '+data.room_type.top+'형태의 방을 많이 소유하고 있습니다. 하지만 이와 관계 없이 당신이 제공할 수 있는 최고의 경험을 위한 방 형태를 준비해보세요.';
+              document.querySelector('#content_roomtype #roomtype_entire_home_div .roomtype').innerText = '집 전체';
+              document.querySelector('#content_roomtype #roomtype_private_room_div .roomtype').innerText = '개인방';
+              document.querySelector('#content_roomtype #roomtype_else_div .roomtype').innerText = '기타';
+
+              document.querySelector('#content_roomtype #roomtype_entire_home_div .count_number').innerText = numberWithCommas(data.room_type.entire_home.price.len);
+              document.querySelector('#content_roomtype #roomtype_private_room_div .count_number').innerText = numberWithCommas(data.room_type.private_room.price.len);
+              document.querySelector('#content_roomtype #roomtype_else_div .count_number').innerText = numberWithCommas(data.room_type.else.price.len);
+              document.querySelector('#content_roomtype #roomtype_entire_home_div .result_numbers').innerText = numberWithCommas(data.room_type.entire_home.price.avg)+'\n'+numberWithCommas(data.room_type.entire_home.price.med)+'\n'+numberWithCommas(data.room_type.entire_home.price.min)+'\n'+numberWithCommas(data.room_type.entire_home.price.max);
+              document.querySelector('#content_roomtype #roomtype_private_room_div .result_numbers').innerText = numberWithCommas(data.room_type.private_room.price.avg)+'\n'+numberWithCommas(data.room_type.private_room.price.med)+'\n'+numberWithCommas(data.room_type.private_room.price.min)+'\n'+numberWithCommas(data.room_type.private_room.price.max);
+              document.querySelector('#content_roomtype #roomtype_else_div .result_numbers').innerText = numberWithCommas(data.room_type.else.price.avg)+'\n'+numberWithCommas(data.room_type.else.price.med)+'\n'+numberWithCommas(data.room_type.else.price.min)+'\n'+numberWithCommas(data.room_type.else.price.max);
+
+              // super_host analysis
+              document.querySelector('#content_superhost .title').innerText = '슈퍼 호스트 비율';
+              document.querySelector('#content_superhost .desc').innerText = data.super_host.message.ko;
+              document.querySelector('#content_superhost #super_host_label_first').innerText = '슈퍼 호스트';
+              document.querySelector('#content_superhost #super_host_label_last').innerText = '일반 호스트';
+              document.querySelector('#content_superhost .opportunity').innerText = '기회';
+
+              document.querySelector('#content_superhost #super_host_data_first').innerText = data.super_host.rate + '%';
+              document.querySelector('#content_superhost #super_host_data_last').innerText = 100-data.super_host.rate + '%';;
+              document.querySelector('#content_superhost #super_host_graph_body_first').style.width = data.super_host.rate + '%';
+              document.querySelector('#content_superhost #super_host_graph_body_last').style.width = 100-data.super_host.rate + '%';
+
+              // business_travel analysis
+              document.querySelector('#content_business_preferred #business_preferred_rate').innerText = '비즈니스 여행 선호 비율';
+              document.querySelector('#content_business_preferred #business_preferred_desc').innerText = data.business_travel.message.ko;
+              document.querySelector('#content_business_preferred #business_preferred_label_first').innerText = '비즈니스 여행\n선호';
+              document.querySelector('#content_business_preferred #business_preferred_label_last').innerText = '비즈니스 여행\n비선호';
+              document.querySelector('#content_business_preferred .opportunity').innerText = '기회';
+
+              document.querySelector('#content_business_preferred #business_preferred_data_first').innerText = data.business_travel.rate + '%';
+              document.querySelector('#content_business_preferred #business_preferred_data_last').innerText = 100-data.business_travel.rate + '%';;
+              document.querySelector('#content_business_preferred #business_preferred_graph_body_first').style.width = data.business_travel.rate + '%';
+              document.querySelector('#content_business_preferred #business_preferred_graph_body_last').style.width = 100-data.business_travel.rate + '%';
+
+              // family_preferred analysis
+              document.querySelector('#content_family_preferred #family_preferred_rate').innerText = '가족 여행 선호 비율';
+              document.querySelector('#content_family_preferred #family_preferred_desc').innerText = data.family_preferred.message.ko;
+              document.querySelector('#content_family_preferred #family_preferred_label_first').innerText = '가족 여행\n선호';
+              document.querySelector('#content_family_preferred #family_preferred_label_last').innerText = '가족 여행\n비선호';
+              document.querySelector('#content_family_preferred .opportunity').innerText = '기회';
+
+              document.querySelector('#content_family_preferred #family_preferred_data_first').innerText = data.family_preferred.rate + '%';
+              document.querySelector('#content_family_preferred #family_preferred_data_last').innerText = 100-data.family_preferred.rate + '%';
+              document.querySelector('#content_family_preferred #family_preferred_graph_body_first').style.width = data.family_preferred.rate + '%';
+              document.querySelector('#content_family_preferred #family_preferred_graph_body_last').style.width = 100-data.family_preferred.rate + '%';
+
+              // Extra host langauage analysis
+              document.querySelector('#content_extra_host_language .title').innerText = '제 2외국어 능력 비율';
+              var list_keys = Object.keys(data.extra_host_language.list);
+              var list_values = Object.values(data.extra_host_language.list);
+              var rate_values = Object.values(data.extra_host_language.rate);
+              for (var num=1; num<8; num++){
+                document.getElementById('ex_lang' + num + '_label').innerText = list_values[num-1].toUpperCase();
+                document.getElementById('ex_lang' + num + '_graph').style.width = rate_values[num-1] + '%';
+                document.getElementById('ex_lang' + num + '_rate').innerText = rate_values[num-1] + '%';
+                // document.getElementById('ex_lang' + num + '_rate').style.bottom = 29+6+rate_values[num-1] + 'px';
+                };
+
+              // Listings distances analysis
+              document.querySelector('#content_listing_distance .title').innerText = '거리에 따른 방 수';
+              document.getElementById('distance').innerText = '거리';
+              document.getElementById('count').innerText = '개수';
+              var distances = [10, 20, 50, 100, 200, 300, 500, 1000, 2000, 3000];
+              for (var num=0; num<distances.length; num++) {
+                if (num == 0) {
+                  document.getElementById('count_' + distances[num]).innerText = numberWithCommas(data.distance[distances[num]]) + '개';
+                }
+                else {
+                  document.getElementById('count_' + distances[num]).innerText = numberWithCommas(data.distance[distances[num]]-data.distance[distances[num-1]]) + '개';
+                }
+              };
+              // document.getElementById('count_10').innerText = numberWithCommas(data.distance[10]) + '개';
+              // document.getElementById('count_20').innerText = numberWithCommas(data.distance[20]) + '개';
+              // document.getElementById('count_50').innerText = numberWithCommas(data.distance[50]) + '개';
+              // document.getElementById('count_100').innerText = numberWithCommas(data.distance[100]) + '개';
+              // document.getElementById('count_200').innerText = numberWithCommas(data.distance[200]) + '개';
+              // document.getElementById('count_300').innerText = numberWithCommas(data.distance[300]) + '개';
+              // document.getElementById('count_500').innerText = numberWithCommas(data.distance[500]) + '개';
+              // document.getElementById('count_1000').innerText = numberWithCommas(data.distance[1000]) + '개';
+              // document.getElementById('count_2000').innerText = numberWithCommas(data.distance[2000]) + '개';
+              // document.getElementById('count_3000').innerText = numberWithCommas(data.distance[3000]) + '개';
+
+              // Listings distances analysis
+              // var table = document.getElementsByClassName("listings-distances-table")[0];
+              // var num = 0;
+              //
+              // for (d in result.distance) {
+              //   var tr = table.insertRow(-1);
+              //   tr.insertCell(-1).innerHTML = Object.keys(d)[num];
+              //   tr.insertCell(-1).innerHTML = Object.values(d)[num];
+              //   num = num + 1;
+              //   }
+              }
+            else {
+              // total score
+              document.getElementsByClassName('a82')[0].innerText = data.total.score;
+              document.getElementsByClassName('not-easy-but-there')[0].innerText = data.total.message.en;
+
+              // listing count and price analysis
+              document.getElementsByClassName('a929-listings')[0].innerText = data.price.len + ' listings';
+              document.getElementsByClassName('a192682510216')[0].innerText = data.price.avg+'\n'+data.price.med+'\n'+data.price.min+'\n'+data.price.max;
+              document.getElementById('price_statistics_desc').innerText = 'Median price is $'+data.price.med+'. To ensure competity, between $'+data.price.min+' and $'+data.price.med+' would be reasonable. If you are targeting to premium, between $'+data.price.med+' and $'+data.price.max+' would works.';
+
+              // room_type analysis
+              document.getElementById('room_type_statistics_desc').innerText = 'Many listings are concentrated to '+data.room_type.top+' type. You can avoid the type, but I recommend you to select room type you can provide the best.';
+              document.getElementsByClassName('a726')[0].innerText = data.room_type.entire_home.price.len;
+              document.getElementsByClassName('a191')[0].innerText = data.room_type.private_room.price.len;
+              document.getElementsByClassName('a12')[0].innerText = data.room_type.else.price.len;
+              document.getElementsByClassName('entire_home_prices')[0].innerText = data.room_type.entire_home.price.avg+'\n'+data.room_type.entire_home.price.med+'\n'+data.room_type.entire_home.price.min+'\n'+data.room_type.entire_home.price.max;
+              document.getElementsByClassName('private_room_prices')[0].innerText = data.room_type.private_room.price.avg+'\n'+data.room_type.private_room.price.med+'\n'+data.room_type.private_room.price.min+'\n'+data.room_type.private_room.price.max;
+              document.getElementsByClassName('else_prices')[0].innerText = data.room_type.else.price.avg+'\n'+data.room_type.else.price.med+'\n'+data.room_type.else.price.min+'\n'+data.room_type.else.price.max;
+
+              // super_host analysis
+              document.getElementById('super_host_desc').innerText = data.super_host.message.en;
+
+              document.getElementById('super_host_data_first').innerText = data.super_host.rate + '%';
+              document.getElementById('super_host_data_last').innerText = 100-data.super_host.rate + '%';
+              document.getElementById('super_host_graph_body_first').style.width = data.super_host.rate + '%';
+              document.getElementById('super_host_graph_body_last').style.width = 100-data.super_host.rate + '%';
+
+              // business_travel analysis
+              document.getElementById('business_preferred_desc').innerText = data.business_travel.message.en;
+
+              document.getElementById('business_preferred_data_first').innerText = data.business_travel.rate + '%';
+              document.getElementById('business_preferred_data_last').innerText = 100-data.business_travel.rate + '%';
+              document.getElementById('business_preferred_graph_body_first').style.width = data.business_travel.rate + '%';
+              document.getElementById('business_preferred_graph_body_last').style.width = 100-data.business_travel.rate + '%';
+
+              // family_preferred analysis
+              document.getElementById('family_preferred_desc').innerText = data.family_preferred.message.en;
+
+              document.getElementById('family_preferred_data_first').innerText = data.family_preferred.rate + '%';
+              document.getElementById('family_preferred_data_last').innerText = 100-data.family_preferred.rate + '%';
+              document.getElementById('family_preferred_graph_body_first').style.width = data.family_preferred.rate + '%';
+              document.getElementById('family_preferred_graph_body_last').style.width = 100-data.family_preferred.rate + '%';
+
+              // Extra host langauage analysis
+              var list_keys = Object.keys(data.extra_host_language.list);
+              var list_values = Object.values(data.extra_host_language.list);
+              var rate_values = Object.values(data.extra_host_language.rate);
+              for (var num=1; num<7; num++){
+                document.getElementById('ex-lang' + num + '-graph').style.height = rate_values[num-1] + 'px';
+                document.getElementById('ex-lang' + num + '-label').innerText = list_values[num-1];
+                document.getElementById('ex-lang' + num + '-rate').innerText = rate_values[num-1] + '%';
+                document.getElementById('ex-lang' + num + '-rate').style.bottom = 29+5+rate_values[num-1] + 'px';
+
+                };
+
+              // Listings distances analysis
+              document.getElementById('count-10').innerText = numberWithCommas(data.distance[10]);
+              document.getElementById('count-20').innerText = numberWithCommas(data.distance[20]);
+              document.getElementById('count-50').innerText = numberWithCommas(data.distance[50]);
+              document.getElementById('count-100').innerText = numberWithCommas(data.distance[100]);
+              document.getElementById('count-200').innerText = numberWithCommas(data.distance[200]);
+              document.getElementById('count-300').innerText = numberWithCommas(data.distance[300]);
+              document.getElementById('count-500').innerText = numberWithCommas(data.distance[500]);
+              document.getElementById('count-1000').innerText = numberWithCommas(data.distance[1000]);
+              document.getElementById('count-2000').innerText = numberWithCommas(data.distance[2000]);
+              document.getElementById('count-3000').innerText = numberWithCommas(data.distance[3000]);
+              // Listings distances analysis
+              // var table = document.getElementsByClassName("listings-distances-table")[0];
+              // var num = 0;
+              //
+              // for (d in result.distance) {
+              //   var tr = table.insertRow(-1);
+              //   tr.insertCell(-1).innerHTML = Object.keys(d)[num];
+              //   tr.insertCell(-1).innerHTML = Object.values(d)[num];
+              //   num = num + 1;
+              //   }
+
+              }
+
+            }
+          };
+        console.log(result)
+    </script>
+  </body>
+</html>

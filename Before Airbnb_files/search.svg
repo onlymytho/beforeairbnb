@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-815.000000, -615.000000)">
+            <g id="Group-11" transform="translate(815.000000, 615.000000)">
+                <rect id="Rectangle-7" fill="#FFFFFF" x="0" y="0" width="40" height="40"></rect>
+                <path d="M29.4497475,29.4497475 L24.3136309,24.3136309 L24.6245832,23.961402 C25.8260224,22.6004808 26.5,20.8532204 26.5,19 C26.5,14.8578644 23.1421356,11.5 19,11.5 C14.8578644,11.5 11.5,14.8578644 11.5,19 C11.5,23.1421356 14.8578644,26.5 19,26.5 C20.8532204,26.5 22.6004808,25.8260224 23.961402,24.6245832 L24.3136309,24.3136309 L29.4497475,29.4497475 L28.7426407,29.4497475 L29.4497475,28.7426407 L29.4497475,29.4497475 Z" id="Combined-Shape" stroke="#FF585B"></path>
+            </g>
+        </g>
+    </g>
+</svg>
