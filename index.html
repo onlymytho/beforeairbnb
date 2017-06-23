@@ -13,8 +13,12 @@
         if ( navigator.platform  ) {
             if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
                 location.href = "index.htm"; //모바일 페이지 경로
+                console.log(navigator.platform);
+                console.log("Go to mobile page");
             } else {
                 location.href = "start.html"; //PC 페이지 경로
+                console.log(navigator.platform);
+                console.log("Go to PC page")
             }
         }
     </script>
