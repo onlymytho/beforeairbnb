@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Before Airbnb</title>
+    <meta content="Research Neighborhoods to Succeed in Your Next Airbnb. Try Now!" name="description">
+    <meta name="Access-Control-Allow-Origin" content="*">
+    <link href="./Before Airbnb_files/favicon2.png" rel="shortcut icon" type="image/png">
+
+    <script>
+        var filter = "win16|win32|win64|mac|macintel";
+
+        if ( navigator.platform  ) {
+            if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+                location.href = "index.htm"; //모바일 페이지 경로
+            } else {
+                location.href = "start.html"; //PC 페이지 경로
+            }
+        }
+    </script>
+    <!-- GA -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments);
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-63621212-2', 'auto');
+      ga('send', 'pageview');
+      ga('send', 'event', 'test_category', 'test_action', 'test_label');
+
+    </script>
+
+    <!-- userLang, getJSON, numberWithCommas, Google Maps -->
+    <script>
+      var userLang = navigator.language || navigator.userLanguage;
+    </script>
+    <script>
+      var getJSON = function(url, callback) {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', url, true);
+          // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+          // xhr.setRequestHeader('"Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE')
+          xhr.responseType = 'json';
+          xhr.onload = function() {
+            var status = xhr.status;
+            if (status == 200) {
+              callback(null, xhr.response);
+            } else {
+              callback(status);
+            }
+          };
+          xhr.send();
+      };
+
+      function numberWithCommas(x) {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+
+    </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBPhG7tgEazABFFgVRArbCe8aLhbGSvJPE&v=3"></script>
+    <!-- Facebook -->
+    <meta content="Before Airbnb" property="og:site_name">
+    <meta content="Before Airbnb" property="og:title">
+    <meta content="Research Neighborhoods to Succedd in Your Next Airbnb. Try Now!" property="og:description">
+    <meta content="http://beforeairbnb.com" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="http://beforeairbnb.com/Before%20Airbnb_files/og-image.png" property="og:image">
+    <!-- Twitter -->
+    <meta content="photo" name="twitter:card">
+    <meta content="Before Airbnb" name="twitter:title">
+    <meta content="Research Neighborhoods to Succedd in Your Next Airbnb. Try Now!" name="twitter:description">
+</head>
+<body>
+</body>
+</html>
