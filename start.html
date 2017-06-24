@@ -568,7 +568,7 @@
             </script>
           </div>
           <div class="background_search">
-            <input type="text" onkeypress="enterinputexec(event);" autocomplete="off" class="search_input" placeholder="Where is your airbnb?">
+            <input type="text" onfocus="input_started_init(1)" onemptied="input_started_init(1)" onkeypress="enterinputexec(event);" autocomplete="off" class="search_input" placeholder="Where is your airbnb?">
             <script>
 
             var input_started = 0
